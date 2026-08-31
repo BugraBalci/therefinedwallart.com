@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Refined — Wall Art &amp; 3D Objects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#0b0b0b",
+            anthracite: "#141414",
+          },
+          fontFamily: {
+            cinzel: ["Cinzel", "serif"],
+            inter: ["Inter", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-ink text-neutral-300 font-inter antialiased">
+  <div class="flex min-h-screen flex-col lg:flex-row">
+    <aside class="sticky top-0 z-20 flex h-auto w-full flex-col border-b border-white/10 bg-ink lg:h-screen lg:w-72 lg:shrink-0 lg:border-b-0 lg:border-r">
+      <div class="flex items-center justify-between px-6 py-5 lg:block lg:px-8 lg:pt-10 lg:pb-0">
+        <a href="/" class="block">
+          <span class="font-cinzel text-[11px] font-medium uppercase tracking-[0.42em] text-neutral-500">Atelier</span>
+          <h1 class="mt-1 font-cinzel text-xl font-semibold tracking-[0.18em] text-neutral-100 lg:text-2xl">
+            THE REFINED
+          </h1>
+        </a>
+      </div>
+
+      <nav class="flex gap-2 overflow-x-auto px-4 py-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:flex-1 lg:flex-col lg:justify-center lg:gap-1 lg:overflow-visible lg:px-8" aria-label="Product categories">
+        <button type="button" data-filter="all" class="filter-btn whitespace-nowrap rounded-sm border border-white/15 bg-white/[0.06] px-4 py-2.5 text-left text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-100 transition hover:border-white/30 hover:bg-white/[0.08] lg:w-full">
+          All Products
+        </button>
+        <button type="button" data-filter="3d-product" class="filter-btn whitespace-nowrap rounded-sm border border-transparent px-4 py-2.5 text-left text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-500 transition hover:border-white/10 hover:text-neutral-200 lg:w-full">
+          3D Product
+        </button>
+        <button type="button" data-filter="wall-art" class="filter-btn whitespace-nowrap rounded-sm border border-transparent px-4 py-2.5 text-left text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-500 transition hover:border-white/10 hover:text-neutral-200 lg:w-full">
+          Wall Art
+        </button>
+      </nav>
+
+      <div class="border-t border-white/10 px-6 py-4 lg:border-t-0 lg:px-8 lg:pb-10 lg:pt-0">
+        <a
+          href="https://www.etsy.com/shop/TheRefinedWallArt"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group flex w-full items-center justify-between text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-400 transition hover:text-neutral-100 lg:border-t lg:border-white/10 lg:pt-6"
+        >
+          Visit Etsy Shop
+          <svg class="h-3.5 w-3.5 shrink-0 text-neutral-500 transition group-hover:text-neutral-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M9 7h8v8" />
+          </svg>
+        </a>
+      </div>
+    </aside>
+
+    <main class="flex-1 px-4 py-8 sm:px-8 lg:px-12 lg:py-12">
+      <div id="product-grid" class="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const FILTER_ACTIVE =
+      "filter-btn whitespace-nowrap rounded-sm border border-white/15 bg-white/[0.06] px-4 py-2.5 text-left text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-100 transition hover:border-white/30 hover:bg-white/[0.08] lg:w-full";
+    const FILTER_INACTIVE =
+      "filter-btn whitespace-nowrap rounded-sm border border-transparent px-4 py-2.5 text-left text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-500 transition hover:border-white/10 hover:text-neutral-200 lg:w-full";
+
+    const grid = document.getElementById("product-grid");
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    let products = [];
+    let activeFilter = "all";
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#39;");
+    }
+
+    function formatPrice(price) {
+      return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+        maximumFractionDigits: 0,
+      }).format(price);
+    }
+
+    function productCard(product) {
+      const title = escapeHtml(product.title);
+      const image = escapeHtml(product.image);
+      const etsyUrl = escapeHtml(product.etsyUrl);
+      const price = formatPrice(product.price);
+
+      return `
+        <article class="flex flex-col overflow-hidden rounded-sm bg-anthracite">
+          <div class="aspect-[4/5] overflow-hidden">
+            <img
+              src="${image}"
+              alt="${title}"
+              class="h-full w-full object-cover transition duration-500 hover:scale-105"
+            />
+          </div>
+          <div class="flex flex-1 flex-col px-5 pb-5 pt-5">
+            <h2 class="font-cinzel text-base font-medium tracking-[0.08em] text-neutral-100">
+              ${title}
+            </h2>
+            <p class="mt-2 text-sm font-light tracking-wide text-neutral-400">${price}</p>
+            <a
+              href="${etsyUrl}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-5 inline-flex items-center justify-between border border-white/15 px-4 py-2.5 text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-200 transition hover:border-white/40 hover:bg-white/[0.06] hover:text-white"
+            >
+              View on Etsy
+              <svg class="h-3.5 w-3.5 shrink-0 text-neutral-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M9 7h8v8" />
+              </svg>
+            </a>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderProducts() {
+      const visible =
+        activeFilter === "all"
+          ? products
+          : products.filter((product) => product.category === activeFilter);
+
+      if (!visible.length) {
+        grid.innerHTML =
+          '<p class="col-span-full py-16 text-center text-sm tracking-wide text-neutral-500">No pieces in this collection yet.</p>';
+        return;
+      }
+
+      grid.innerHTML = visible.map(productCard).join("");
+    }
+
+    function setActiveFilter(filter) {
+      activeFilter = filter;
+      filterButtons.forEach((button) => {
+        const isActive = button.dataset.filter === filter;
+        button.className = isActive ? FILTER_ACTIVE : FILTER_INACTIVE;
+        button.setAttribute("aria-pressed", String(isActive));
+      });
+      renderProducts();
+    }
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        setActiveFilter(button.dataset.filter);
+      });
+    });
+
+    fetch("products.json")
+      .then((response) => {
+        if (!response.ok) throw new Error("Unable to load products");
+        return response.json();
+      })
+      .then((data) => {
+        products = Array.isArray(data) ? data : [];
+        setActiveFilter("all");
+      })
+      .catch(() => {
+        grid.innerHTML =
+          '<p class="col-span-full py-16 text-center text-sm tracking-wide text-neutral-500">The collection could not be loaded.</p>';
+      });
+  </script>
+</body>
+</html>
