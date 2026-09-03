@@ -3,86 +3,382 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Refined — Wall Art &amp; 3D Objects</title>
+  <title>The Refined &amp; Studios — Wall Art, Iron Works &amp; 3D Objects</title>
+  <meta name="description" content="A curated showcase of handcrafted metal wall art, forged iron works, bespoke organizers and 3D printed objects." />
+  <link id="canonical-url" rel="canonical" href="https://therefinedwallart.com/" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
             ink: "#0b0b0b",
-            anthracite: "#141414",
+            coal: "#121212",
+            anthracite: "#181818",
+            champagne: "#c8a97e",
           },
           fontFamily: {
             cinzel: ["Cinzel", "serif"],
             inter: ["Inter", "sans-serif"],
           },
+          letterSpacing: {
+            luxe: "0.32em",
+          },
+          keyframes: {
+            rise: {
+              "0%": { opacity: "0", transform: "translateY(14px)" },
+              "100%": { opacity: "1", transform: "translateY(0)" },
+            },
+          },
+          animation: {
+            rise: "rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both",
+          },
         },
       },
     };
   </script>
+  <style>
+    ::selection { background: #c8a97e; color: #0b0b0b; }
+    html { scroll-behavior: smooth; }
+    body { -webkit-font-smoothing: antialiased; }
+    .scroll-slim::-webkit-scrollbar { width: 6px; height: 6px; }
+    .scroll-slim::-webkit-scrollbar-track { background: transparent; }
+    .scroll-slim::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 9999px; }
+    .no-scrollbar { scrollbar-width: none; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .hairline { background: linear-gradient(90deg, transparent, rgba(200,169,126,0.35), transparent); }
+    .swatch {
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.22);
+    }
+    .swatch[aria-pressed="true"] {
+      box-shadow: 0 0 0 2px #121212, 0 0 0 3.5px #c8a97e, inset 0 0 0 1px rgba(255,255,255,0.28);
+    }
+    #product-grid article img,
+    #qv-stage img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  </style>
 </head>
-<body class="bg-ink text-neutral-300 font-inter antialiased">
-  <div class="flex min-h-screen flex-col lg:flex-row">
-    <aside class="sticky top-0 z-20 flex h-auto w-full flex-col border-b border-white/10 bg-ink lg:h-screen lg:w-72 lg:shrink-0 lg:border-b-0 lg:border-r">
-      <div class="flex items-center justify-between px-6 py-5 lg:block lg:px-8 lg:pt-10 lg:pb-0">
-        <a href="/" class="block">
-          <span class="font-cinzel text-[11px] font-medium uppercase tracking-[0.42em] text-neutral-500">Atelier</span>
-          <h1 class="mt-1 font-cinzel text-xl font-semibold tracking-[0.18em] text-neutral-100 lg:text-2xl">
-            THE REFINED
-          </h1>
-        </a>
+<body class="bg-ink font-inter text-neutral-300">
+
+  <!-- Mobile drawer backdrop -->
+  <div id="sidebar-backdrop" class="fixed inset-0 z-40 hidden bg-black/70 backdrop-blur-sm lg:hidden"></div>
+
+  <div class="flex min-h-screen">
+
+    <!-- ============================= SIDEBAR ============================= -->
+    <aside
+      id="sidebar"
+      class="fixed inset-y-0 left-0 z-50 flex w-[286px] -translate-x-full flex-col border-r border-white/10 bg-coal transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] lg:sticky lg:top-0 lg:z-30 lg:h-screen lg:w-[300px] lg:shrink-0 lg:translate-x-0 lg:bg-ink"
+    >
+      <!-- Brand -->
+      <div class="relative px-8 pb-8 pt-9">
+        <h1 class="font-cinzel text-[19px] font-semibold leading-snug tracking-[0.16em] text-neutral-50">
+          THE REFINED<br />
+          <span class="text-champagne">&amp;</span> STUDIOS
+        </h1>
+        <div class="hairline mt-6 h-px w-full"></div>
+        <button
+          type="button"
+          id="sidebar-close"
+          class="absolute right-5 top-6 rounded-full border border-white/10 p-2 text-neutral-500 transition hover:border-white/25 hover:text-neutral-100 lg:hidden"
+          data-i18n-aria="a11y.closeMenu"
+          aria-label="Close menu"
+        >
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
       </div>
 
-      <nav class="flex gap-2 overflow-x-auto px-4 py-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:flex-1 lg:flex-col lg:justify-center lg:gap-1 lg:overflow-visible lg:px-8" aria-label="Product categories">
-        <button type="button" data-filter="all" class="filter-btn whitespace-nowrap rounded-sm border border-white/15 bg-white/[0.06] px-4 py-2.5 text-left text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-100 transition hover:border-white/30 hover:bg-white/[0.08] lg:w-full">
-          All Products
+      <!-- Filters -->
+      <nav class="scroll-slim flex-1 overflow-y-auto px-5 pb-4" aria-label="Collections">
+        <p class="px-3 pb-3 text-[10px] font-medium uppercase tracking-luxe text-neutral-600" data-i18n="nav.heading">Collections</p>
+
+        <button type="button" data-filter="all" class="filter-btn group relative flex w-full items-center gap-3 rounded-sm px-3 py-3 text-left transition">
+          <span class="filter-bar absolute left-0 top-1/2 h-0 w-px -translate-y-1/2 bg-champagne transition-all duration-300"></span>
+          <span class="min-w-0 flex-1">
+            <span class="filter-label block truncate text-[12px] font-medium uppercase tracking-[0.2em]" data-i18n="all">All Studios</span>
+            <span class="filter-caption mt-1 block truncate text-[10px] font-light uppercase tracking-[0.18em]" data-i18n="nav.all.caption">The complete collection</span>
+          </span>
+          <span class="filter-count text-[10px] font-light tabular-nums tracking-widest" data-count-for="all"></span>
         </button>
-        <button type="button" data-filter="3d-product" class="filter-btn whitespace-nowrap rounded-sm border border-transparent px-4 py-2.5 text-left text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-500 transition hover:border-white/10 hover:text-neutral-200 lg:w-full">
-          3D Product
+
+        <button type="button" data-filter="wall-art" class="filter-btn group relative flex w-full items-center gap-3 rounded-sm px-3 py-3 text-left transition">
+          <span class="filter-bar absolute left-0 top-1/2 h-0 w-px -translate-y-1/2 bg-champagne transition-all duration-300"></span>
+          <span class="min-w-0 flex-1">
+            <span class="filter-label block truncate text-[12px] font-medium uppercase tracking-[0.2em]" data-i18n="nav.wallArt.title">The Refined Wall Art</span>
+            <span class="filter-caption mt-1 block truncate text-[10px] font-light uppercase tracking-[0.18em]" data-i18n="nav.wallArt.caption">Wall Art</span>
+          </span>
+          <span class="filter-count text-[10px] font-light tabular-nums tracking-widest" data-count-for="wall-art"></span>
         </button>
-        <button type="button" data-filter="wall-art" class="filter-btn whitespace-nowrap rounded-sm border border-transparent px-4 py-2.5 text-left text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-500 transition hover:border-white/10 hover:text-neutral-200 lg:w-full">
-          Wall Art
+
+        <button type="button" data-filter="iron-works" class="filter-btn group relative flex w-full items-center gap-3 rounded-sm px-3 py-3 text-left transition">
+          <span class="filter-bar absolute left-0 top-1/2 h-0 w-px -translate-y-1/2 bg-champagne transition-all duration-300"></span>
+          <span class="min-w-0 flex-1">
+            <span class="filter-label block truncate text-[12px] font-medium uppercase tracking-[0.2em]" data-i18n="nav.iron.title">Absolute Iron Works</span>
+            <span class="filter-caption mt-1 block truncate text-[10px] font-light uppercase tracking-[0.18em]" data-i18n="nav.iron.caption">Metal &amp; Iron</span>
+          </span>
+          <span class="filter-count text-[10px] font-light tabular-nums tracking-widest" data-count-for="iron-works"></span>
+        </button>
+
+        <button type="button" data-filter="organizer-decor" class="filter-btn group relative flex w-full items-center gap-3 rounded-sm px-3 py-3 text-left transition">
+          <span class="filter-bar absolute left-0 top-1/2 h-0 w-px -translate-y-1/2 bg-champagne transition-all duration-300"></span>
+          <span class="min-w-0 flex-1">
+            <span class="filter-label block truncate text-[12px] font-medium uppercase tracking-[0.2em]" data-i18n="nav.box.title">Box Part Studio</span>
+            <span class="filter-caption mt-1 block truncate text-[10px] font-light uppercase tracking-[0.18em]" data-i18n="nav.box.caption">Custom Design &amp; Organizer</span>
+          </span>
+          <span class="filter-count text-[10px] font-light tabular-nums tracking-widest" data-count-for="organizer-decor"></span>
+        </button>
+
+        <button type="button" data-filter="3d-printing" class="filter-btn group relative flex w-full items-center gap-3 rounded-sm px-3 py-3 text-left transition">
+          <span class="filter-bar absolute left-0 top-1/2 h-0 w-px -translate-y-1/2 bg-champagne transition-all duration-300"></span>
+          <span class="min-w-0 flex-1">
+            <span class="filter-label block truncate text-[12px] font-medium uppercase tracking-[0.2em]" data-i18n="nav.tridim.title">TriDim Printing Studio</span>
+            <span class="filter-caption mt-1 block truncate text-[10px] font-light uppercase tracking-[0.18em]" data-i18n="nav.tridim.caption">3D Printing</span>
+          </span>
+          <span class="filter-count text-[10px] font-light tabular-nums tracking-widest" data-count-for="3d-printing"></span>
         </button>
       </nav>
 
-      <div class="border-t border-white/10 px-6 py-4 lg:border-t-0 lg:px-8 lg:pb-10 lg:pt-0">
+      <!-- Storefront link -->
+      <div class="border-t border-white/10 px-8 py-6">
+        <p class="text-[10px] font-medium uppercase tracking-luxe text-neutral-600" data-i18n="sidebar.storefront">Official Storefront</p>
         <a
           href="https://www.etsy.com/shop/TheRefinedWallArt"
           target="_blank"
           rel="noopener noreferrer"
-          class="group flex w-full items-center justify-between text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-400 transition hover:text-neutral-100 lg:border-t lg:border-white/10 lg:pt-6"
+          class="group mt-4 flex w-full items-center justify-between text-[11px] font-medium uppercase tracking-[0.2em] text-neutral-400 transition hover:text-champagne"
         >
-          Visit Etsy Shop
-          <svg class="h-3.5 w-3.5 shrink-0 text-neutral-500 transition group-hover:text-neutral-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <span data-i18n="sidebar.visitShop">Visit Etsy Shop</span>
+          <svg class="h-3.5 w-3.5 shrink-0 text-neutral-600 transition duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-champagne" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M9 7h8v8" />
           </svg>
         </a>
       </div>
     </aside>
 
-    <main class="flex-1 px-4 py-8 sm:px-8 lg:px-12 lg:py-12">
-      <div id="product-grid" class="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
+    <!-- ============================= CONTENT ============================= -->
+    <div class="flex min-w-0 flex-1 flex-col">
+
+      <!-- Top bar -->
+      <header class="sticky top-0 z-30 border-b border-white/[0.07] bg-ink/85 backdrop-blur-xl">
+        <div class="flex items-center justify-between gap-4 px-5 py-4 sm:px-8 lg:px-12">
+          <div class="flex min-w-0 items-center gap-3">
+            <button
+              type="button"
+              id="sidebar-open"
+              class="rounded-sm border border-white/10 p-2.5 text-neutral-400 transition hover:border-white/25 hover:text-neutral-100 lg:hidden"
+              data-i18n-aria="a11y.openMenu"
+              aria-label="Open menu"
+            >
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+              </svg>
+            </button>
+            <span class="truncate font-cinzel text-[13px] font-semibold tracking-[0.18em] text-neutral-100 lg:hidden">
+              THE REFINED <span class="text-champagne">&amp;</span> STUDIOS
+            </span>
+          </div>
+
+          <!-- Language switch -->
+          <div class="flex items-center gap-1 rounded-full border border-white/10 bg-white/[0.03] p-1" role="group" aria-label="Language">
+            <button type="button" data-lang="tr" class="lang-btn rounded-full px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] transition">TR</button>
+            <span class="h-3 w-px bg-white/10" aria-hidden="true"></span>
+            <button type="button" data-lang="en" class="lang-btn rounded-full px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] transition">EN</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-1 px-5 pb-20 pt-8 sm:px-8 lg:px-12 lg:pt-10">
+        <div class="mb-8 flex items-center gap-4 lg:mb-10">
+          <span class="h-px w-12 bg-champagne/40"></span>
+          <span id="collection-count" class="text-[10px] font-light uppercase tracking-[0.24em] text-neutral-600"></span>
+        </div>
+
+        <!-- Product grid -->
+        <div id="product-grid" class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"></div>
+      </main>
+
+      <footer class="border-t border-white/[0.07] px-5 py-8 sm:px-8 lg:px-12">
+        <p class="text-[10px] font-light uppercase tracking-[0.22em] text-neutral-700">
+          © <span id="year"></span> The Refined &amp; Studios
+        </p>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ============================= QUICK VIEW MODAL (hidden) ============================= -->
+  <div
+    id="quickview"
+    class="fixed inset-0 z-[60] hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="qv-title"
+  >
+    <div id="qv-backdrop" class="absolute inset-0 bg-black/85 opacity-0 backdrop-blur-md transition-opacity duration-300"></div>
+
+    <div id="qv-shell" class="scroll-slim relative flex h-full items-end justify-center overflow-y-auto p-0 sm:items-center sm:p-6">
+      <div
+        id="qv-panel"
+        class="relative w-full max-w-6xl translate-y-6 border border-white/10 bg-coal opacity-0 shadow-[0_40px_120px_-20px_rgba(0,0,0,0.9)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] sm:translate-y-4"
+      >
+        <button
+          type="button"
+          id="qv-close"
+          class="absolute right-4 top-4 z-10 rounded-full border border-white/10 bg-ink/60 p-2.5 text-neutral-400 backdrop-blur transition hover:border-white/30 hover:text-neutral-50"
+          data-i18n-aria="a11y.closeModal"
+          aria-label="Close"
+        >
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)]">
+          <!-- Gallery. min-w-0 stops the media's intrinsic width from blowing out the fr column. -->
+          <div class="flex min-h-0 min-w-0 flex-col bg-ink p-4 sm:p-6 lg:p-8">
+            <div id="qv-stage" class="flex min-h-[22rem] w-full items-center justify-center overflow-hidden bg-ink sm:min-h-[28rem] lg:h-[min(72vh,42rem)] lg:min-h-[32rem]"></div>
+            <div id="qv-thumbs" class="no-scrollbar mt-4 flex gap-3 overflow-x-auto"></div>
+          </div>
+
+          <!-- Details -->
+          <div class="flex min-w-0 flex-col p-6 sm:p-8 lg:p-10">
+            <span id="qv-shop" class="inline-flex w-fit items-center rounded-sm border border-champagne/30 bg-champagne/[0.08] px-2.5 py-1 text-[9.5px] font-medium uppercase tracking-[0.22em] text-champagne"></span>
+            <h3 id="qv-title" class="mt-5 font-cinzel text-2xl font-medium leading-snug tracking-[0.05em] text-neutral-50 lg:text-[26px]"></h3>
+            <div class="mt-6 h-px w-14 bg-white/15"></div>
+            <p id="qv-description" class="mt-6 text-[13.5px] font-light leading-[1.85] text-neutral-400"></p>
+
+            <div id="qv-colors-wrap" class="mt-8 hidden">
+              <p class="text-[10px] font-medium uppercase tracking-[0.24em] text-neutral-600" data-i18n="selectColor">Select Color / Finish:</p>
+              <div id="qv-colors" class="mt-4 flex flex-wrap items-center gap-3"></div>
+              <p id="qv-color-name" class="mt-4 text-[11px] font-medium uppercase tracking-[0.2em] text-champagne"></p>
+            </div>
+
+            <div class="mt-auto pt-10">
+              <a
+                id="qv-cta"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group flex items-center justify-between border border-champagne/40 bg-champagne/[0.06] px-6 py-4 text-[11px] font-medium uppercase tracking-[0.24em] text-champagne transition hover:border-champagne hover:bg-champagne hover:text-ink"
+              >
+                <span data-i18n="viewOnEtsy">Order on Etsy</span>
+                <svg class="h-4 w-4 shrink-0 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M9 7h8v8" />
+                </svg>
+              </a>
+              <p class="mt-4 text-[10.5px] font-light leading-relaxed tracking-wide text-neutral-600" data-i18n="modal.note">
+                Sizes, finishes and shipping details are listed on the Etsy product page.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+    </div>
   </div>
 
   <script>
-    const FILTER_ACTIVE =
-      "filter-btn whitespace-nowrap rounded-sm border border-white/15 bg-white/[0.06] px-4 py-2.5 text-left text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-100 transition hover:border-white/30 hover:bg-white/[0.08] lg:w-full";
-    const FILTER_INACTIVE =
-      "filter-btn whitespace-nowrap rounded-sm border border-transparent px-4 py-2.5 text-left text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-500 transition hover:border-white/10 hover:text-neutral-200 lg:w-full";
+    /* ---------------------------------- i18n ---------------------------------- */
+    const I18N = {
+      all: { en: "All Studios", tr: "Tüm Stüdyolar" },
+      viewOnEtsy: { en: "Order on Etsy", tr: "Etsy Üzerinden İncele" },
+      selectColor: { en: "Select Color / Finish:", tr: "Renk / Bitiş Seçenekleri:" },
+      "nav.heading": { en: "Collections", tr: "Koleksiyonlar" },
+      "nav.all.caption": { en: "The complete collection", tr: "Koleksiyonun tamamı" },
+      "nav.wallArt.title": { en: "The Refined Wall Art", tr: "The Refined Wall Art" },
+      "nav.wallArt.caption": { en: "Wall Art", tr: "Duvar Sanatı" },
+      "nav.iron.title": { en: "Absolute Iron Works", tr: "Absolute Iron Works" },
+      "nav.iron.caption": { en: "Metal & Iron", tr: "Metal & Demir" },
+      "nav.box.title": { en: "Box Part Studio", tr: "Box Part Studio" },
+      "nav.box.caption": { en: "Custom Design & Organizer", tr: "Özel Tasarım & Organizer" },
+      "nav.tridim.title": { en: "TriDim Printing Studio", tr: "TriDim Printing Studio" },
+      "nav.tridim.caption": { en: "3D Printing", tr: "3D Baskı" },
+      "sidebar.storefront": { en: "Official Storefront", tr: "Resmî Mağaza" },
+      "sidebar.visitShop": { en: "Visit Etsy Shop", tr: "Mağazayı Ziyaret Et" },
+      "grid.count": { en: "{n} pieces", tr: "{n} parça" },
+      "grid.countOne": { en: "1 piece", tr: "1 parça" },
+      "grid.empty": { en: "No pieces in this collection yet.", tr: "Bu koleksiyonda henüz ürün yok." },
+      "grid.failed": { en: "The collection could not be loaded.", tr: "Koleksiyon yüklenemedi." },
+      "gallery.image": { en: "Image", tr: "Görsel" },
+      "modal.note": {
+        en: "Sizes, finishes and shipping details are listed on the Etsy product page.",
+        tr: "Ölçü, kaplama ve kargo detayları Etsy ürün sayfasında yer alır.",
+      },
+      "a11y.openMenu": { en: "Open menu", tr: "Menüyü aç" },
+      "a11y.closeMenu": { en: "Close menu", tr: "Menüyü kapat" },
+      "a11y.closeModal": { en: "Close", tr: "Kapat" },
+      "a11y.openDetails": { en: "View details", tr: "Detayları görüntüle" },
+    };
 
+    const SHOP_LABELS = {
+      "wall-art": "The Refined Wall Art",
+      "iron-works": "Absolute Iron Works",
+      "organizer-decor": "Box Part Studio",
+      "3d-printing": "TriDim Printing Studio",
+    };
+
+    const STORAGE_KEY = "trs-lang";
+
+    /* Shown when a product has no artwork yet, or an Etsy CDN url stops resolving. */
+    const IMAGE_FALLBACK =
+      "data:image/svg+xml;charset=utf-8," +
+      encodeURIComponent(
+        '<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">' +
+          '<rect width="800" height="1000" fill="#181818"/>' +
+          '<rect x="56" y="56" width="688" height="888" fill="none" stroke="#c8a97e" stroke-opacity="0.16"/>' +
+          '<path d="M356 500h88M400 456v88" stroke="#c8a97e" stroke-opacity="0.32" stroke-width="1.5"/>' +
+          "</svg>"
+      );
+
+    /* -------------------------------- Styling -------------------------------- */
+    const FILTER_STATE = {
+      active: {
+        button: "bg-white/[0.05]",
+        label: "text-neutral-50",
+        caption: "text-champagne/70",
+        count: "text-champagne/70",
+        bar: "h-8",
+      },
+      inactive: {
+        button: "hover:bg-white/[0.025]",
+        label: "text-neutral-400",
+        caption: "text-neutral-600",
+        count: "text-neutral-700",
+        bar: "h-0",
+      },
+    };
+
+    const LANG_ACTIVE = "lang-btn rounded-full bg-champagne px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-ink transition";
+    const LANG_INACTIVE = "lang-btn rounded-full px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-neutral-500 transition hover:text-neutral-200";
+
+    /* --------------------------------- State --------------------------------- */
     const grid = document.getElementById("product-grid");
-    const filterButtons = document.querySelectorAll(".filter-btn");
+    const filterButtons = Array.from(document.querySelectorAll(".filter-btn"));
+    const langButtons = Array.from(document.querySelectorAll(".lang-btn"));
+    const collectionCount = document.getElementById("collection-count");
+    const canonicalLink = document.getElementById("canonical-url");
+
+    const FILTER_PARAM = "filter";
+    const CANONICAL_ORIGIN = "https://therefinedwallart.com";
+    const validFilters = new Set(filterButtons.map((button) => button.dataset.filter));
+
     let products = [];
     let activeFilter = "all";
+    let lang = "en";
+    let loadFailed = false;
+    let openProductId = null;
+
+    const t = (key) => I18N[key]?.[lang] ?? I18N[key]?.en ?? key;
 
     function escapeHtml(value) {
-      return String(value)
+      return String(value ?? "")
         .replaceAll("&", "&amp;")
         .replaceAll("<", "&lt;")
         .replaceAll(">", "&gt;")
@@ -90,80 +386,442 @@
         .replaceAll("'", "&#39;");
     }
 
-    function formatPrice(price) {
-      return new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-        maximumFractionDigits: 0,
-      }).format(price);
+    function localized(field) {
+      if (!field) return "";
+      return typeof field === "string" ? field : field[lang] ?? field.en ?? "";
     }
 
-    function productCard(product) {
-      const title = escapeHtml(product.title);
-      const image = escapeHtml(product.image);
-      const etsyUrl = escapeHtml(product.etsyUrl);
-      const price = formatPrice(product.price);
+    /* ---------------------------------- Images -------------------------------- */
+    function imagesOf(product) {
+      const images = Array.isArray(product.images) ? product.images : [];
+      return images.filter(Boolean);
+    }
+
+    /* ---------------------------------- Cards --------------------------------- */
+    function productCard(product, index) {
+      const title = escapeHtml(localized(product.title));
+      const images = imagesOf(product);
+      const image = images[0] ? escapeHtml(images[0]) : IMAGE_FALLBACK;
+      const shop = escapeHtml(SHOP_LABELS[product.category] ?? product.shop ?? "");
+      const colors = Array.isArray(product.colors) ? product.colors : [];
+
+      const swatches = colors
+        .slice(0, 4)
+        .map((color) => `<span class="h-2.5 w-2.5 rounded-full border border-white/25" style="background-color:${escapeHtml(color.hex)}"></span>`)
+        .join("");
 
       return `
-        <article class="flex flex-col overflow-hidden rounded-sm bg-anthracite">
-          <div class="aspect-[4/5] overflow-hidden">
+        <article
+          class="group relative flex animate-rise flex-col bg-coal transition-colors duration-500 hover:bg-anthracite"
+          style="animation-delay:${Math.min(index, 11) * 55}ms"
+        >
+          <div class="relative aspect-[3/4] overflow-hidden bg-ink">
             <img
               src="${image}"
               alt="${title}"
-              class="h-full w-full object-cover transition duration-500 hover:scale-105"
+              loading="lazy"
+              class="h-full w-full object-contain"
             />
+            <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0 opacity-70 transition-opacity duration-500 group-hover:opacity-95"></div>
           </div>
-          <div class="flex flex-1 flex-col px-5 pb-5 pt-5">
-            <h2 class="font-cinzel text-base font-medium tracking-[0.08em] text-neutral-100">
-              ${title}
-            </h2>
-            <p class="mt-2 text-sm font-light tracking-wide text-neutral-400">${price}</p>
-            <a
-              href="${etsyUrl}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mt-5 inline-flex items-center justify-between border border-white/15 px-4 py-2.5 text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-200 transition hover:border-white/40 hover:bg-white/[0.06] hover:text-white"
-            >
-              View on Etsy
-              <svg class="h-3.5 w-3.5 shrink-0 text-neutral-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M9 7h8v8" />
-              </svg>
-            </a>
+
+          <div class="flex flex-1 flex-col px-5 pb-6 pt-5">
+            <p class="text-[9.5px] font-medium uppercase tracking-[0.24em] text-neutral-600 transition-colors duration-500 group-hover:text-champagne/70">${shop}</p>
+            <h3 class="mt-3 font-cinzel text-[15px] font-medium leading-snug tracking-[0.04em] text-neutral-100">${title}</h3>
+            ${swatches ? `<div class="mt-auto flex items-center gap-1.5 pt-5">${swatches}</div>` : ""}
           </div>
+
+          <button
+            type="button"
+            data-product-id="${escapeHtml(product.id)}"
+            class="absolute inset-0 z-10 cursor-pointer outline-none ring-champagne/60 ring-offset-2 ring-offset-ink focus-visible:ring-1"
+          >
+            <span class="sr-only">${escapeHtml(t("a11y.openDetails"))} — ${title}</span>
+          </button>
         </article>
       `;
     }
 
     function renderProducts() {
-      const visible =
-        activeFilter === "all"
-          ? products
-          : products.filter((product) => product.category === activeFilter);
-
-      if (!visible.length) {
-        grid.innerHTML =
-          '<p class="col-span-full py-16 text-center text-sm tracking-wide text-neutral-500">No pieces in this collection yet.</p>';
+      if (loadFailed) {
+        grid.innerHTML = `<p class="col-span-full py-24 text-center text-[13px] font-light tracking-wide text-neutral-500">${escapeHtml(t("grid.failed"))}</p>`;
+        collectionCount.textContent = "";
         return;
       }
 
-      grid.innerHTML = visible.map(productCard).join("");
+      const visible = activeFilter === "all" ? products : products.filter((p) => p.category === activeFilter);
+
+      collectionCount.textContent = visible.length === 1 ? t("grid.countOne") : t("grid.count").replace("{n}", visible.length);
+
+      grid.innerHTML = visible.length
+        ? visible.map(productCard).join("")
+        : `<p class="col-span-full py-24 text-center text-[13px] font-light tracking-wide text-neutral-500">${escapeHtml(t("grid.empty"))}</p>`;
+    }
+
+    function renderCounts() {
+      document.querySelectorAll("[data-count-for]").forEach((el) => {
+        const key = el.dataset.countFor;
+        const n = key === "all" ? products.length : products.filter((p) => p.category === key).length;
+        el.textContent = n ? String(n).padStart(2, "0") : "";
+      });
+    }
+
+    /* -------------------------------- Filtering ------------------------------- */
+    function filterFromUrl() {
+      const requested = new URLSearchParams(window.location.search).get(FILTER_PARAM);
+      return requested && validFilters.has(requested) ? requested : "all";
+    }
+
+    function syncUrlToFilter(filter) {
+      const query = filter === "all" ? "" : `?${FILTER_PARAM}=${encodeURIComponent(filter)}`;
+      canonicalLink.href = `${CANONICAL_ORIGIN}/${query}`;
+
+      /* replaceState throws on file:// and keeps filter clicks out of session history */
+      if (window.location.protocol === "http:" || window.location.protocol === "https:") {
+        window.history.replaceState(null, "", `${window.location.pathname}${query}`);
+      }
     }
 
     function setActiveFilter(filter) {
       activeFilter = filter;
+      syncUrlToFilter(filter);
+
       filterButtons.forEach((button) => {
         const isActive = button.dataset.filter === filter;
-        button.className = isActive ? FILTER_ACTIVE : FILTER_INACTIVE;
+        const state = isActive ? FILTER_STATE.active : FILTER_STATE.inactive;
+        const other = isActive ? FILTER_STATE.inactive : FILTER_STATE.active;
+
+        button.classList.remove(...other.button.split(" "));
+        button.classList.add(...state.button.split(" "));
         button.setAttribute("aria-pressed", String(isActive));
+
+        const label = button.querySelector(".filter-label");
+        const caption = button.querySelector(".filter-caption");
+        const count = button.querySelector(".filter-count");
+        const bar = button.querySelector(".filter-bar");
+
+        label.classList.remove(other.label);
+        label.classList.add(state.label);
+        caption.classList.remove(other.caption);
+        caption.classList.add(state.caption);
+        count.classList.remove(other.count);
+        count.classList.add(state.count);
+        bar.classList.remove(other.bar);
+        bar.classList.add(state.bar);
       });
+
       renderProducts();
     }
+
+    /* -------------------------------- Language -------------------------------- */
+    function setLanguage(next) {
+      lang = next === "tr" || next === "en" ? next : "en";
+      document.documentElement.lang = lang;
+
+      try {
+        localStorage.setItem(STORAGE_KEY, lang);
+      } catch (_) {
+        /* storage unavailable — language still applies for this session */
+      }
+
+      langButtons.forEach((button) => {
+        const isActive = button.dataset.lang === lang;
+        button.className = isActive ? LANG_ACTIVE : LANG_INACTIVE;
+        button.setAttribute("aria-pressed", String(isActive));
+      });
+
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        el.textContent = t(el.dataset.i18n);
+      });
+      document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
+        el.setAttribute("aria-label", t(el.dataset.i18nAria));
+      });
+
+      renderProducts();
+      if (openProductId !== null) renderModal(openProductId, true);
+    }
+
+    /* --------------------------- Mobile sidebar drawer -------------------------- */
+    const sidebar = document.getElementById("sidebar");
+    const sidebarBackdrop = document.getElementById("sidebar-backdrop");
+
+    function openSidebar() {
+      sidebar.classList.remove("-translate-x-full");
+      sidebarBackdrop.classList.remove("hidden");
+      document.body.classList.add("overflow-hidden");
+    }
+
+    function closeSidebar() {
+      sidebar.classList.add("-translate-x-full");
+      sidebarBackdrop.classList.add("hidden");
+      if (openProductId === null) document.body.classList.remove("overflow-hidden");
+    }
+
+    document.getElementById("sidebar-open").addEventListener("click", openSidebar);
+    document.getElementById("sidebar-close").addEventListener("click", closeSidebar);
+    sidebarBackdrop.addEventListener("click", closeSidebar);
+
+    /* ----------------------------- Quick view modal ---------------------------- */
+    const modal = document.getElementById("quickview");
+    const modalShell = document.getElementById("qv-shell");
+    const modalBackdrop = document.getElementById("qv-backdrop");
+    const modalPanel = document.getElementById("qv-panel");
+    const modalClose = document.getElementById("qv-close");
+    const qvStage = document.getElementById("qv-stage");
+    const qvThumbs = document.getElementById("qv-thumbs");
+    const qvShop = document.getElementById("qv-shop");
+    const qvTitle = document.getElementById("qv-title");
+    const qvDescription = document.getElementById("qv-description");
+    const qvColorsWrap = document.getElementById("qv-colors-wrap");
+    const qvColors = document.getElementById("qv-colors");
+    const qvColorName = document.getElementById("qv-color-name");
+    const qvCta = document.getElementById("qv-cta");
+
+    let lastFocused = null;
+    let selectedImageIndex = 0;
+    let selectedColorIndex = 0;
+
+    function colorName(color) {
+      if (!color) return "";
+      return localized(color.name);
+    }
+
+    function renderStage(images, altText, etsyUrl) {
+      const url = images[selectedImageIndex];
+      const alt = escapeHtml(altText);
+      const src = url ? escapeHtml(url) : IMAGE_FALLBACK;
+      const href = escapeHtml(etsyUrl || "#");
+
+      qvStage.innerHTML = `
+        <a href="${href}" target="_blank" rel="noopener noreferrer" class="flex h-full w-full items-center justify-center bg-ink">
+          <img src="${src}" alt="${alt}" class="h-full w-full object-contain" />
+        </a>`;
+    }
+
+    function renderThumbs(images, titleText) {
+      if (images.length < 2) {
+        qvThumbs.innerHTML = "";
+        return;
+      }
+
+      qvThumbs.innerHTML = images
+        .map((url, i) => {
+          const selected = i === selectedImageIndex;
+          const label = escapeHtml(`${titleText} — ${t("gallery.image")} ${i + 1}`);
+
+          return `
+            <button
+              type="button"
+              data-image-index="${i}"
+              class="relative h-16 w-16 shrink-0 overflow-hidden border transition hover:border-white/40 ${selected ? "border-champagne/70" : "border-white/10"}"
+              aria-label="${label}"
+              aria-pressed="${selected}"
+            ><img src="${escapeHtml(url)}" alt="" loading="lazy" class="h-full w-full object-cover" /></button>`;
+        })
+        .join("");
+    }
+
+    function renderModal(productId, keepSelection) {
+      const product = products.find((p) => String(p.id) === String(productId));
+      if (!product) return;
+
+      const images = imagesOf(product);
+      const colors = Array.isArray(product.colors) ? product.colors : [];
+      const etsyUrl = product.etsyUrl ?? "#";
+
+      if (!keepSelection) {
+        selectedImageIndex = 0;
+        selectedColorIndex = 0;
+      }
+      if (images.length) selectedImageIndex = Math.min(selectedImageIndex, images.length - 1);
+      if (colors.length) selectedColorIndex = Math.min(selectedColorIndex, colors.length - 1);
+
+      const titleText = localized(product.title);
+
+      qvShop.textContent = SHOP_LABELS[product.category] ?? product.shop ?? "";
+      qvTitle.textContent = titleText;
+      qvDescription.textContent = localized(product.description);
+      qvCta.href = etsyUrl;
+
+      renderStage(images, titleText, etsyUrl);
+      renderThumbs(images, titleText);
+
+      if (colors.length) {
+        qvColorsWrap.classList.remove("hidden");
+        qvColorsWrap.style.display = "";
+        qvColors.innerHTML = colors
+          .map((color, i) => {
+            const name = escapeHtml(colorName(color));
+            const selected = i === selectedColorIndex;
+            return `
+              <button
+                type="button"
+                data-color-index="${i}"
+                class="swatch h-8 w-8 rounded-full transition hover:scale-105"
+                style="background-color:${escapeHtml(color.hex)}"
+                aria-label="${name}"
+                aria-pressed="${selected}"
+                title="${name}"
+              ></button>`;
+          })
+          .join("");
+        qvColorName.textContent = colorName(colors[selectedColorIndex]);
+      } else {
+        qvColorsWrap.classList.add("hidden");
+        qvColorsWrap.style.display = "none";
+        qvColors.innerHTML = "";
+        qvColorName.textContent = "";
+      }
+    }
+
+    function openModal(productId) {
+      lastFocused = document.activeElement;
+      openProductId = productId;
+      selectedImageIndex = 0;
+      selectedColorIndex = 0;
+      renderModal(productId);
+
+      modal.classList.remove("hidden");
+      document.body.classList.add("overflow-hidden");
+
+      requestAnimationFrame(() => {
+        modalBackdrop.classList.replace("opacity-0", "opacity-100");
+        modalPanel.classList.remove("opacity-0", "translate-y-6", "sm:translate-y-4");
+        modalPanel.classList.add("opacity-100", "translate-y-0");
+      });
+
+      modalClose.focus();
+    }
+
+    function closeModal() {
+      openProductId = null;
+      modalBackdrop.classList.replace("opacity-100", "opacity-0");
+      modalPanel.classList.remove("opacity-100", "translate-y-0");
+      modalPanel.classList.add("opacity-0", "translate-y-6", "sm:translate-y-4");
+
+      window.setTimeout(() => {
+        modal.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+        qvStage.innerHTML = "";
+        qvThumbs.innerHTML = "";
+      }, 300);
+
+      if (lastFocused) lastFocused.focus();
+    }
+
+    grid.addEventListener("click", (event) => {
+      const trigger = event.target.closest("[data-product-id]");
+      if (trigger) openModal(trigger.dataset.productId);
+    });
+
+    function markSelectedThumb() {
+      qvThumbs.querySelectorAll("[data-image-index]").forEach((button) => {
+        const selected = Number(button.dataset.imageIndex) === selectedImageIndex;
+        button.classList.toggle("border-champagne/70", selected);
+        button.classList.toggle("border-white/10", !selected);
+        button.setAttribute("aria-pressed", String(selected));
+      });
+    }
+
+    function showImage(index) {
+      const product = products.find((p) => String(p.id) === String(openProductId));
+      if (!product) return;
+
+      const images = imagesOf(product);
+      if (index < 0 || index >= images.length) return;
+
+      selectedImageIndex = index;
+      renderStage(images, localized(product.title), product.etsyUrl ?? "#");
+      markSelectedThumb();
+    }
+
+    qvThumbs.addEventListener("click", (event) => {
+      const thumb = event.target.closest("[data-image-index]");
+      if (thumb) showImage(Number(thumb.dataset.imageIndex));
+    });
+
+    qvColors.addEventListener("click", (event) => {
+      const swatch = event.target.closest("[data-color-index]");
+      if (!swatch) return;
+
+      const product = products.find((p) => String(p.id) === String(openProductId));
+      const colors = Array.isArray(product?.colors) ? product.colors : [];
+
+      selectedColorIndex = Number(swatch.dataset.colorIndex);
+      qvColors.querySelectorAll("[data-color-index]").forEach((button) => {
+        button.setAttribute("aria-pressed", String(button === swatch));
+      });
+      qvColorName.textContent = colorName(colors[selectedColorIndex]);
+
+      /* Colour-coded products carry the shot of that exact finish. */
+      const linked = colors[selectedColorIndex]?.imageIndex;
+      if (typeof linked === "number") showImage(linked);
+    });
+
+    modalClose.addEventListener("click", closeModal);
+    modalBackdrop.addEventListener("click", closeModal);
+    modalShell.addEventListener("click", (event) => {
+      if (event.target === modalShell) closeModal();
+    });
+
+    modal.addEventListener("keydown", (event) => {
+      if (event.key !== "Tab") return;
+
+      const focusable = modal.querySelectorAll("button, a[href], [tabindex]:not([tabindex='-1'])");
+      if (!focusable.length) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape") return;
+      if (openProductId !== null) closeModal();
+      else if (!sidebar.classList.contains("-translate-x-full")) closeSidebar();
+    });
+
+    /* --------------------------------- Wiring --------------------------------- */
+    /* Image errors do not bubble, so this listens during the capture phase. */
+    document.addEventListener(
+      "error",
+      (event) => {
+        const target = event.target;
+        if (target instanceof HTMLImageElement && target.src !== IMAGE_FALLBACK) {
+          target.src = IMAGE_FALLBACK;
+        }
+      },
+      true
+    );
 
     filterButtons.forEach((button) => {
       button.addEventListener("click", () => {
         setActiveFilter(button.dataset.filter);
+        if (window.innerWidth < 1024) closeSidebar();
       });
     });
+
+    langButtons.forEach((button) => {
+      button.addEventListener("click", () => setLanguage(button.dataset.lang));
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    let storedLang = null;
+    try {
+      storedLang = localStorage.getItem(STORAGE_KEY);
+    } catch (_) {
+      /* storage unavailable — fall back to the default language */
+    }
+    setLanguage(storedLang === "tr" || storedLang === "en" ? storedLang : "en");
+    setActiveFilter(filterFromUrl());
 
     fetch("products.json")
       .then((response) => {
@@ -172,11 +830,12 @@
       })
       .then((data) => {
         products = Array.isArray(data) ? data : [];
-        setActiveFilter("all");
+        renderCounts();
+        renderProducts();
       })
       .catch(() => {
-        grid.innerHTML =
-          '<p class="col-span-full py-16 text-center text-sm tracking-wide text-neutral-500">The collection could not be loaded.</p>';
+        loadFailed = true;
+        renderProducts();
       });
   </script>
 </body>

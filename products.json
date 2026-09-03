@@ -1,82 +1,3097 @@
 [
   {
-    "id": "trwa-wa-4543337745",
-    "title": "Bat Metal Wall Art – Dark Knight Man Cave Decor",
-    "category": "wall-art",
-    "price": 90,
-    "image": "https://i.etsystatic.com/67101466/r/il/a2f4f6/8340740895/il_794xN.8340740895_jy2e.jpg",
-    "etsyUrl": "https://www.etsy.com/listing/4543337745/bat-superhero-metal-wall-art-dark-knight"
+    "id": 1,
+    "shop": "AbsoluteIronWorks",
+    "category": "iron-works",
+    "title": {
+      "en": "Tree Silhouette Metal Coat Rack – Entryway Wall Hooks",
+      "tr": "Ağaç Silüetli Metal Askılık – Antre Duvar Askısı"
+    },
+    "description": {
+      "en": "Branches double as hooks, so coats and bags settle into the shape instead of hiding it. Powder coated in eight finishes.",
+      "tr": "Dallar aynı zamanda askı görevi görür; paltolar ve çantalar formu gizlemek yerine içine yerleşir. Sekiz renkte elektrostatik boyalıdır."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 1
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#b91c1c",
+        "name": {
+          "en": "Red",
+          "tr": "Kırmızı"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#1d4ed8",
+        "name": {
+          "en": "Blue",
+          "tr": "Mavi"
+        },
+        "imageIndex": 5
+      },
+      {
+        "hex": "#15803d",
+        "name": {
+          "en": "Green",
+          "tr": "Yeşil"
+        },
+        "imageIndex": 6
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/AbsoluteIronWorks",
+    "images": [
+      "AbsoluteIronworks/a%C4%9Fa%C3%A7%20ask%C4%B1l%C4%B1k/agacask%C4%B1l%C4%B1ksiyah.png",
+      "AbsoluteIronworks/a%C4%9Fa%C3%A7%20ask%C4%B1l%C4%B1k/agacask%C4%B1l%C4%B1kbeyaz.png",
+      "AbsoluteIronworks/a%C4%9Fa%C3%A7%20ask%C4%B1l%C4%B1k/agacask%C4%B1l%C4%B1kgold.png",
+      "AbsoluteIronworks/a%C4%9Fa%C3%A7%20ask%C4%B1l%C4%B1k/agacask%C4%B1l%C4%B1kg%C3%BCm%C3%BC%C5%9F.png",
+      "AbsoluteIronworks/a%C4%9Fa%C3%A7%20ask%C4%B1l%C4%B1k/agacask%C4%B1l%C4%B1kk%C4%B1rm%C4%B1z%C4%B1.png",
+      "AbsoluteIronworks/a%C4%9Fa%C3%A7%20ask%C4%B1l%C4%B1k/agacask%C4%B1l%C4%B1kmavi.png",
+      "AbsoluteIronworks/a%C4%9Fa%C3%A7%20ask%C4%B1l%C4%B1k/agacask%C4%B1l%C4%B1kye%C5%9Fil.png",
+      "AbsoluteIronworks/a%C4%9Fa%C3%A7%20ask%C4%B1l%C4%B1k/agacask%C4%B1l%C4%B1k%C3%B6l%C3%A7%C3%BC.png"
+    ]
   },
   {
-    "id": "trwa-wa-4549572323",
-    "title": "Last Supper Metal Wall Art – Christian Steel Decor",
-    "category": "wall-art",
-    "price": 90,
-    "image": "https://i.etsystatic.com/67101466/r/il/86c0b9/8384900167/il_794xN.8384900167_ahgs.jpg",
-    "etsyUrl": "https://www.etsy.com/listing/4549572323/last-supper-metal-wall-art-christian"
+    "id": 2,
+    "shop": "AbsoluteIronWorks",
+    "category": "iron-works",
+    "title": {
+      "en": "Mountain Range Metal Coat Rack – Alpine Wall Hooks",
+      "tr": "Dağ Silüetli Metal Askılık – Alpin Duvar Askısı"
+    },
+    "description": {
+      "en": "A ridgeline of peaks where each summit becomes a hook. Cut from 2 mm steel and finished in eight powder coat colours.",
+      "tr": "Her zirvesi bir askıya dönüşen dağ sırası. 2 mm çelikten kesilmiş, sekiz elektrostatik renkte bitirilmiştir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 1
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#b91c1c",
+        "name": {
+          "en": "Red",
+          "tr": "Kırmızı"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#1d4ed8",
+        "name": {
+          "en": "Blue",
+          "tr": "Mavi"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#eab308",
+        "name": {
+          "en": "Yellow",
+          "tr": "Sarı"
+        },
+        "imageIndex": 5
+      },
+      {
+        "hex": "#15803d",
+        "name": {
+          "en": "Green",
+          "tr": "Yeşil"
+        },
+        "imageIndex": 6
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/AbsoluteIronWorks",
+    "images": [
+      "AbsoluteIronworks/da%C4%9F%20ask%C4%B1l%C4%B1k/dagask%C4%B1l%C4%B1ksiyah.png",
+      "AbsoluteIronworks/da%C4%9F%20ask%C4%B1l%C4%B1k/dagask%C4%B1l%C4%B1kbeyaz.png",
+      "AbsoluteIronworks/da%C4%9F%20ask%C4%B1l%C4%B1k/dagask%C4%B1l%C4%B1kg%C3%BCm%C3%BC%C5%9F.png",
+      "AbsoluteIronworks/da%C4%9F%20ask%C4%B1l%C4%B1k/dagask%C4%B1l%C4%B1kk%C4%B1rm%C4%B1z%C4%B1.png",
+      "AbsoluteIronworks/da%C4%9F%20ask%C4%B1l%C4%B1k/dagask%C4%B1l%C4%B1kmavi.png",
+      "AbsoluteIronworks/da%C4%9F%20ask%C4%B1l%C4%B1k/dagask%C4%B1l%C4%B1ksar%C4%B1.png",
+      "AbsoluteIronworks/da%C4%9F%20ask%C4%B1l%C4%B1k/dagask%C4%B1l%C4%B1kye%C5%9Fil.png",
+      "AbsoluteIronworks/da%C4%9F%20ask%C4%B1l%C4%B1k/dagask%C4%B1l%C4%B1k%C3%B6lc%C3%BC.png"
+    ]
   },
   {
-    "id": "trwa-wa-4565585341",
-    "title": "Viking Shield Metal Wall Art – Norse Rune Decor",
-    "category": "wall-art",
-    "price": 100,
-    "image": "https://i.etsystatic.com/67101466/r/il/302ee7/8453577434/il_794xN.8453577434_fj1e.jpg",
-    "etsyUrl": "https://www.etsy.com/listing/4565585341/viking-shield-metal-wall-art-norse-rune"
+    "id": 3,
+    "shop": "AbsoluteIronWorks",
+    "category": "iron-works",
+    "title": {
+      "en": "Floating Metal Wall Bookshelf – Invisible Bracket Shelf",
+      "tr": "Duvara Monte Metal Kitaplık – Gizli Askılı Raf"
+    },
+    "description": {
+      "en": "The bracket disappears behind the books, so the stack appears to float. Folded from a single piece for load bearing rigidity.",
+      "tr": "Askı kitapların arkasında kaybolur, böylece kitaplar havada duruyormuş gibi görünür. Taşıma dayanımı için tek parçadan bükülmüştür."
+    },
+    "colors": [
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 11
+      },
+      {
+        "hex": "#1d4ed8",
+        "name": {
+          "en": "Blue",
+          "tr": "Mavi"
+        },
+        "imageIndex": 12
+      },
+      {
+        "hex": "#eab308",
+        "name": {
+          "en": "Yellow",
+          "tr": "Sarı"
+        },
+        "imageIndex": 13
+      },
+      {
+        "hex": "#15803d",
+        "name": {
+          "en": "Green",
+          "tr": "Yeşil"
+        },
+        "imageIndex": 14
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/AbsoluteIronWorks",
+    "images": [
+      "AbsoluteIronworks/duvar%20kitapl%C4%B1k/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2021_06_51%20%281%29.png",
+      "AbsoluteIronworks/duvar%20kitapl%C4%B1k/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2021_06_51%20%282%29.png",
+      "AbsoluteIronworks/duvar%20kitapl%C4%B1k/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2021_06_52%20%283%29.png",
+      "AbsoluteIronworks/duvar%20kitapl%C4%B1k/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2021_06_52%20%284%29.png",
+      "AbsoluteIronworks/duvar%20kitapl%C4%B1k/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2021_06_52%20%285%29.png",
+      "AbsoluteIronworks/duvar%20kitapl%C4%B1k/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2021_06_53%20%286%29.png",
+      "AbsoluteIronworks/duvar%20kitapl%C4%B1k/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2021_06_53%20%287%29.png",
+      "AbsoluteIronworks/duvar%20kitapl%C4%B1k/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2021_06_53%20%288%29.png",
+      "AbsoluteIronworks/duvar%20kitapl%C4%B1k/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2021_06_54%20%289%29.png",
+      "AbsoluteIronworks/duvar%20kitapl%C4%B1k/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2021_06_54%20%2810%29.png",
+      "AbsoluteIronworks/duvar%20kitapl%C4%B1k/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_14_54.png",
+      "AbsoluteIronworks/duvar%20kitapl%C4%B1k/duvarkitapl%C4%B1kbeyaz.png",
+      "AbsoluteIronworks/duvar%20kitapl%C4%B1k/duvarkitapl%C4%B1kmavi.png",
+      "AbsoluteIronworks/duvar%20kitapl%C4%B1k/duvarkitapl%C4%B1ksar%C4%B1.png",
+      "AbsoluteIronworks/duvar%20kitapl%C4%B1k/duvarkitapl%C4%B1kye%C5%9Fil.png"
+    ]
   },
   {
-    "id": "trwa-wa-4564478258",
-    "title": "Super Woman Metal Wall Art – Superhero Decor",
-    "category": "wall-art",
-    "price": 100,
-    "image": "https://i.etsystatic.com/67101466/r/il/f547bf/8445190548/il_794xN.8445190548_zif7.jpg",
-    "etsyUrl": "https://www.etsy.com/listing/4564478258/wonder-woman-metal-wall-art-superhero"
+    "id": 4,
+    "shop": "AbsoluteIronWorks",
+    "category": "iron-works",
+    "title": {
+      "en": "Dog Silhouette Metal Leash & Coat Rack",
+      "tr": "Köpek Silüetli Metal Tasma ve Askılık"
+    },
+    "description": {
+      "en": "A compact hallway rack for leashes, harnesses and keys, with the dog profile cut as a single continuous line.",
+      "tr": "Tasma, göğüs tasması ve anahtarlar için kompakt antre askısı; köpek profili tek kesintisiz hat olarak kesilmiştir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#78350f",
+        "name": {
+          "en": "Brown",
+          "tr": "Kahverengi"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#b91c1c",
+        "name": {
+          "en": "Red",
+          "tr": "Kırmızı"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#1d4ed8",
+        "name": {
+          "en": "Blue",
+          "tr": "Mavi"
+        },
+        "imageIndex": 5
+      },
+      {
+        "hex": "#6b21a8",
+        "name": {
+          "en": "Purple",
+          "tr": "Mor"
+        },
+        "imageIndex": 6
+      },
+      {
+        "hex": "#ec4899",
+        "name": {
+          "en": "Pink",
+          "tr": "Pembe"
+        },
+        "imageIndex": 7
+      },
+      {
+        "hex": "#eab308",
+        "name": {
+          "en": "Yellow",
+          "tr": "Sarı"
+        },
+        "imageIndex": 8
+      },
+      {
+        "hex": "#15803d",
+        "name": {
+          "en": "Green",
+          "tr": "Yeşil"
+        },
+        "imageIndex": 9
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/AbsoluteIronWorks",
+    "images": [
+      "AbsoluteIronworks/K%C3%B6pekAsk%C4%B1l%C4%B1k/k%C3%B6pekask%C4%B1l%C4%B1ksiyah.png",
+      "AbsoluteIronworks/K%C3%B6pekAsk%C4%B1l%C4%B1k/k%C3%B6pekask%C4%B1l%C4%B1k.png",
+      "AbsoluteIronworks/K%C3%B6pekAsk%C4%B1l%C4%B1k/k%C3%B6pekask%C4%B1l%C4%B1kbeyaz.png",
+      "AbsoluteIronworks/K%C3%B6pekAsk%C4%B1l%C4%B1k/k%C3%B6pekask%C4%B1l%C4%B1kkahverengi.png",
+      "AbsoluteIronworks/K%C3%B6pekAsk%C4%B1l%C4%B1k/k%C3%B6pekask%C4%B1l%C4%B1kk%C4%B1rm%C4%B1z%C4%B1.png",
+      "AbsoluteIronworks/K%C3%B6pekAsk%C4%B1l%C4%B1k/k%C3%B6pekask%C4%B1l%C4%B1kmavi.png",
+      "AbsoluteIronworks/K%C3%B6pekAsk%C4%B1l%C4%B1k/k%C3%B6pekask%C4%B1l%C4%B1kmor.png",
+      "AbsoluteIronworks/K%C3%B6pekAsk%C4%B1l%C4%B1k/k%C3%B6pekask%C4%B1l%C4%B1kpembe.png",
+      "AbsoluteIronworks/K%C3%B6pekAsk%C4%B1l%C4%B1k/k%C3%B6pekask%C4%B1l%C4%B1ksar%C4%B1.png",
+      "AbsoluteIronworks/K%C3%B6pekAsk%C4%B1l%C4%B1k/k%C3%B6pekask%C4%B1l%C4%B1kye%C5%9Fil.png",
+      "AbsoluteIronworks/K%C3%B6pekAsk%C4%B1l%C4%B1k/k%C3%B6pekask%C4%B1l%C4%B1k%C3%B6l%C3%A7%C3%BC.png"
+    ]
   },
   {
-    "id": "trwa-wa-4564578244",
-    "title": "Halloween Haunted House Metal Door Sign",
-    "category": "wall-art",
-    "price": 100,
-    "image": "https://i.etsystatic.com/67101466/r/il/ef2a0b/8445802450/il_794xN.8445802450_32jt.jpg",
-    "etsyUrl": "https://www.etsy.com/listing/4564578244/halloween-door-sign-metal-halloween"
+    "id": 5,
+    "shop": "AbsoluteIronWorks",
+    "category": "iron-works",
+    "title": {
+      "en": "Portable Steel Barbecue Grill – Flat Pack Fire Pit",
+      "tr": "Portatif Çelik Mangal – Sökülebilir Ateş Çukuru"
+    },
+    "description": {
+      "en": "Interlocking steel panels that assemble without tools and pack flat for transport. Ventilation slots keep the coals drawing air.",
+      "tr": "Aletsiz kurulan, taşımak için düz katlanan geçmeli çelik paneller. Havalandırma yarıkları kömürün hava almasını sürdürür."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/AbsoluteIronWorks",
+    "images": [
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_26_47.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_28_47%20%281%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_28_47%20%282%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_28_48%20%283%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_28_48%20%284%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_28_48%20%285%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_28_48%20%286%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_28_49%20%287%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_28_49%20%288%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_28_49%20%289%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_28_49%20%2810%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_36_12.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_46_51%20%281%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_46_51%20%282%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_46_51%20%283%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_46_52%20%284%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_46_52%20%285%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_46_52%20%286%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_46_53%20%287%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_46_53%20%288%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_46_53%20%289%29.png",
+      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_46_53%20%2810%29.png"
+    ]
   },
   {
-    "id": "trwa-wa-4564541271",
-    "title": "Joker Metal Wall Art – Gamer Room Decor",
-    "category": "wall-art",
-    "price": 100,
-    "image": "https://i.etsystatic.com/67101466/r/il/2b73f4/8493172623/il_794xN.8493172623_fl7a.jpg",
-    "etsyUrl": "https://www.etsy.com/listing/4564541271/joker-metal-wall-art-comic-book-villain"
+    "id": 6,
+    "shop": "AbsoluteIronWorks",
+    "category": "iron-works",
+    "title": {
+      "en": "Viking Themed Metal Wall Shelf – Norse Decor Ledge",
+      "tr": "Viking Temalı Metal Duvar Rafı – Nors Dekor Konsolu"
+    },
+    "description": {
+      "en": "A shelf with carved Norse detailing along the apron, sized for figures, candles and small volumes.",
+      "tr": "Ön yüzünde Nors motifleri işlenmiş bir raf; figürler, mumlar ve küçük kitaplar için ölçülendirilmiştir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 5
+      },
+      {
+        "hex": "#7f1d1d",
+        "name": {
+          "en": "Burgundy",
+          "tr": "Bordo"
+        },
+        "imageIndex": 6
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 7
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        },
+        "imageIndex": 8
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/AbsoluteIronWorks",
+    "images": [
+      "AbsoluteIronworks/Viking%20Raf/vikingrafsiyah.png",
+      "AbsoluteIronworks/Viking%20Raf/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2014_34_03.png",
+      "AbsoluteIronworks/Viking%20Raf/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2014_34_11.png",
+      "AbsoluteIronworks/Viking%20Raf/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2014_35_18.png",
+      "AbsoluteIronworks/Viking%20Raf/ChatGPT%20Image%2029%20Tem%202026%2022_20_01.png",
+      "AbsoluteIronworks/Viking%20Raf/vikingrafbeyaz.png",
+      "AbsoluteIronworks/Viking%20Raf/vikingrafbordo.png",
+      "AbsoluteIronworks/Viking%20Raf/vikingrafgold.png",
+      "AbsoluteIronworks/Viking%20Raf/vikingrafgri.png",
+      "AbsoluteIronworks/Viking%20Raf/15%20cm5.91%20in.png"
+    ]
   },
   {
-    "id": "trwa-wa-4548447447",
-    "title": "Butterfly Metal Wall Art Set – 4 Piece Nature Decor",
-    "category": "wall-art",
-    "price": 75,
-    "image": "https://i.etsystatic.com/67101466/r/il/be8c31/8328921830/il_794xN.8328921830_tixo.jpg",
-    "etsyUrl": "https://www.etsy.com/listing/4548447447/butterfly-metal-wall-art-set-4-piece"
+    "id": 7,
+    "shop": "AbsoluteIronWorks",
+    "category": "iron-works",
+    "title": {
+      "en": "Leaf Motif Metal Bookshelf – Botanical Wall Storage",
+      "tr": "Yaprak Motifli Metal Kitaplık – Botanik Duvar Rafı"
+    },
+    "description": {
+      "en": "Leaf veins form the open lattice of the shelf back, letting the wall colour read through the storage.",
+      "tr": "Yaprak damarları rafın arka kafesini oluşturur; duvar rengi rafın içinden okunmaya devam eder."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/AbsoluteIronWorks",
+    "images": [
+      "AbsoluteIronworks/YaprakKitapl%C4%B1k/Ads%C4%B1z%20tasar%C4%B1m%20%286%29.png",
+      "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2019_34_25.png",
+      "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_31.png",
+      "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%282%29.png",
+      "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%283%29.png",
+      "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%284%29.png",
+      "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%285%29.png",
+      "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%286%29.png",
+      "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%287%29.png",
+      "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%288%29.png",
+      "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%289%29.png",
+      "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%2810%29.png",
+      "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%2811%29.png"
+    ]
   },
   {
-    "id": "trwa-wa-4563676372",
-    "title": "Personalized German Shepherd Metal Name Sign",
-    "category": "wall-art",
-    "price": 130,
-    "image": "https://i.etsystatic.com/67101466/r/il/2f7607/8439329712/il_794xN.8439329712_afc3.jpg",
-    "etsyUrl": "https://www.etsy.com/listing/4563676372/personalized-german-shepherd-name-sign"
+    "id": 8,
+    "shop": "AbsoluteIronWorks",
+    "category": "iron-works",
+    "title": {
+      "en": "Wall Mounted Metal Wine Rack – Bottle & Glass Holder",
+      "tr": "Duvara Monte Metal Şaraplık – Şişe ve Kadeh Askısı"
+    },
+    "description": {
+      "en": "A wall mounted rack that cradles bottles by the neck and hangs glasses beneath, cut and welded from sheet steel.",
+      "tr": "Şişeleri boyundan kavrayan, kadehleri altına asan duvara monte raf; sac çelikten kesilip kaynaklanmıştır."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/AbsoluteIronWorks",
+    "images": [
+      "AbsoluteIronworks/%C5%9Earapl%C4%B1k/Gemini_Generated_Image_2cy5k62cy5k62cy5.png",
+      "AbsoluteIronworks/%C5%9Earapl%C4%B1k/Gemini_Generated_Image_3s84nl3s84nl3s84.png",
+      "AbsoluteIronworks/%C5%9Earapl%C4%B1k/Gemini_Generated_Image_bczwm3bczwm3bczw.png",
+      "AbsoluteIronworks/%C5%9Earapl%C4%B1k/Gemini_Generated_Image_d4zwdrd4zwdrd4zw.png",
+      "AbsoluteIronworks/%C5%9Earapl%C4%B1k/Gemini_Generated_Image_fu3hc5fu3hc5fu3h.png",
+      "AbsoluteIronworks/%C5%9Earapl%C4%B1k/Gemini_Generated_Image_fw7hiyfw7hiyfw7h.png",
+      "AbsoluteIronworks/%C5%9Earapl%C4%B1k/Gemini_Generated_Image_im4nxlim4nxlim4n.png",
+      "AbsoluteIronworks/%C5%9Earapl%C4%B1k/Gemini_Generated_Image_wdoqgkwdoqgkwdoq.png"
+    ]
   },
   {
-    "id": "trwa-wa-4563630381",
-    "title": "Personalized Mountain Family Metal Sign – Cabin Decor",
+    "id": 9,
+    "shop": "TheRefinedWallArt",
     "category": "wall-art",
-    "price": 110,
-    "image": "https://i.etsystatic.com/67101466/r/il/3c6a16/8487020131/il_794xN.8487020131_r5sv.jpg",
-    "etsyUrl": "https://www.etsy.com/listing/4563630381/personalized-mountain-family-name-sign"
+    "title": {
+      "en": "Custom Metal Wall Art – Your Design Laser Cut to Order",
+      "tr": "Kişiye Özel Metal Duvar Sanatı – Tasarımınız Lazerle Kesilir"
+    },
+    "description": {
+      "en": "Send any photo, sketch or logo and it is traced, cut from steel and powder coated in the finish you choose.",
+      "tr": "Herhangi bir fotoğraf, çizim veya logoyu gönderin; vektöre çevrilir, çelikten kesilir ve seçtiğiniz renkte boyanır."
+    },
+    "colors": [],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/01-custom-wall-art/01-hero-family-portrait.png",
+      "TheRefined/01-custom-wall-art/02-custom-pet-example.png",
+      "TheRefined/01-custom-wall-art/03-custom-car-example.png",
+      "TheRefined/01-custom-wall-art/04-custom-house-example.png",
+      "TheRefined/01-custom-wall-art/05-custom-logo-example.png",
+      "TheRefined/01-custom-wall-art/06-decorative-design-example.png",
+      "TheRefined/01-custom-wall-art/07-powder-coat-closeup.png",
+      "TheRefined/01-custom-wall-art/09-room-scale-example.png",
+      "TheRefined/01-custom-wall-art/10-protective-packaging.png",
+      "TheRefined/01-custom-wall-art/08-color-options.png"
+    ]
   },
   {
-    "id": "trwa-wa-4563322892",
-    "title": "Odin and Ravens Metal Wall Art – Norse Decor",
+    "id": 10,
+    "shop": "TheRefinedWallArt",
     "category": "wall-art",
-    "price": 110,
-    "image": "https://i.etsystatic.com/67101466/r/il/d52d40/8436647212/il_794xN.8436647212_5zhb.jpg",
-    "etsyUrl": "https://www.etsy.com/listing/4563322892/norse-mythology-odin-and-ravens-metal"
+    "title": {
+      "en": "Custom Pet Portrait Metal Wall Art – Photo to Steel",
+      "tr": "Kişiye Özel Evcil Hayvan Portresi Metal Tablo – Fotoğraftan Çeliğe"
+    },
+    "description": {
+      "en": "A single photograph becomes a clean silhouette portrait, cut so the ears, whiskers and coat line stay readable.",
+      "tr": "Tek bir fotoğraf sade bir silüet portreye dönüşür; kulaklar, bıyıklar ve tüy hattı okunur kalacak şekilde kesilir."
+    },
+    "colors": [],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/02-custom-pet-portrait/01-hero-dog-portrait.png",
+      "TheRefined/02-custom-pet-portrait/02-custom-cat-portrait.png",
+      "TheRefined/02-custom-pet-portrait/03-custom-horse-portrait.png",
+      "TheRefined/02-custom-pet-portrait/04-two-pet-portrait.png",
+      "TheRefined/02-custom-pet-portrait/05-pet-memorial-example.png",
+      "TheRefined/02-custom-pet-portrait/06-photo-to-metal.png",
+      "TheRefined/02-custom-pet-portrait/07-powder-coat-closeup.png",
+      "TheRefined/02-custom-pet-portrait/09-room-scale-example.png",
+      "TheRefined/02-custom-pet-portrait/10-gift-packaging.png",
+      "TheRefined/02-custom-pet-portrait/08-color-options.png"
+    ]
+  },
+  {
+    "id": 11,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Custom Couple & Family Portrait Metal Wall Art",
+      "tr": "Kişiye Özel Çift ve Aile Portresi Metal Tablo"
+    },
+    "description": {
+      "en": "Wedding, anniversary or family photographs cut into steel, with the negative space carrying the likeness.",
+      "tr": "Düğün, yıldönümü veya aile fotoğrafları çeliğe kesilir; benzerliği boşluklar taşır."
+    },
+    "colors": [],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/03-custom-couple-family/01-hero-wedding-portrait.png",
+      "TheRefined/03-custom-couple-family/02-family-portrait.png",
+      "TheRefined/03-custom-couple-family/03-mother-child-portrait.png",
+      "TheRefined/03-custom-couple-family/04-anniversary-portrait.png",
+      "TheRefined/03-custom-couple-family/05-new-family-portrait.png",
+      "TheRefined/03-custom-couple-family/06-photo-to-metal.png",
+      "TheRefined/03-custom-couple-family/07-powder-coat-closeup.png",
+      "TheRefined/03-custom-couple-family/09-bedroom-scale-example.png",
+      "TheRefined/03-custom-couple-family/10-anniversary-gift-packaging.png",
+      "TheRefined/03-custom-couple-family/08-color-options.png"
+    ]
+  },
+  {
+    "id": 12,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Custom Car & Motorcycle Metal Wall Art – Garage Decor",
+      "tr": "Kişiye Özel Araba ve Motosiklet Metal Tablosu – Garaj Dekoru"
+    },
+    "description": {
+      "en": "Your own vehicle rendered in profile, sized for a garage wall or workshop bay.",
+      "tr": "Kendi aracınızın profilden yorumu; garaj duvarı veya atölye bölmesi için ölçülendirilmiştir."
+    },
+    "colors": [],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/04-custom-car-motorcycle/01-hero-custom-car.png",
+      "TheRefined/04-custom-car-motorcycle/02-custom-motorcycle.png",
+      "TheRefined/04-custom-car-motorcycle/03-custom-pickup.png",
+      "TheRefined/04-custom-car-motorcycle/04-custom-camper-van.png",
+      "TheRefined/04-custom-car-motorcycle/05-custom-offroad-vehicle.png",
+      "TheRefined/04-custom-car-motorcycle/06-photo-to-metal.png",
+      "TheRefined/04-custom-car-motorcycle/09-garage-scale-example.png",
+      "TheRefined/04-custom-car-motorcycle/10-car-lover-gift-packaging.png",
+      "TheRefined/04-custom-car-motorcycle/08-color-options.png"
+    ]
+  },
+  {
+    "id": 13,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Custom Business Logo Metal Sign – Reception & Storefront",
+      "tr": "Kişiye Özel Kurumsal Logo Metal Tabela – Resepsiyon ve Vitrin"
+    },
+    "description": {
+      "en": "Vector logo files cut to size for reception walls and shopfronts, with hidden standoffs for a floating install.",
+      "tr": "Vektör logo dosyaları resepsiyon duvarları ve vitrinler için ölçüsünde kesilir; süzülme etkisi için gizli aparatlarla gelir."
+    },
+    "colors": [],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/06-custom-business-logo/01-hero-studio-logo.png",
+      "TheRefined/06-custom-business-logo/02-cafe-logo-sign.png",
+      "TheRefined/06-custom-business-logo/03-barbershop-logo-sign.png",
+      "TheRefined/06-custom-business-logo/04-gym-logo-sign.png",
+      "TheRefined/06-custom-business-logo/05-veterinary-logo-sign.png",
+      "TheRefined/06-custom-business-logo/06-logo-file-to-metal.png",
+      "TheRefined/06-custom-business-logo/07-powder-coat-closeup.png",
+      "TheRefined/06-custom-business-logo/09-reception-scale-example.png",
+      "TheRefined/06-custom-business-logo/10-installation-ready-packaging.png",
+      "TheRefined/06-custom-business-logo/08-color-options.png"
+    ]
+  },
+  {
+    "id": 14,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Leo Zodiac Lion Metal Wall Art – Astrology Decor",
+      "tr": "Aslan Burcu Metal Duvar Sanatı – Astroloji Dekoru"
+    },
+    "description": {
+      "en": "The lion's mane worked as radiating linework, offered in eight powder coat finishes from bordeaux to gold.",
+      "tr": "Aslanın yelesi ışınsal çizgilerle işlenmiştir; bordodan altına sekiz elektrostatik renkte sunulur."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#d9c7a7",
+        "name": {
+          "en": "Beige",
+          "tr": "Bej"
+        },
+        "imageIndex": 1
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#78350f",
+        "name": {
+          "en": "Brown",
+          "tr": "Kahverengi"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#7f1d1d",
+        "name": {
+          "en": "Burgundy",
+          "tr": "Bordo"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 5
+      },
+      {
+        "hex": "#4d5320",
+        "name": {
+          "en": "Khaki",
+          "tr": "Haki"
+        },
+        "imageIndex": 6
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/aslan%20burcu/aslanburcusiyah.png",
+      "TheRefined/aslan%20burcu/aslanburcubej.png",
+      "TheRefined/aslan%20burcu/aslanburcubeyaz.png",
+      "TheRefined/aslan%20burcu/aslanburcukahverengi.png",
+      "TheRefined/aslan%20burcu/aslantablobordo.png",
+      "TheRefined/aslan%20burcu/aslantablogold.png",
+      "TheRefined/aslan%20burcu/aslantablohaki.png",
+      "TheRefined/aslan%20burcu/aslanburcu%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 15,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Horse Metal Wall Art – Equestrian Steel Decor",
+      "tr": "At Metal Duvar Sanatı – Binicilik Temalı Çelik Dekor"
+    },
+    "description": {
+      "en": "A horse at gallop caught in mid stride, with the mane cut fine enough to read as movement.",
+      "tr": "Dörtnala giden bir at, adımının ortasında yakalanmıştır; yelesi hareket olarak okunacak kadar ince kesilmiştir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 1
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#78350f",
+        "name": {
+          "en": "Brown",
+          "tr": "Kahverengi"
+        },
+        "imageIndex": 4
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/at%20tablo/atsiyah.png",
+      "TheRefined/at%20tablo/atalt%C4%B1n.png",
+      "TheRefined/at%20tablo/atbeyaz.png",
+      "TheRefined/at%20tablo/atgri.png",
+      "TheRefined/at%20tablo/atkahverengi.png",
+      "TheRefined/at%20tablo/atbeyaz%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 16,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Bear Metal Wall Art – Wildlife Cabin Decor",
+      "tr": "Ayı Metal Duvar Sanatı – Doğa ve Dağ Evi Dekoru"
+    },
+    "description": {
+      "en": "A standing bear reduced to its essential contour, suited to cabin walls and rustic interiors.",
+      "tr": "Temel konturuna indirgenmiş ayakta bir ayı; dağ evi duvarları ve rustik iç mekânlar için uygundur."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/ay%C4%B1%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_39_48%20%281%29.png",
+      "TheRefined/ay%C4%B1%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_39_48%20%282%29.png",
+      "TheRefined/ay%C4%B1%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_39_48%20%283%29.png",
+      "TheRefined/ay%C4%B1%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_39_49%20%284%29.png",
+      "TheRefined/ay%C4%B1%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_39_50%20%285%29.png",
+      "TheRefined/ay%C4%B1%20tablo/ay%C4%B1%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 17,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Tree of Life Metal Wall Art – Botanical Steel Decor",
+      "tr": "Hayat Ağacı Metal Duvar Sanatı – Botanik Çelik Dekor"
+    },
+    "description": {
+      "en": "Root and branch resolve into one continuous cut, so the piece holds together on a large wall without a frame.",
+      "tr": "Kök ve dallar tek kesintisiz kesimde birleşir; böylece pano geniş duvarda çerçeveye ihtiyaç duymadan bütünlüğünü korur."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/a%C4%9Fa%C3%A7%20tablo/ChatGPT%20Image%2031%20Tem%202026%2012_07_28.png",
+      "TheRefined/a%C4%9Fa%C3%A7%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_11_08%20%281%29.png",
+      "TheRefined/a%C4%9Fa%C3%A7%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_11_09%20%282%29.png",
+      "TheRefined/a%C4%9Fa%C3%A7%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_11_09%20%283%29.png",
+      "TheRefined/a%C4%9Fa%C3%A7%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_11_09%20%284%29.png",
+      "TheRefined/a%C4%9Fa%C3%A7%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_11_10%20%285%29.png",
+      "TheRefined/a%C4%9Fa%C3%A7%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_11_11%20%286%29.png",
+      "TheRefined/a%C4%9Fa%C3%A7%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_11_11%20%287%29.png",
+      "TheRefined/a%C4%9Fa%C3%A7%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_11_11%20%288%29.png"
+    ]
+  },
+  {
+    "id": 18,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Viking Axe & Shield Metal Wall Art – Norse Warrior Decor",
+      "tr": "Viking Balta ve Kalkan Metal Duvar Sanatı – Nors Savaşçı Dekoru"
+    },
+    "description": {
+      "en": "Crossed axes over a runed shield boss, cut as one panel so the layering reads from across the room.",
+      "tr": "Rünlü kalkan göbeği üzerinde çapraz baltalar; katmanlanma odanın diğer ucundan okunacak şekilde tek panel olarak kesilmiştir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/baltakalkantablo/43fc12a1-f741-4b3e-830a-719efe4fb3aa.png",
+      "TheRefined/baltakalkantablo/ChatGPT%20Image%2030%20A%C4%9Fu%202026%2022_23_32%20%281%29.png",
+      "TheRefined/baltakalkantablo/ChatGPT%20Image%2030%20A%C4%9Fu%202026%2022_23_32%20%282%29.png",
+      "TheRefined/baltakalkantablo/ChatGPT%20Image%2030%20A%C4%9Fu%202026%2022_23_33%20%283%29.png",
+      "TheRefined/baltakalkantablo/ChatGPT%20Image%2030%20A%C4%9Fu%202026%2022_23_33%20%284%29.png",
+      "TheRefined/baltakalkantablo/ChatGPT%20Image%2030%20A%C4%9Fu%202026%2022_23_33%20%285%29.png",
+      "TheRefined/baltakalkantablo/ChatGPT%20Image%2030%20A%C4%9Fu%202026%2022_23_34%20%286%29.png",
+      "TheRefined/baltakalkantablo/ChatGPT%20Image%2030%20A%C4%9Fu%202026%2022_23_34%20%287%29.png",
+      "TheRefined/baltakalkantablo/ChatGPT%20Image%2030%20A%C4%9Fu%202026%2022_23_34%20%288%29.png",
+      "TheRefined/baltakalkantablo/ChatGPT%20Image%2030%20A%C4%9Fu%202026%2022_23_35%20%289%29.png",
+      "TheRefined/baltakalkantablo/ChatGPT%20Image%2030%20A%C4%9Fu%202026%2022_23_35%20%2810%29.png"
+    ]
+  },
+  {
+    "id": 19,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Bat Emblem Metal Wall Art – Superhero Steel Decor",
+      "tr": "Yarasa Amblemi Metal Duvar Sanatı – Süper Kahraman Çelik Dekor"
+    },
+    "description": {
+      "en": "The wing spread emblem cut from a single sheet, available in matte black and brushed silver.",
+      "tr": "Tek levhadan kesilmiş kanat açıklığı amblemi; mat siyah ve fırçalanmış gümüş seçenekleriyle."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        },
+        "imageIndex": 3
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/batman%20tablo/batmantablosiyah.png",
+      "TheRefined/batman%20tablo/batmann.png",
+      "TheRefined/batman%20tablo/batmannn.png",
+      "TheRefined/batman%20tablo/batmantablog%C3%BCm%C3%BC%C5%9F.png",
+      "TheRefined/batman%20tablo/batman%C3%BC.png",
+      "TheRefined/batman%20tablo/Gemini_Generated_Image_chg2qkchg2qkchg2.jpg",
+      "TheRefined/batman%20tablo/Gemini_Generated_Image_ffh370ffh370ffh3.jpg",
+      "TheRefined/batman%20tablo/batmanolcu.png"
+    ]
+  },
+  {
+    "id": 20,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Dark Knight Mask Metal Wall Art – Man Cave Decor",
+      "tr": "Kara Şövalye Maskesi Metal Duvar Sanatı – Erkek Odası Dekoru"
+    },
+    "description": {
+      "en": "The cowl silhouette at scale, with the eye slits and ears cut sharp enough to hold the profile at distance.",
+      "tr": "Büyük ölçekte maske silüeti; göz yarıkları ve kulakları profili uzaktan koruyacak kadar keskin kesilmiştir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/BatmanMaskeTablo/batman_krem_duvar_130cm_gercekci.png",
+      "TheRefined/BatmanMaskeTablo/batmanmask1.png",
+      "TheRefined/BatmanMaskeTablo/batmanmask2.png",
+      "TheRefined/BatmanMaskeTablo/batmanmask3.png",
+      "TheRefined/BatmanMaskeTablo/batmanmask4.png",
+      "TheRefined/BatmanMaskeTablo/batmanmask5.png",
+      "TheRefined/BatmanMaskeTablo/batmanmask6.png",
+      "TheRefined/BatmanMaskeTablo/batmanmask7.png",
+      "TheRefined/BatmanMaskeTablo/Gemini_Generated_Image_1xvrds1xvrds1xvr.png",
+      "TheRefined/BatmanMaskeTablo/Gemini_Generated_Image_4i2zvn4i2zvn4i2z.png",
+      "TheRefined/BatmanMaskeTablo/Gemini_Generated_Image_6osoq56osoq56oso.png",
+      "TheRefined/BatmanMaskeTablo/Gemini_Generated_Image_6t8utj6t8utj6t8u.png",
+      "TheRefined/BatmanMaskeTablo/Gemini_Generated_Image_27u30m27u30m27u3.png",
+      "TheRefined/BatmanMaskeTablo/Gemini_Generated_Image_eu7xyleu7xyleu7x.png",
+      "TheRefined/BatmanMaskeTablo/Gemini_Generated_Image_fni30yfni30yfni3.png",
+      "TheRefined/BatmanMaskeTablo/Gemini_Generated_Image_qh7z56qh7z56qh7z.png",
+      "TheRefined/BatmanMaskeTablo/batmanmask%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 21,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Biceps Flex Metal Wall Art – Home Gym Decor",
+      "tr": "Biceps Metal Duvar Sanatı – Ev Spor Salonu Dekoru"
+    },
+    "description": {
+      "en": "A flexed arm study for gym walls, cut with enough contour separation to read under directional light.",
+      "tr": "Spor salonu duvarları için bir kol çalışması; yönlü ışık altında okunacak kadar kontur ayrımıyla kesilmiştir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/biceps%20tablo/bicepstablo1.png",
+      "TheRefined/biceps%20tablo/bicepstablo2.png",
+      "TheRefined/biceps%20tablo/bicepstablo3.png",
+      "TheRefined/biceps%20tablo/bicepstablo4.png",
+      "TheRefined/biceps%20tablo/bicepstablo5.png",
+      "TheRefined/biceps%20tablo/bicepstablo6.png",
+      "TheRefined/biceps%20tablo/bicepstablo7.png",
+      "TheRefined/biceps%20tablo/bicepstablo8.png",
+      "TheRefined/biceps%20tablo/bicepstablo9.png",
+      "TheRefined/biceps%20tablo/bicepstablo%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 22,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Custom Mountain Family Name Metal Sign – Personalised Decor",
+      "tr": "Kişiye Özel Dağ ve Aile İsmi Metal Tabela – Kişiselleştirilmiş Dekor"
+    },
+    "description": {
+      "en": "A mountain range with your family name cut into the ridgeline, made to order in any spelling.",
+      "tr": "Sırt hattına aile isminiz kesilmiş bir dağ silsilesi; istediğiniz yazımla siparişe özel üretilir."
+    },
+    "colors": [],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_15.png",
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_47%20%281%29.png",
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_48%20%282%29.png",
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_49%20%283%29.png",
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_49%20%284%29.png",
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_50%20%285%29.png",
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_50%20%286%29.png",
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_51%20%287%29.png",
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_52%20%288%29.png",
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_52%20%289%29.png",
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_53%20%2810%29.png",
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_53%20%2811%29.png",
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_54%20%2812%29.png",
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_55%20%2813%29.png",
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_55%20%2814%29.png",
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_56%20%2815%29.png",
+      "TheRefined/CustomDa%C4%9FAile%C4%B0sim/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2015_50_56%20%2816%29.png"
+    ]
+  },
+  {
+    "id": 23,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Custom Coffee Bar Metal Sign – Kitchen & Café Decor",
+      "tr": "Kişiye Özel Kahve Köşesi Metal Tabela – Mutfak ve Kafe Dekoru"
+    },
+    "description": {
+      "en": "A coffee bar sign with your own wording, cut for kitchen corners and café counters.",
+      "tr": "Kendi metninizle bir kahve köşesi tabelası; mutfak köşeleri ve kafe tezgâhları için kesilir."
+    },
+    "colors": [],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/CustomKahveTablo/ChatGPT%20Image%2017%20A%C4%9Fu%202026%2016_36_31.png",
+      "TheRefined/CustomKahveTablo/ChatGPT%20Image%2017%20A%C4%9Fu%202026%2016_37_40%20%281%29.png",
+      "TheRefined/CustomKahveTablo/ChatGPT%20Image%2017%20A%C4%9Fu%202026%2016_37_40%20%282%29.png",
+      "TheRefined/CustomKahveTablo/ChatGPT%20Image%2017%20A%C4%9Fu%202026%2016_37_42%20%283%29.png",
+      "TheRefined/CustomKahveTablo/ChatGPT%20Image%2017%20A%C4%9Fu%202026%2016_37_43%20%284%29.png",
+      "TheRefined/CustomKahveTablo/ChatGPT%20Image%2017%20A%C4%9Fu%202026%2016_37_44%20%285%29.png",
+      "TheRefined/CustomKahveTablo/ChatGPT%20Image%2017%20A%C4%9Fu%202026%2016_37_46%20%286%29.png",
+      "TheRefined/CustomKahveTablo/ChatGPT%20Image%2017%20A%C4%9Fu%202026%2016_37_47%20%287%29.png",
+      "TheRefined/CustomKahveTablo/ChatGPT%20Image%2017%20A%C4%9Fu%202026%2016_37_49%20%288%29.png",
+      "TheRefined/CustomKahveTablo/ChatGPT%20Image%2017%20A%C4%9Fu%202026%2016_37_50%20%289%29.png",
+      "TheRefined/CustomKahveTablo/ChatGPT%20Image%2017%20A%C4%9Fu%202026%2016_37_51%20%2810%29.png",
+      "TheRefined/CustomKahveTablo/kahvetablotext.png",
+      "TheRefined/CustomKahveTablo/kahvetablo%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 24,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Custom Dog Breed Metal Wall Art – Personalised Pet Decor",
+      "tr": "Kişiye Özel Köpek Irkı Metal Duvar Sanatı – Kişiselleştirilmiş Evcil Dekor"
+    },
+    "description": {
+      "en": "Your dog's breed profile cut to order, with the name plate integrated into the same panel.",
+      "tr": "Köpeğinizin ırk profili siparişe özel kesilir; isim plakası aynı panele entegre edilir."
+    },
+    "colors": [],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/CustomK%C3%B6pek/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2016_31_31%20%281%29.png",
+      "TheRefined/CustomK%C3%B6pek/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2016_31_32%20%282%29.png",
+      "TheRefined/CustomK%C3%B6pek/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2016_31_32%20%283%29.png",
+      "TheRefined/CustomK%C3%B6pek/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2016_31_33%20%284%29.png",
+      "TheRefined/CustomK%C3%B6pek/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2016_31_34%20%285%29.png",
+      "TheRefined/CustomK%C3%B6pek/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2016_31_34%20%286%29.png",
+      "TheRefined/CustomK%C3%B6pek/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2016_31_35%20%287%29.png",
+      "TheRefined/CustomK%C3%B6pek/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2016_31_35%20%288%29.png",
+      "TheRefined/CustomK%C3%B6pek/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2016_31_36%20%289%29.png",
+      "TheRefined/CustomK%C3%B6pek/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2016_31_37%20%2810%29.png",
+      "TheRefined/CustomK%C3%B6pek/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2016_31_37%20%2811%29.png",
+      "TheRefined/CustomK%C3%B6pek/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2016_31_39%20%2812%29.png",
+      "TheRefined/CustomK%C3%B6pek/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2016_31_39%20%2813%29.png"
+    ]
+  },
+  {
+    "id": 25,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Woman in Dress from Behind Metal Wall Art – Feminine Line Decor",
+      "tr": "Elbiseli Arkadan Kadın Metal Duvar Sanatı – Feminen Çizgi Dekoru"
+    },
+    "description": {
+      "en": "A back view figure study where the dress falls as one long uninterrupted cut.",
+      "tr": "Elbisenin tek uzun ve kesintisiz bir hat olarak döküldüğü, arkadan görünüşlü bir figür çalışması."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%289%29.png",
+      "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%2810%29.png",
+      "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%2811%29.png",
+      "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_38%20%2812%29.png",
+      "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_38%20%2813%29.png",
+      "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_40%20%2814%29.png",
+      "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_40%20%2815%29.png",
+      "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_41%20%2816%29.png",
+      "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/elbiselikad%C4%B1n%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 26,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Woman with Hat Metal Wall Art – Elegant Figure Decor",
+      "tr": "Şapkalı Kadın Metal Duvar Sanatı – Zarif Figür Dekoru"
+    },
+    "description": {
+      "en": "A wide brimmed hat casts the composition's only hard shadow line, balanced against the softer dress contour.",
+      "tr": "Geniş kenarlı şapka kompozisyonun tek sert gölge hattını oluşturur; elbisenin yumuşak konturuyla dengelenir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/Elbiseli%C5%9Eapkal%C4%B1Kad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_18_29.png",
+      "TheRefined/Elbiseli%C5%9Eapkal%C4%B1Kad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%281%29.png",
+      "TheRefined/Elbiseli%C5%9Eapkal%C4%B1Kad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%282%29.png",
+      "TheRefined/Elbiseli%C5%9Eapkal%C4%B1Kad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%283%29.png",
+      "TheRefined/Elbiseli%C5%9Eapkal%C4%B1Kad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%284%29.png",
+      "TheRefined/Elbiseli%C5%9Eapkal%C4%B1Kad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%285%29.png",
+      "TheRefined/Elbiseli%C5%9Eapkal%C4%B1Kad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%286%29.png",
+      "TheRefined/Elbiseli%C5%9Eapkal%C4%B1Kad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%287%29.png",
+      "TheRefined/Elbiseli%C5%9Eapkal%C4%B1Kad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%288%29.png",
+      "TheRefined/Elbiseli%C5%9Eapkal%C4%B1Kad%C4%B1nTablo/%C5%9Fapkal%C4%B1kad%C4%B1n%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 27,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Halloween Door Decor Metal Sign – Seasonal Porch Art",
+      "tr": "Halloween Kapı Süsü Metal Tabela – Mevsimsel Veranda Dekoru"
+    },
+    "description": {
+      "en": "A door hanger sized piece for the season, powder coated so it can stay outside on a covered porch.",
+      "tr": "Sezona uygun kapı askısı ölçüsünde bir parça; kapalı verandada dışarıda kalabilmesi için elektrostatik boyalıdır."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/halloweenkap%C4%B1/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_01_04%20%281%29.png",
+      "TheRefined/halloweenkap%C4%B1/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_01_04%20%282%29.png",
+      "TheRefined/halloweenkap%C4%B1/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_01_04%20%283%29.png",
+      "TheRefined/halloweenkap%C4%B1/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_01_05%20%284%29.png",
+      "TheRefined/halloweenkap%C4%B1/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_01_05%20%285%29.png",
+      "TheRefined/halloweenkap%C4%B1/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_01_06%20%286%29.png",
+      "TheRefined/halloweenkap%C4%B1/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_01_06%20%287%29.png",
+      "TheRefined/halloweenkap%C4%B1/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_01_06%20%288%29.png",
+      "TheRefined/halloweenkap%C4%B1/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_01_07%20%289%29.png",
+      "TheRefined/halloweenkap%C4%B1/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_01_07%20%2810%29.png"
+    ]
+  },
+  {
+    "id": 28,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Happiness Script Metal Wall Art – Typographic Steel Decor",
+      "tr": "Happiness Yazılı Metal Duvar Sanatı – Tipografik Çelik Dekor"
+    },
+    "description": {
+      "en": "Script lettering cut as one connected line, so the word holds its shape without a backing plate.",
+      "tr": "Tek bağlantılı hat olarak kesilmiş el yazısı; kelime arka plaka olmadan formunu korur."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/happines%20tablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2013_41_50%20%281%29.png",
+      "TheRefined/happines%20tablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2013_41_50%20%282%29.png",
+      "TheRefined/happines%20tablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2013_41_50%20%283%29.png",
+      "TheRefined/happines%20tablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2013_41_50%20%284%29.png",
+      "TheRefined/happines%20tablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2013_41_50%20%285%29.png",
+      "TheRefined/happines%20tablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2013_41_50%20%286%29.png",
+      "TheRefined/happines%20tablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2013_41_50%20%287%29.png",
+      "TheRefined/happines%20tablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2013_41_50%20%288%29.png",
+      "TheRefined/happines%20tablo/happinessolcu.png"
+    ]
+  },
+  {
+    "id": 29,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Green Giant Head Metal Wall Art – Comic Steel Decor",
+      "tr": "Yeşil Dev Kafası Metal Duvar Sanatı – Çizgi Roman Çelik Dekoru"
+    },
+    "description": {
+      "en": "A heavy browed profile built from broad planes, sized to anchor a games room wall.",
+      "tr": "Geniş yüzeylerden kurulmuş çıkık kaşlı bir profil; oyun odası duvarına hâkim olacak ölçüdedir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/hulk%20kafa%20tablo/hulktablosiyah2.png",
+      "TheRefined/hulk%20kafa%20tablo/hulktablosiyah3.png",
+      "TheRefined/hulk%20kafa%20tablo/hulktablosiyah%20%281%29.png",
+      "TheRefined/hulk%20kafa%20tablo/hulktablosiyah.png",
+      "TheRefined/hulk%20kafa%20tablo/hulktablosiyah%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 30,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Jesus Portrait Metal Wall Art – Christian Home Decor",
+      "tr": "İsa Portresi Metal Duvar Sanatı – Hristiyan Ev Dekoru"
+    },
+    "description": {
+      "en": "A portrait study worked in fine parallel lines, the hair and beard carrying most of the detail.",
+      "tr": "İnce paralel çizgilerle işlenmiş bir portre çalışması; detayın çoğunu saç ve sakal taşır."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/isa%20tablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2016_06_40%20%282%29.png",
+      "TheRefined/isa%20tablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2016_06_40%20%283%29.png",
+      "TheRefined/isa%20tablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2016_06_40%20%284%29.png",
+      "TheRefined/isa%20tablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2016_06_40%20%285%29.png",
+      "TheRefined/isa%20tablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2016_06_40%20%286%29.png",
+      "TheRefined/isa%20tablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2016_06_40%20%287%29.png",
+      "TheRefined/isa%20tablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2016_06_40%20%288%29.png",
+      "TheRefined/isa%20tablo/isa%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 31,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Jesus with Lamb Metal Wall Art – Christian Steel Decor",
+      "tr": "İsa ve Kuzu Metal Duvar Sanatı – Hristiyan Temalı Çelik Dekor"
+    },
+    "description": {
+      "en": "The Good Shepherd motif cut at 1.5 mm so the robe folds and the lamb's fleece both stay legible.",
+      "tr": "İyi Çoban motifi 1,5 mm kalınlıkta kesilmiştir; cübbe kıvrımları ve kuzunun yapağısı okunur kalır."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2016_58_07.png",
+      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%289%29.png",
+      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%2810%29.png",
+      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%2811%29.png",
+      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%2812%29.png",
+      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%2813%29.png",
+      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%2814%29.png",
+      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%2815%29.png"
+    ]
+  },
+  {
+    "id": 32,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Clown Prince Metal Wall Art – Comic Villain Decor",
+      "tr": "Palyaço Prens Metal Duvar Sanatı – Çizgi Roman Kötü Karakter Dekoru"
+    },
+    "description": {
+      "en": "A grinning portrait built from high contrast shapes, intended for dark painted walls.",
+      "tr": "Yüksek kontrastlı formlardan kurulmuş sırıtan bir portre; koyu boyalı duvarlar için tasarlanmıştır."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/jokertablo/Gemini_Generated_Image_4p2hke4p2hke4p2h.jpg",
+      "TheRefined/jokertablo/Gemini_Generated_Image_7du20j7du20j7du2.jpg",
+      "TheRefined/jokertablo/Gemini_Generated_Image_fi6vptfi6vptfi6v.jpg",
+      "TheRefined/jokertablo/Gemini_Generated_Image_gf4dyjgf4dyjgf4d.jpg",
+      "TheRefined/jokertablo/Gemini_Generated_Image_k2birtk2birtk2bi.jpg",
+      "TheRefined/jokertablo/Gemini_Generated_Image_qfr89uqfr89uqfr8.jpg",
+      "TheRefined/jokertablo/Gemini_Generated_Image_sm6t2asm6t2asm6t.jpg",
+      "TheRefined/jokertablo/joker%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 33,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Sun Woman Metal Wall Art – Boho Feminine Decor",
+      "tr": "Güneş Kadın Metal Duvar Sanatı – Boho Feminen Dekor"
+    },
+    "description": {
+      "en": "A face in profile against a rayed sun disc, offered in nine powder coat finishes.",
+      "tr": "Işınlı bir güneş diski önünde profilden bir yüz; dokuz elektrostatik renkte sunulur."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 1
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#efe6d3",
+        "name": {
+          "en": "Cream",
+          "tr": "Krem"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#b91c1c",
+        "name": {
+          "en": "Red",
+          "tr": "Kırmızı"
+        },
+        "imageIndex": 5
+      },
+      {
+        "hex": "#ec4899",
+        "name": {
+          "en": "Pink",
+          "tr": "Pembe"
+        },
+        "imageIndex": 6
+      },
+      {
+        "hex": "#15803d",
+        "name": {
+          "en": "Green",
+          "tr": "Yeşil"
+        },
+        "imageIndex": 7
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/g%C3%BCne%C5%9F%20kad%C4%B1n/g%C3%BCne%C5%9Fkad%C4%B1nsiyah.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/g%C3%BCne%C5%9F%20kad%C4%B1n/g%C3%BCne%C5%9Fkad%C4%B1nalt%C4%B1n.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/g%C3%BCne%C5%9F%20kad%C4%B1n/g%C3%BCne%C5%9Fkad%C4%B1nbeyaz.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/g%C3%BCne%C5%9F%20kad%C4%B1n/g%C3%BCne%C5%9Fkad%C4%B1ngri.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/g%C3%BCne%C5%9F%20kad%C4%B1n/g%C3%BCne%C5%9Fkad%C4%B1nkrem.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/g%C3%BCne%C5%9F%20kad%C4%B1n/g%C3%BCne%C5%9Fkad%C4%B1nk%C4%B1rm%C4%B1z%C4%B1.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/g%C3%BCne%C5%9F%20kad%C4%B1n/g%C3%BCne%C5%9Fkad%C4%B1npembe.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/g%C3%BCne%C5%9F%20kad%C4%B1n/g%C3%BCne%C5%9Fkad%C4%B1nye%C5%9Fil.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/g%C3%BCne%C5%9F%20kad%C4%B1n/g%C3%BCne%C5%9Fkad%C4%B1nolcu.png"
+    ]
+  },
+  {
+    "id": 34,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Woman from Behind Metal Wall Art – Minimal Nude Line Decor",
+      "tr": "Arkadan Kadın Metal Duvar Sanatı – Minimal Çizgi Dekoru"
+    },
+    "description": {
+      "en": "A back study reduced to a single flowing outline, restrained enough for a bedroom wall.",
+      "tr": "Tek akıcı konturla ifade edilmiş bir sırt çalışması; yatak odası duvarı için yeterince sakindir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 1
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#efe6d3",
+        "name": {
+          "en": "Cream",
+          "tr": "Krem"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#b91c1c",
+        "name": {
+          "en": "Red",
+          "tr": "Kırmızı"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#ec4899",
+        "name": {
+          "en": "Pink",
+          "tr": "Pembe"
+        },
+        "imageIndex": 5
+      },
+      {
+        "hex": "#15803d",
+        "name": {
+          "en": "Green",
+          "tr": "Yeşil"
+        },
+        "imageIndex": 6
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/kad%C4%B1n%20arkadan/kad%C4%B1narkasiyah.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/kad%C4%B1n%20arkadan/kad%C4%B1narkaalt%C4%B1n.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/kad%C4%B1n%20arkadan/kad%C4%B1narkabeyaz.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/kad%C4%B1n%20arkadan/kad%C4%B1narkakrem.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/kad%C4%B1n%20arkadan/kad%C4%B1narkak%C4%B1rm%C4%B1z%C4%B1.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/kad%C4%B1n%20arkadan/kad%C4%B1narkapembe.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/kad%C4%B1n%20arkadan/kad%C4%B1narkayesil.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/kad%C4%B1n%20arkadan/kad%C4%B1narkaolcu.png"
+    ]
+  },
+  {
+    "id": 35,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Strong Woman Metal Wall Art – Fitness Figure Decor",
+      "tr": "Kaslı Kadın Metal Duvar Sanatı – Fitness Figürü Dekoru"
+    },
+    "description": {
+      "en": "A flexed female figure for gym and studio walls, with muscle definition carried by cut separation rather than engraving.",
+      "tr": "Spor salonu ve stüdyo duvarları için kaslı bir kadın figürü; kas ayrımı kazıma yerine kesim boşluklarıyla verilmiştir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 1
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#b91c1c",
+        "name": {
+          "en": "Red",
+          "tr": "Kırmızı"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#ec4899",
+        "name": {
+          "en": "Pink",
+          "tr": "Pembe"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#15803d",
+        "name": {
+          "en": "Green",
+          "tr": "Yeşil"
+        },
+        "imageIndex": 5
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/kasl%C4%B1%20kad%C4%B1n/kasl%C4%B1kad%C4%B1nsiyah.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/kasl%C4%B1%20kad%C4%B1n/kasl%C4%B1kad%C4%B1nalt%C4%B1n.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/kasl%C4%B1%20kad%C4%B1n/kasl%C4%B1kad%C4%B1ngri.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/kasl%C4%B1%20kad%C4%B1n/kasl%C4%B1kad%C4%B1nk%C4%B1rm%C4%B1z%C4%B1.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/kasl%C4%B1%20kad%C4%B1n/kasl%C4%B1kad%C4%B1npembe.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/kasl%C4%B1%20kad%C4%B1n/kasl%C4%B1kad%C4%B1nye%C5%9Fil.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/kasl%C4%B1%20kad%C4%B1n/kasl%C4%B1kad%C4%B1nolcu.png"
+    ]
+  },
+  {
+    "id": 36,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Seated Woman Metal Wall Art – Sculptural Line Decor",
+      "tr": "Oturan Kadın Metal Duvar Sanatı – Heykelsi Çizgi Dekoru"
+    },
+    "description": {
+      "en": "A seated pose where the limbs close into a loop, giving the piece a stable visual base.",
+      "tr": "Uzuvların bir halka hâlinde kapandığı oturan bir duruş; panoya sağlam bir görsel taban kazandırır."
+    },
+    "colors": [
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 1
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#b91c1c",
+        "name": {
+          "en": "Red",
+          "tr": "Kırmızı"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#ec4899",
+        "name": {
+          "en": "Pink",
+          "tr": "Pembe"
+        },
+        "imageIndex": 5
+      },
+      {
+        "hex": "#15803d",
+        "name": {
+          "en": "Green",
+          "tr": "Yeşil"
+        },
+        "imageIndex": 6
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/oturan%20kad%C4%B1n/oturankad%C4%B1nalt%C4%B1n.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/oturan%20kad%C4%B1n/oturankad%C4%B1nbeyaz%20%281%29.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/oturan%20kad%C4%B1n/oturankad%C4%B1nbeyaz.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/oturan%20kad%C4%B1n/oturankad%C4%B1ngri.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/oturan%20kad%C4%B1n/oturankad%C4%B1nk%C4%B1rm%C4%B1z%C4%B1.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/oturan%20kad%C4%B1n/oturankad%C4%B1npembe.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/oturan%20kad%C4%B1n/oturankad%C4%B1nye%C5%9Fil.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/oturan%20kad%C4%B1n/oturankad%C4%B1nolcu.png"
+    ]
+  },
+  {
+    "id": 37,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Cactus Metal Wall Art – Desert Botanical Decor",
+      "tr": "Kaktüs Metal Duvar Sanatı – Çöl Botanik Dekoru"
+    },
+    "description": {
+      "en": "A small format botanical set, easy to group in twos and threes above a shelf.",
+      "tr": "Küçük formatlı botanik set; raf üstünde ikili ve üçlü gruplamak kolaydır."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/kakt%C3%BCs%20tablo/tablo1.png",
+      "TheRefined/kakt%C3%BCs%20tablo/tablo2.png",
+      "TheRefined/kakt%C3%BCs%20tablo/tablo3.png",
+      "TheRefined/kakt%C3%BCs%20tablo/tablo4.png",
+      "TheRefined/kakt%C3%BCs%20tablo/tablolare.png",
+      "TheRefined/kakt%C3%BCs%20tablo/tablolar%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 38,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Eagle Metal Wall Art – Wings Spread Steel Decor",
+      "tr": "Kartal Metal Duvar Sanatı – Açık Kanatlı Çelik Dekor"
+    },
+    "description": {
+      "en": "Each flight feather cut separately so the wing keeps its depth from an angle. Six powder coat finishes.",
+      "tr": "Her uçuş teleği ayrı kesilmiştir; kanat açılı bakışta derinliğini korur. Altı elektrostatik renk seçeneği."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 7
+      },
+      {
+        "hex": "#4d5320",
+        "name": {
+          "en": "Khaki",
+          "tr": "Haki"
+        },
+        "imageIndex": 8
+      },
+      {
+        "hex": "#78350f",
+        "name": {
+          "en": "Brown",
+          "tr": "Kahverengi"
+        },
+        "imageIndex": 9
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/KartalTablo/kartalS%C4%B0YAH2.png",
+      "TheRefined/KartalTablo/Gemini_Generated_Image_g2t6oeg2t6oeg2t6.png",
+      "TheRefined/KartalTablo/Gemini_Generated_Image_nofvhpnofvhpnofv.png",
+      "TheRefined/KartalTablo/Gemini_Generated_Image_q7hqn5q7hqn5q7hq.png",
+      "TheRefined/KartalTablo/Gemini_Generated_Image_s31tm0s31tm0s31t.png",
+      "TheRefined/KartalTablo/Gemini_Generated_Image_tab6s8tab6s8tab6.png",
+      "TheRefined/KartalTablo/Gemini_Generated_Image_ttudt2ttudt2ttud.png",
+      "TheRefined/KartalTablo/kartalbeyaz.png",
+      "TheRefined/KartalTablo/kartalhaki.png",
+      "TheRefined/KartalTablo/kartalkahve.png",
+      "TheRefined/KartalTablo/kartalS%C4%B0YAH3.png",
+      "TheRefined/KartalTablo/kartalS%C4%B0YAH.png"
+    ]
+  },
+  {
+    "id": 39,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Cat Metal Wall Art – Minimal Feline Line Decor",
+      "tr": "Kedi Metal Duvar Sanatı – Minimal Kedi Çizgi Dekoru"
+    },
+    "description": {
+      "en": "A seated cat in a single sweeping contour, offered in white, cream and brown.",
+      "tr": "Tek akıcı konturda oturan bir kedi; beyaz, krem ve kahverengi seçenekleriyle."
+    },
+    "colors": [
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#78350f",
+        "name": {
+          "en": "Brown",
+          "tr": "Kahverengi"
+        },
+        "imageIndex": 1
+      },
+      {
+        "hex": "#efe6d3",
+        "name": {
+          "en": "Cream",
+          "tr": "Krem"
+        },
+        "imageIndex": 2
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/kedi%20tablo/keditablobeyaz.png",
+      "TheRefined/kedi%20tablo/keditablokahverengi.png",
+      "TheRefined/kedi%20tablo/keditablokrem.png"
+    ]
+  },
+  {
+    "id": 40,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Butterfly Metal Wall Art – Wing Detail Steel Decor",
+      "tr": "Kelebek Metal Duvar Sanatı – Kanat Detaylı Çelik Dekor"
+    },
+    "description": {
+      "en": "Wing cells cut as open tracery, so the wall colour becomes part of the pattern.",
+      "tr": "Kanat gözleri açık kafes olarak kesilmiştir; duvar rengi desenin bir parçası hâline gelir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/kelebek%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_48_32%20%281%29.png",
+      "TheRefined/kelebek%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_48_32%20%282%29.png",
+      "TheRefined/kelebek%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_48_33%20%283%29.png",
+      "TheRefined/kelebek%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_48_33%20%284%29.png",
+      "TheRefined/kelebek%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_48_33%20%285%29.png",
+      "TheRefined/kelebek%20tablo/kelebekolc%C3%BC.png"
+    ]
+  },
+  {
+    "id": 41,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Wolf Head Metal Wall Art – Norse Wildlife Decor",
+      "tr": "Kurt Başı Metal Duvar Sanatı – Nors ve Doğa Dekoru"
+    },
+    "description": {
+      "en": "A frontal wolf head where the ruff is cut in layered spikes. Eight finishes including bordeaux and khaki.",
+      "tr": "Yanak tüyleri katmanlı dikenler hâlinde kesilmiş cepheden kurt başı. Bordo ve haki dâhil sekiz renk."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#7f1d1d",
+        "name": {
+          "en": "Burgundy",
+          "tr": "Bordo"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        },
+        "imageIndex": 5
+      },
+      {
+        "hex": "#4d5320",
+        "name": {
+          "en": "Khaki",
+          "tr": "Haki"
+        },
+        "imageIndex": 6
+      },
+      {
+        "hex": "#78350f",
+        "name": {
+          "en": "Brown",
+          "tr": "Kahverengi"
+        },
+        "imageIndex": 7
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/Kurt%20Tablo/kurttablosiyah.png",
+      "TheRefined/Kurt%20Tablo/Gemini_Generated_Image_ignhd2ignhd2ignh.png",
+      "TheRefined/Kurt%20Tablo/kurttablobeyaz.png",
+      "TheRefined/Kurt%20Tablo/kurttablobordo.png",
+      "TheRefined/Kurt%20Tablo/kurttablogold.png",
+      "TheRefined/Kurt%20Tablo/kurttablogri.png",
+      "TheRefined/Kurt%20Tablo/kurttablohaki.png",
+      "TheRefined/Kurt%20Tablo/kurttablokahverengi.png",
+      "TheRefined/Kurt%20Tablo/kurttablo%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 42,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Howling Wolf Profile Metal Wall Art – Moonlit Steel Decor",
+      "tr": "Yandan Uluyan Kurt Metal Duvar Sanatı – Ay Işığı Çelik Dekoru"
+    },
+    "description": {
+      "en": "A profile howl set against an open circle, the simplest of the wolf pieces and the easiest to place.",
+      "tr": "Açık bir daire önünde profilden uluma; kurt serisinin en yalını ve yerleştirmesi en kolay olanı."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/kurt%20yandan%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_22_39%20%281%29.png",
+      "TheRefined/kurt%20yandan%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_22_40%20%282%29.png",
+      "TheRefined/kurt%20yandan%20tablo/ChatGPT%20Image%2031%20Tem%202026%2017_22_40%20%283%29.png"
+    ]
+  },
+  {
+    "id": 43,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Virgin Mary Metal Wall Art – Madonna Christian Decor",
+      "tr": "Meryem Ana Metal Duvar Sanatı – Madonna Hristiyan Dekoru"
+    },
+    "description": {
+      "en": "A veiled Madonna study where the drapery is cut in long parallel runs to suggest fabric weight.",
+      "tr": "Örtülü bir Meryem çalışması; kumaş ağırlığını sezdirmek için drapeler uzun paralel hatlarla kesilmiştir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/MeryemAnaTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2017_10_24.png",
+      "TheRefined/MeryemAnaTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_33%20%281%29.png",
+      "TheRefined/MeryemAnaTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_33%20%282%29.png",
+      "TheRefined/MeryemAnaTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%283%29.png",
+      "TheRefined/MeryemAnaTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%284%29.png",
+      "TheRefined/MeryemAnaTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%285%29.png",
+      "TheRefined/MeryemAnaTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%286%29.png",
+      "TheRefined/MeryemAnaTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%287%29.png",
+      "TheRefined/MeryemAnaTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%288%29.png",
+      "TheRefined/MeryemAnaTablo/meryemana%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 44,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Odin and Ravens Metal Wall Art – Norse Mythology Decor",
+      "tr": "Odin ve Kuzgunları Metal Duvar Sanatı – Nors Mitolojisi Dekoru"
+    },
+    "description": {
+      "en": "Huginn and Muninn framing the Allfather in a composition built for larger walls, with negative space carrying most of the drama.",
+      "tr": "Huginn ve Muninn'in Tanrılar Babası'nı çerçevelediği, geniş duvarlar için tasarlanmış bir kompozisyon; etkisini büyük ölçüde boşluk kullanımından alır."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/listing/4563322892/norse-mythology-odin-and-ravens-metal",
+    "images": [
+      "TheRefined/OdinTablo/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2001_19_26%20%281%29.png",
+      "TheRefined/OdinTablo/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2001_19_27%20%282%29.png",
+      "TheRefined/OdinTablo/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2001_19_27%20%283%29.png",
+      "TheRefined/OdinTablo/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2001_19_27%20%284%29.png",
+      "TheRefined/OdinTablo/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2001_19_28%20%285%29.png",
+      "TheRefined/OdinTablo/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2001_19_28%20%286%29.png",
+      "TheRefined/OdinTablo/Gemini_Generated_Image_7mxcuq7mxcuq7mxc.jpg",
+      "TheRefined/OdinTablo/Gemini_Generated_Image_63tnej63tnej63tn.jpg",
+      "TheRefined/OdinTablo/30%20cm%20%2811.8%E2%80%9D%29%2040%20cm%20%2815.7%29%2050%20cm%20%2819.7%E2%80%9D%29%2060%20cm%20%2823%2C6%29%2070%20cm%20%2827.6%29%2080%20cm%20%2831.5%29%2090%20cm%20%2835.4%E2%80%9D%29%20100%20cm%20%2839.4%29%20110%20cm%20%2843.3%29%20120%20cm%20%2847.2%E2%80%9D%29%20130%20cm%20%2851.2%E2%80%9D%29%20140%20cm%20%2855.1%E2%80%9D%29%20150%20cm%20%2859%2C1%E2%80%9D%29.png"
+    ]
+  },
+  {
+    "id": 45,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Pilates Figure Metal Wall Art – Studio & Home Gym Decor",
+      "tr": "Pilates Figürü Metal Duvar Sanatı – Stüdyo ve Ev Spor Dekoru"
+    },
+    "description": {
+      "en": "A reformer pose reduced to line, scaled from 50 to 150 cm for studio walls.",
+      "tr": "Çizgiye indirgenmiş bir reformer duruşu; stüdyo duvarları için 50 ile 150 cm arasında ölçeklenir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/PilatesTablo/ChatGPT%20Image%2025%20A%C4%9Fu%202026%2015_38_27%20%281%29.png",
+      "TheRefined/PilatesTablo/ChatGPT%20Image%2025%20A%C4%9Fu%202026%2015_38_27%20%282%29.png",
+      "TheRefined/PilatesTablo/ChatGPT%20Image%2025%20A%C4%9Fu%202026%2015_38_27%20%283%29.png",
+      "TheRefined/PilatesTablo/ChatGPT%20Image%2025%20A%C4%9Fu%202026%2015_38_28%20%284%29.png",
+      "TheRefined/PilatesTablo/ChatGPT%20Image%2025%20A%C4%9Fu%202026%2015_38_29%20%285%29.png",
+      "TheRefined/PilatesTablo/ChatGPT%20Image%2025%20A%C4%9Fu%202026%2015_38_29%20%286%29.png",
+      "TheRefined/PilatesTablo/ChatGPT%20Image%2025%20A%C4%9Fu%202026%2015_38_29%20%287%29.png",
+      "TheRefined/PilatesTablo/ChatGPT%20Image%2025%20A%C4%9Fu%202026%2015_38_30%20%288%29.png",
+      "TheRefined/PilatesTablo/ChatGPT%20Image%2025%20A%C4%9Fu%202026%2015_39_49.png",
+      "TheRefined/PilatesTablo/50%20cm%20%2819.7%E2%80%9D%29%2060%20cm%20%2823.6%E2%80%9D%29%2070%20cm%20%2827.6%29%2080%20cm%20%2831.5%E2%80%9D%29%2090%20cm%20%2835.4%E2%80%9D%29%20100%20cm%20%2839.4%E2%80%9D%29%20110%20cm%20%2843.3%E2%80%9D%29%20120%20cm%20%2847.2%E2%80%9D%29%20130%20cm%20%2851.2%E2%80%9D%29%20140%20cm%20%2855.1%E2%80%9D%29%20150%20cm%20%2859.1%E2%80%9D%29.png"
+    ]
+  },
+  {
+    "id": 46,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Runic Circle Metal Wall Art – Norse Rune Decor",
+      "tr": "Rünik Daire Metal Duvar Sanatı – Nors Rün Dekoru"
+    },
+    "description": {
+      "en": "Concentric rune bands radiating from a raised centre, finished by hand so the brushed grain catches light across the day.",
+      "tr": "Yükseltilmiş merkezden dışa açılan iç içe rün halkaları; fırçalama dokusunun gün boyu ışığı yakalaması için elde bitirilmiştir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#7f1d1d",
+        "name": {
+          "en": "Burgundy",
+          "tr": "Bordo"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        },
+        "imageIndex": 5
+      },
+      {
+        "hex": "#78350f",
+        "name": {
+          "en": "Brown",
+          "tr": "Kahverengi"
+        },
+        "imageIndex": 6
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/Runik%20Tablo/runiktablosiyah.png",
+      "TheRefined/Runik%20Tablo/Ads%C4%B1z%20tasar%C4%B1m%20%283%29.png",
+      "TheRefined/Runik%20Tablo/runiktablobeyaz.png",
+      "TheRefined/Runik%20Tablo/runiktablobordo.png",
+      "TheRefined/Runik%20Tablo/runiktablogold.png",
+      "TheRefined/Runik%20Tablo/runiktablogri.png",
+      "TheRefined/Runik%20Tablo/runiktablokahve.png",
+      "TheRefined/Runik%20Tablo/runiktablo%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 47,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Firearm Silhouette Metal Wall Art – Collector Room Decor",
+      "tr": "Silah Silüeti Metal Duvar Sanatı – Koleksiyon Odası Dekoru"
+    },
+    "description": {
+      "en": "A profile study for collectors' walls, cut clean so the mechanism outline stays accurate.",
+      "tr": "Koleksiyoner duvarları için bir profil çalışması; mekanizma konturu doğru kalacak şekilde temiz kesilmiştir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 1
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#15803d",
+        "name": {
+          "en": "Green",
+          "tr": "Yeşil"
+        },
+        "imageIndex": 4
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/silah%20tablo/silahtablosiyah.png",
+      "TheRefined/silah%20tablo/silahtablobeyaz.png",
+      "TheRefined/silah%20tablo/silahtablogold.png",
+      "TheRefined/silah%20tablo/silahtablog%C3%BCm%C3%BC%C5%9F.png",
+      "TheRefined/silah%20tablo/silahtabloye%C5%9Fil.png",
+      "TheRefined/silah%20tablo/silahtablo%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 48,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Last Supper Metal Wall Art – Christian Steel Decor",
+      "tr": "Son Akşam Yemeği Metal Duvar Sanatı – Hristiyan Temalı Çelik Dekor"
+    },
+    "description": {
+      "en": "A detailed silhouette study of the classic scene, cut at 1.5 mm so the fine linework holds its edge. Suited to entryways and dining walls.",
+      "tr": "Klasik sahnenin ayrıntılı silüet yorumu; ince çizgilerin keskinliğini koruması için 1,5 mm kalınlıkta kesilmiştir. Antre ve yemek odası duvarları için uygundur."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/listing/4549572323/last-supper-metal-wall-art-christian",
+    "images": [
+      "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2016_42_34%20%283%29.png",
+      "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_36%20%2825%29.png",
+      "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_36%20%2826%29.png",
+      "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_37%20%2827%29.png",
+      "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_37%20%2828%29.png",
+      "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_37%20%2829%29.png",
+      "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_37%20%2830%29.png",
+      "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_37%20%2831%29.png",
+      "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_38%20%2832%29.png",
+      "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%2030%20A%C4%9Fu%202026%2019_43_24.png"
+    ]
+  },
+  {
+    "id": 49,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Spider Hero City Skyline Metal Wall Art – Urban Comic Decor",
+      "tr": "Örümcek Kahraman Şehir Silüeti Metal Duvar Sanatı – Kentsel Çizgi Roman Dekoru"
+    },
+    "description": {
+      "en": "A skyline swing scene with the towers cut as a continuous base, offered in black, gold, silver and bordeaux.",
+      "tr": "Kuleleri kesintisiz bir taban olarak kesilmiş şehir silüeti sahnesi; siyah, altın, gümüş ve bordo seçenekleriyle."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#7f1d1d",
+        "name": {
+          "en": "Burgundy",
+          "tr": "Bordo"
+        },
+        "imageIndex": 1
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        },
+        "imageIndex": 3
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/spider%20nyc%20tablo/spidertablosiyah.png",
+      "TheRefined/spider%20nyc%20tablo/spidertablobordo.png",
+      "TheRefined/spider%20nyc%20tablo/spidertablogold.png",
+      "TheRefined/spider%20nyc%20tablo/spidertablog%C3%BCm%C3%BC%C5%9F.png",
+      "TheRefined/spider%20nyc%20tablo/spidertablosiyah%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 50,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Spider Hero Mask Metal Wall Art – Comic Room Decor",
+      "tr": "Örümcek Kahraman Maskesi Metal Duvar Sanatı – Çizgi Roman Oda Dekoru"
+    },
+    "description": {
+      "en": "The web lines double as the structure holding the mask together, so no backing plate is needed.",
+      "tr": "Ağ çizgileri maskeyi bir arada tutan taşıyıcı yapıyı da oluşturur; arka plakaya gerek kalmaz."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/spiderman%20kafa%20tablo/spidermantablosiyah.png",
+      "TheRefined/spiderman%20kafa%20tablo/spidertablosiyah2.png",
+      "TheRefined/spiderman%20kafa%20tablo/spidertablosiyah3.png",
+      "TheRefined/spiderman%20kafa%20tablo/spidertablosiyah%20%281%29.png",
+      "TheRefined/spiderman%20kafa%20tablo/spidertablosiyah%C3%B6l%C3%A7%C3%BC%20%281%29.png"
+    ]
+  },
+  {
+    "id": 51,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Viking Compass Vegvisir Metal Wall Art – Norse Rune Decor",
+      "tr": "Viking Pusulası Vegvisir Metal Duvar Sanatı – Nors Rün Dekoru"
+    },
+    "description": {
+      "en": "The Vegvisir staves set in a true circle, cut so each arm keeps an even width all the way out.",
+      "tr": "Tam bir daire içine yerleştirilmiş Vegvisir çubukları; her kol uca kadar eşit genişlikte kalacak şekilde kesilmiştir."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#7f1d1d",
+        "name": {
+          "en": "Burgundy",
+          "tr": "Bordo"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        },
+        "imageIndex": 5
+      },
+      {
+        "hex": "#78350f",
+        "name": {
+          "en": "Brown",
+          "tr": "Kahverengi"
+        },
+        "imageIndex": 6
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/Viking%20Pusula%20Tablo/vpusulasiyah.png",
+      "TheRefined/Viking%20Pusula%20Tablo/Gemini_Generated_Image_7dfugs7dfugs7dfu.png",
+      "TheRefined/Viking%20Pusula%20Tablo/vpusulabeyaz.png",
+      "TheRefined/Viking%20Pusula%20Tablo/vpusulabordo.png",
+      "TheRefined/Viking%20Pusula%20Tablo/vpusulagold.png",
+      "TheRefined/Viking%20Pusula%20Tablo/vpusulagri.png",
+      "TheRefined/Viking%20Pusula%20Tablo/vpusulakahverengi.png",
+      "TheRefined/Viking%20Pusula%20Tablo/vpusulasiyah%C3%B6l%C3%A7%C3%BC.png"
+    ]
+  },
+  {
+    "id": 52,
+    "shop": "TheRefinedWallArt",
+    "category": "wall-art",
+    "title": {
+      "en": "Amazon Warrior Woman Metal Wall Art – Heroine Steel Decor",
+      "tr": "Amazon Savaşçı Kadın Metal Duvar Sanatı – Kadın Kahraman Çelik Dekoru"
+    },
+    "description": {
+      "en": "A standing heroine pose with the shield and cuffs cut as separate planes for depth.",
+      "tr": "Kalkan ve kolçakların derinlik için ayrı düzlemler hâlinde kesildiği ayakta bir kahraman duruşu."
+    },
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        }
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        }
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        }
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        }
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        }
+      }
+    ],
+    "etsyUrl": "https://www.etsy.com/shop/TheRefinedWallArt",
+    "images": [
+      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_25_58%20%281%29.png",
+      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_25_58%20%282%29.png",
+      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_25_59%20%283%29.png",
+      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_25_59%20%284%29.png",
+      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_25_59%20%285%29.png",
+      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_26_00%20%286%29.png",
+      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_26_00%20%287%29.png",
+      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_26_00%20%288%29.png",
+      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_26_01%20%289%29.png",
+      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_26_01%20%2810%29.png",
+      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_35_16.png"
+    ]
   }
 ]
