@@ -346,7 +346,6 @@
       "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_28_49%20%289%29.png",
       "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_46_51%20%281%29.png",
       "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_46_52%20%284%29.png",
-      "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_46_53%20%288%29.png",
       "AbsoluteIronworks/mangal/ChatGPT%20Image%2029%20A%C4%9Fu%202026%2001_46_53%20%2810%29.png"
     ]
   },
@@ -380,12 +379,20 @@
         "imageIndex": 2
       },
       {
+        "hex": "#efe6d3",
+        "name": {
+          "en": "Cream",
+          "tr": "Krem Rengi"
+        },
+        "imageIndex": 3
+      },
+      {
         "hex": "#7f1d1d",
         "name": {
           "en": "Burgundy",
           "tr": "Bordo"
         },
-        "imageIndex": 5
+        "imageIndex": 6
       },
       {
         "hex": "#d4af37",
@@ -393,7 +400,7 @@
           "en": "Gold",
           "tr": "Altın"
         },
-        "imageIndex": 6
+        "imageIndex": 7
       },
       {
         "hex": "#71717a",
@@ -401,13 +408,14 @@
           "en": "Grey",
           "tr": "Gri"
         },
-        "imageIndex": 7
+        "imageIndex": 8
       }
     ],
     "etsyUrl": "https://absoluteironworks.etsy.com",
     "images": [
       "AbsoluteIronworks/Viking%20Raf/vikingrafsiyah.png",
       "AbsoluteIronworks/Viking%20Raf/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2014_34_03.png",
+      "AbsoluteIronworks/Viking%20Raf/vikingrafbeyaz.png",
       "AbsoluteIronworks/Viking%20Raf/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2014_34_11.png",
       "AbsoluteIronworks/Viking%20Raf/ChatGPT%20Image%2027%20A%C4%9Fu%202026%2014_35_18.png",
       "AbsoluteIronworks/Viking%20Raf/ChatGPT%20Image%2029%20Tem%202026%2022_20_01.png",
@@ -430,39 +438,84 @@
     },
     "colors": [
       {
-        "hex": "#18181b",
-        "name": {
-          "en": "Matte Black",
-          "tr": "Mat Siyah"
-        }
-      },
-      {
         "hex": "#f5f5f4",
         "name": {
           "en": "White",
           "tr": "Beyaz"
-        }
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#15803d",
+        "name": {
+          "en": "Green",
+          "tr": "Yeşil"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#eab308",
+        "name": {
+          "en": "Yellow",
+          "tr": "Sarı"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#f4a6c1",
+        "name": {
+          "en": "Light Pink",
+          "tr": "Açık Pembe"
+        },
+        "imageIndex": 5
+      },
+      {
+        "hex": "#1d4ed8",
+        "name": {
+          "en": "Blue",
+          "tr": "Mavi"
+        },
+        "imageIndex": 6
       },
       {
         "hex": "#d4af37",
         "name": {
           "en": "Gold",
           "tr": "Altın"
-        }
+        },
+        "imageIndex": 7
       },
       {
-        "hex": "#c0c0c0",
+        "hex": "#78350f",
         "name": {
-          "en": "Silver",
-          "tr": "Gümüş"
-        }
+          "en": "Brown",
+          "tr": "Kahverengi"
+        },
+        "imageIndex": 8
       },
       {
-        "hex": "#71717a",
+        "hex": "#b91c1c",
         "name": {
-          "en": "Grey",
-          "tr": "Gri"
-        }
+          "en": "Red",
+          "tr": "Kırmızı"
+        },
+        "imageIndex": 9
+      },
+      {
+        "hex": "#efe6d3",
+        "name": {
+          "en": "Cream",
+          "tr": "Krem Rengi"
+        },
+        "imageIndex": 10
       }
     ],
     "etsyUrl": "https://absoluteironworks.etsy.com",
@@ -474,7 +527,6 @@
       "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%284%29.png",
       "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%285%29.png",
       "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%286%29.png",
-      "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%287%29.png",
       "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%288%29.png",
       "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%289%29.png",
       "AbsoluteIronworks/YaprakKitapl%C4%B1k/ChatGPT%20Image%2026%20A%C4%9Fu%202026%2021_57_51%20%2810%29.png",
@@ -663,7 +715,6 @@
       "TheRefined/03-custom-couple-family/04-anniversary-portrait.png",
       "TheRefined/03-custom-couple-family/05-new-family-portrait.png",
       "TheRefined/03-custom-couple-family/06-photo-to-metal.png",
-      "TheRefined/03-custom-couple-family/07-powder-coat-closeup.png",
       "TheRefined/03-custom-couple-family/09-bedroom-scale-example.png",
       "TheRefined/03-custom-couple-family/10-anniversary-gift-packaging.png",
       "TheRefined/03-custom-couple-family/08-color-options.png"
@@ -1238,11 +1289,51 @@
       "en": "A coffee bar sign with your own wording, cut for kitchen corners and café counters.",
       "tr": "Kendi metninizle bir kahve köşesi tabelası; mutfak köşeleri ve kafe tezgâhları için kesilir."
     },
-    "colors": [],
+    "colors": [
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#78350f",
+        "name": {
+          "en": "Brown",
+          "tr": "Kahverengi"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#15803d",
+        "name": {
+          "en": "Green",
+          "tr": "Yeşil"
+        },
+        "imageIndex": 6
+      },
+      {
+        "hex": "#f5f5f4",
+        "name": {
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 8
+      }
+    ],
     "etsyUrl": "https://therefinedwallart.etsy.com",
     "images": [
       "TheRefined/CustomKahveTablo/ChatGPT%20Image%2017%20A%C4%9Fu%202026%2016_36_31.png",
-      "TheRefined/CustomKahveTablo/ChatGPT%20Image%2017%20A%C4%9Fu%202026%2016_37_40%20%281%29.png",
       "TheRefined/CustomKahveTablo/ChatGPT%20Image%2017%20A%C4%9Fu%202026%2016_37_40%20%282%29.png",
       "TheRefined/CustomKahveTablo/ChatGPT%20Image%2017%20A%C4%9Fu%202026%2016_37_42%20%283%29.png",
       "TheRefined/CustomKahveTablo/ChatGPT%20Image%2017%20A%C4%9Fu%202026%2016_37_43%20%284%29.png",
@@ -1294,51 +1385,72 @@
     },
     "colors": [
       {
-        "hex": "#18181b",
-        "name": {
-          "en": "Matte Black",
-          "tr": "Mat Siyah"
-        }
-      },
-      {
         "hex": "#f5f5f4",
         "name": {
           "en": "White",
           "tr": "Beyaz"
-        }
+        },
+        "imageIndex": 0
       },
       {
-        "hex": "#d4af37",
+        "hex": "#18181b",
         "name": {
-          "en": "Gold",
-          "tr": "Altın"
-        }
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 1
       },
       {
         "hex": "#c0c0c0",
         "name": {
           "en": "Silver",
           "tr": "Gümüş"
-        }
+        },
+        "imageIndex": 2
       },
       {
-        "hex": "#71717a",
+        "hex": "#d4af37",
         "name": {
-          "en": "Grey",
-          "tr": "Gri"
-        }
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#b91c1c",
+        "name": {
+          "en": "Red",
+          "tr": "Kırmızı"
+        },
+        "imageIndex": 5
+      },
+      {
+        "hex": "#ec4899",
+        "name": {
+          "en": "Pink",
+          "tr": "Pembe"
+        },
+        "imageIndex": 6
+      },
+      {
+        "hex": "#6b21a8",
+        "name": {
+          "en": "Purple",
+          "tr": "Mor"
+        },
+        "imageIndex": 7
       }
     ],
     "etsyUrl": "https://therefinedwallart.etsy.com",
     "images": [
       "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%289%29.png",
       "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%2810%29.png",
+      "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_40%20%2815%29.png",
       "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%2811%29.png",
+      "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_41%20%2816%29.png",
       "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_38%20%2812%29.png",
       "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_38%20%2813%29.png",
-      "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_40%20%2814%29.png",
-      "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_40%20%2815%29.png",
-      "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_41%20%2816%29.png"
+      "TheRefined/ElbiseliArkadanKad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_40%20%2814%29.png"
     ]
   },
   {
@@ -1359,42 +1471,70 @@
         "name": {
           "en": "Matte Black",
           "tr": "Mat Siyah"
-        }
+        },
+        "imageIndex": 0
       },
       {
         "hex": "#f5f5f4",
         "name": {
           "en": "White",
           "tr": "Beyaz"
-        }
+        },
+        "imageIndex": 1
       },
       {
-        "hex": "#d4af37",
+        "hex": "#b08968",
         "name": {
-          "en": "Gold",
-          "tr": "Altın"
-        }
+          "en": "Light Brown",
+          "tr": "Açık Kahverengi"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#b91c1c",
+        "name": {
+          "en": "Red",
+          "tr": "Kırmızı"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#6b21a8",
+        "name": {
+          "en": "Purple",
+          "tr": "Mor"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#ec4899",
+        "name": {
+          "en": "Pink",
+          "tr": "Pembe"
+        },
+        "imageIndex": 5
       },
       {
         "hex": "#c0c0c0",
         "name": {
           "en": "Silver",
           "tr": "Gümüş"
-        }
+        },
+        "imageIndex": 6
       },
       {
-        "hex": "#71717a",
+        "hex": "#d4af37",
         "name": {
-          "en": "Grey",
-          "tr": "Gri"
-        }
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 7
       }
     ],
     "etsyUrl": "https://therefinedwallart.etsy.com",
     "images": [
       "TheRefined/Elbiseli%C5%9Eapkal%C4%B1Kad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_18_29.png",
       "TheRefined/Elbiseli%C5%9Eapkal%C4%B1Kad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%281%29.png",
-      "TheRefined/Elbiseli%C5%9Eapkal%C4%B1Kad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%282%29.png",
       "TheRefined/Elbiseli%C5%9Eapkal%C4%B1Kad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%283%29.png",
       "TheRefined/Elbiseli%C5%9Eapkal%C4%B1Kad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%284%29.png",
       "TheRefined/Elbiseli%C5%9Eapkal%C4%B1Kad%C4%B1nTablo/ChatGPT%20Image%2010%20A%C4%9Fu%202026%2018_48_37%20%285%29.png",
@@ -1421,35 +1561,8 @@
         "name": {
           "en": "Matte Black",
           "tr": "Mat Siyah"
-        }
-      },
-      {
-        "hex": "#f5f5f4",
-        "name": {
-          "en": "White",
-          "tr": "Beyaz"
-        }
-      },
-      {
-        "hex": "#d4af37",
-        "name": {
-          "en": "Gold",
-          "tr": "Altın"
-        }
-      },
-      {
-        "hex": "#c0c0c0",
-        "name": {
-          "en": "Silver",
-          "tr": "Gümüş"
-        }
-      },
-      {
-        "hex": "#71717a",
-        "name": {
-          "en": "Grey",
-          "tr": "Gri"
-        }
+        },
+        "imageIndex": 0
       }
     ],
     "etsyUrl": "https://therefinedwallart.etsy.com",
@@ -1480,39 +1593,68 @@
     },
     "colors": [
       {
-        "hex": "#18181b",
+        "hex": "#eab308",
         "name": {
-          "en": "Matte Black",
-          "tr": "Mat Siyah"
-        }
+          "en": "Yellow",
+          "tr": "Sarı"
+        },
+        "imageIndex": 0
       },
       {
-        "hex": "#f5f5f4",
+        "hex": "#15803d",
         "name": {
-          "en": "White",
-          "tr": "Beyaz"
-        }
+          "en": "Green",
+          "tr": "Yeşil"
+        },
+        "imageIndex": 1
       },
       {
-        "hex": "#d4af37",
+        "hex": "#ec4899",
         "name": {
-          "en": "Gold",
-          "tr": "Altın"
-        }
+          "en": "Pink",
+          "tr": "Pembe"
+        },
+        "imageIndex": 2
       },
       {
-        "hex": "#c0c0c0",
+        "hex": "#1d4ed8",
         "name": {
-          "en": "Silver",
-          "tr": "Gümüş"
-        }
+          "en": "Blue",
+          "tr": "Mavi"
+        },
+        "imageIndex": 3
       },
       {
         "hex": "#71717a",
         "name": {
           "en": "Grey",
           "tr": "Gri"
-        }
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#e8d48c",
+        "name": {
+          "en": "Light Yellow",
+          "tr": "Açık Sarı"
+        },
+        "imageIndex": 5
+      },
+      {
+        "hex": "#6b21a8",
+        "name": {
+          "en": "Purple",
+          "tr": "Mor"
+        },
+        "imageIndex": 6
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 7
       }
     ],
     "etsyUrl": "https://therefinedwallart.etsy.com",
@@ -1575,35 +1717,48 @@
         "name": {
           "en": "Matte Black",
           "tr": "Mat Siyah"
-        }
+        },
+        "imageIndex": 0
       },
       {
         "hex": "#f5f5f4",
         "name": {
           "en": "White",
           "tr": "Beyaz"
-        }
-      },
-      {
-        "hex": "#d4af37",
-        "name": {
-          "en": "Gold",
-          "tr": "Altın"
-        }
+        },
+        "imageIndex": 1
       },
       {
         "hex": "#c0c0c0",
         "name": {
           "en": "Silver",
           "tr": "Gümüş"
-        }
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 3
       },
       {
         "hex": "#71717a",
         "name": {
           "en": "Grey",
           "tr": "Gri"
-        }
+        },
+        "imageIndex": 5
+      },
+      {
+        "hex": "#b08968",
+        "name": {
+          "en": "Light Brown",
+          "tr": "Açık Kahverengi"
+        },
+        "imageIndex": 6
       }
     ],
     "etsyUrl": "https://therefinedwallart.etsy.com",
@@ -1635,47 +1790,58 @@
         "name": {
           "en": "Matte Black",
           "tr": "Mat Siyah"
-        }
+        },
+        "imageIndex": 0
       },
       {
         "hex": "#f5f5f4",
         "name": {
           "en": "White",
           "tr": "Beyaz"
-        }
-      },
-      {
-        "hex": "#d4af37",
-        "name": {
-          "en": "Gold",
-          "tr": "Altın"
-        }
+        },
+        "imageIndex": 1
       },
       {
         "hex": "#c0c0c0",
         "name": {
           "en": "Silver",
           "tr": "Gümüş"
-        }
+        },
+        "imageIndex": 2
       },
       {
-        "hex": "#71717a",
+        "hex": "#d4af37",
         "name": {
-          "en": "Grey",
-          "tr": "Gri"
-        }
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#b08968",
+        "name": {
+          "en": "Light Brown",
+          "tr": "Açık Kahverengi"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#78350f",
+        "name": {
+          "en": "Brown",
+          "tr": "Kahverengi"
+        },
+        "imageIndex": 5
       }
     ],
     "etsyUrl": "https://therefinedwallart.etsy.com",
     "images": [
-      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2016_58_07.png",
-      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%289%29.png",
       "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%2810%29.png",
-      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%2811%29.png",
+      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%289%29.png",
       "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%2812%29.png",
-      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%2813%29.png",
-      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%2814%29.png",
-      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%2815%29.png"
+      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2016_58_07.png",
+      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%2811%29.png",
+      "TheRefined/%C4%B0saKuzuTablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_34%20%2813%29.png"
     ]
   },
   {
@@ -1696,35 +1862,8 @@
         "name": {
           "en": "Matte Black",
           "tr": "Mat Siyah"
-        }
-      },
-      {
-        "hex": "#f5f5f4",
-        "name": {
-          "en": "White",
-          "tr": "Beyaz"
-        }
-      },
-      {
-        "hex": "#d4af37",
-        "name": {
-          "en": "Gold",
-          "tr": "Altın"
-        }
-      },
-      {
-        "hex": "#c0c0c0",
-        "name": {
-          "en": "Silver",
-          "tr": "Gümüş"
-        }
-      },
-      {
-        "hex": "#71717a",
-        "name": {
-          "en": "Grey",
-          "tr": "Gri"
-        }
+        },
+        "imageIndex": 0
       }
     ],
     "etsyUrl": "https://therefinedwallart.etsy.com",
@@ -1995,20 +2134,28 @@
     },
     "colors": [
       {
-        "hex": "#d4af37",
-        "name": {
-          "en": "Gold",
-          "tr": "Altın"
-        },
-        "imageIndex": 0
-      },
-      {
         "hex": "#f5f5f4",
         "name": {
           "en": "White",
           "tr": "Beyaz"
         },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#efe6d3",
+        "name": {
+          "en": "Cream",
+          "tr": "Krem"
+        },
         "imageIndex": 1
+      },
+      {
+        "hex": "#d4af37",
+        "name": {
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 2
       },
       {
         "hex": "#71717a",
@@ -2045,9 +2192,9 @@
     ],
     "etsyUrl": "https://therefinedwallart.etsy.com",
     "images": [
-      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/oturan%20kad%C4%B1n/oturankad%C4%B1nalt%C4%B1n.png",
-      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/oturan%20kad%C4%B1n/oturankad%C4%B1nbeyaz%20%281%29.png",
       "TheRefined/kad%C4%B1n%20tablolar%C4%B1/oturan%20kad%C4%B1n/oturankad%C4%B1nbeyaz.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/oturan%20kad%C4%B1n/oturankad%C4%B1nbeyaz%20%281%29.png",
+      "TheRefined/kad%C4%B1n%20tablolar%C4%B1/oturan%20kad%C4%B1n/oturankad%C4%B1nalt%C4%B1n.png",
       "TheRefined/kad%C4%B1n%20tablolar%C4%B1/oturan%20kad%C4%B1n/oturankad%C4%B1ngri.png",
       "TheRefined/kad%C4%B1n%20tablolar%C4%B1/oturan%20kad%C4%B1n/oturankad%C4%B1nk%C4%B1rm%C4%B1z%C4%B1.png",
       "TheRefined/kad%C4%B1n%20tablolar%C4%B1/oturan%20kad%C4%B1n/oturankad%C4%B1npembe.png",
@@ -2103,13 +2250,29 @@
           "en": "White",
           "tr": "Beyaz"
         },
-        "imageIndex": 7
+        "imageIndex": 4
+      },
+      {
+        "hex": "#71717a",
+        "name": {
+          "en": "Grey",
+          "tr": "Gri"
+        },
+        "imageIndex": 5
       },
       {
         "hex": "#4d5320",
         "name": {
           "en": "Khaki",
           "tr": "Haki"
+        },
+        "imageIndex": 6
+      },
+      {
+        "hex": "#b08968",
+        "name": {
+          "en": "Light Brown",
+          "tr": "Açık Kahverengi"
         },
         "imageIndex": 8
       },
@@ -2125,17 +2288,16 @@
     "etsyUrl": "https://therefinedwallart.etsy.com",
     "images": [
       "TheRefined/KartalTablo/kartalS%C4%B0YAH2.png",
-      "TheRefined/KartalTablo/Gemini_Generated_Image_g2t6oeg2t6oeg2t6.png",
       "TheRefined/KartalTablo/Gemini_Generated_Image_nofvhpnofvhpnofv.png",
       "TheRefined/KartalTablo/Gemini_Generated_Image_q7hqn5q7hqn5q7hq.png",
-      "TheRefined/KartalTablo/Gemini_Generated_Image_s31tm0s31tm0s31t.png",
-      "TheRefined/KartalTablo/Gemini_Generated_Image_tab6s8tab6s8tab6.png",
-      "TheRefined/KartalTablo/Gemini_Generated_Image_ttudt2ttudt2ttud.png",
+      "TheRefined/KartalTablo/kartalS%C4%B0YAH.png",
       "TheRefined/KartalTablo/kartalbeyaz.png",
-      "TheRefined/KartalTablo/kartalhaki.png",
-      "TheRefined/KartalTablo/kartalkahve.png",
       "TheRefined/KartalTablo/kartalS%C4%B0YAH3.png",
-      "TheRefined/KartalTablo/kartalS%C4%B0YAH.png"
+      "TheRefined/KartalTablo/Gemini_Generated_Image_tab6s8tab6s8tab6.png",
+      "TheRefined/KartalTablo/kartalhaki.png",
+      "TheRefined/KartalTablo/Gemini_Generated_Image_g2t6oeg2t6oeg2t6.png",
+      "TheRefined/KartalTablo/Gemini_Generated_Image_s31tm0s31tm0s31t.png",
+      "TheRefined/KartalTablo/kartalkahve.png"
     ]
   },
   {
@@ -2302,35 +2464,24 @@
         "name": {
           "en": "Matte Black",
           "tr": "Mat Siyah"
-        }
-      },
-      {
-        "hex": "#f5f5f4",
-        "name": {
-          "en": "White",
-          "tr": "Beyaz"
-        }
-      },
-      {
-        "hex": "#d4af37",
-        "name": {
-          "en": "Gold",
-          "tr": "Altın"
-        }
+        },
+        "imageIndex": 0
       },
       {
         "hex": "#c0c0c0",
         "name": {
           "en": "Silver",
           "tr": "Gümüş"
-        }
+        },
+        "imageIndex": 1
       },
       {
-        "hex": "#71717a",
+        "hex": "#f5f5f4",
         "name": {
-          "en": "Grey",
-          "tr": "Gri"
-        }
+          "en": "White",
+          "tr": "Beyaz"
+        },
+        "imageIndex": 2
       }
     ],
     "etsyUrl": "https://therefinedwallart.etsy.com",
@@ -2354,39 +2505,60 @@
     },
     "colors": [
       {
-        "hex": "#18181b",
-        "name": {
-          "en": "Matte Black",
-          "tr": "Mat Siyah"
-        }
-      },
-      {
         "hex": "#f5f5f4",
         "name": {
           "en": "White",
           "tr": "Beyaz"
-        }
+        },
+        "imageIndex": 0
       },
       {
-        "hex": "#d4af37",
+        "hex": "#4d5320",
         "name": {
-          "en": "Gold",
-          "tr": "Altın"
-        }
+          "en": "Khaki",
+          "tr": "Haki"
+        },
+        "imageIndex": 2
+      },
+      {
+        "hex": "#efe6d3",
+        "name": {
+          "en": "Cream",
+          "tr": "Krem"
+        },
+        "imageIndex": 3
+      },
+      {
+        "hex": "#78350f",
+        "name": {
+          "en": "Brown",
+          "tr": "Kahverengi"
+        },
+        "imageIndex": 4
       },
       {
         "hex": "#c0c0c0",
         "name": {
           "en": "Silver",
           "tr": "Gümüş"
-        }
+        },
+        "imageIndex": 5
       },
       {
-        "hex": "#71717a",
+        "hex": "#d4af37",
         "name": {
-          "en": "Grey",
-          "tr": "Gri"
-        }
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 6
+      },
+      {
+        "hex": "#15803d",
+        "name": {
+          "en": "Green",
+          "tr": "Yeşil"
+        },
+        "imageIndex": 8
       }
     ],
     "etsyUrl": "https://therefinedwallart.etsy.com",
@@ -2416,39 +2588,36 @@
     },
     "colors": [
       {
-        "hex": "#18181b",
-        "name": {
-          "en": "Matte Black",
-          "tr": "Mat Siyah"
-        }
-      },
-      {
         "hex": "#f5f5f4",
         "name": {
           "en": "White",
           "tr": "Beyaz"
-        }
+        },
+        "imageIndex": 0
+      },
+      {
+        "hex": "#18181b",
+        "name": {
+          "en": "Matte Black",
+          "tr": "Mat Siyah"
+        },
+        "imageIndex": 2
       },
       {
         "hex": "#d4af37",
         "name": {
           "en": "Gold",
           "tr": "Altın"
-        }
+        },
+        "imageIndex": 4
       },
       {
         "hex": "#c0c0c0",
         "name": {
           "en": "Silver",
           "tr": "Gümüş"
-        }
-      },
-      {
-        "hex": "#71717a",
-        "name": {
-          "en": "Grey",
-          "tr": "Gri"
-        }
+        },
+        "imageIndex": 6
       }
     ],
     "etsyUrl": "https://www.etsy.com/listing/4563322892/norse-mythology-odin-and-ravens-metal",
@@ -2481,35 +2650,72 @@
         "name": {
           "en": "Matte Black",
           "tr": "Mat Siyah"
-        }
+        },
+        "imageIndex": 0
       },
       {
         "hex": "#f5f5f4",
         "name": {
           "en": "White",
           "tr": "Beyaz"
-        }
+        },
+        "imageIndex": 1
       },
       {
         "hex": "#d4af37",
         "name": {
           "en": "Gold",
           "tr": "Altın"
-        }
+        },
+        "imageIndex": 2
       },
       {
         "hex": "#c0c0c0",
         "name": {
           "en": "Silver",
           "tr": "Gümüş"
-        }
+        },
+        "imageIndex": 3
       },
       {
-        "hex": "#71717a",
+        "hex": "#b91c1c",
         "name": {
-          "en": "Grey",
-          "tr": "Gri"
-        }
+          "en": "Red",
+          "tr": "Kırmızı"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#6b21a8",
+        "name": {
+          "en": "Purple",
+          "tr": "Mor"
+        },
+        "imageIndex": 5
+      },
+      {
+        "hex": "#15803d",
+        "name": {
+          "en": "Green",
+          "tr": "Yeşil"
+        },
+        "imageIndex": 6
+      },
+      {
+        "hex": "#ec4899",
+        "name": {
+          "en": "Pink",
+          "tr": "Pembe"
+        },
+        "imageIndex": 7
+      },
+      {
+        "hex": "#efe6d3",
+        "name": {
+          "en": "Cream",
+          "tr": "Krem"
+        },
+        "imageIndex": 8
       }
     ],
     "etsyUrl": "https://therefinedwallart.etsy.com",
@@ -2678,47 +2884,68 @@
         "name": {
           "en": "Matte Black",
           "tr": "Mat Siyah"
-        }
+        },
+        "imageIndex": 0
       },
       {
         "hex": "#f5f5f4",
         "name": {
           "en": "White",
           "tr": "Beyaz"
-        }
-      },
-      {
-        "hex": "#d4af37",
-        "name": {
-          "en": "Gold",
-          "tr": "Altın"
-        }
+        },
+        "imageIndex": 2
       },
       {
         "hex": "#c0c0c0",
         "name": {
           "en": "Silver",
           "tr": "Gümüş"
-        }
+        },
+        "imageIndex": 3
       },
       {
-        "hex": "#71717a",
+        "hex": "#d4af37",
         "name": {
-          "en": "Grey",
-          "tr": "Gri"
-        }
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 4
+      },
+      {
+        "hex": "#efe6d3",
+        "name": {
+          "en": "Cream",
+          "tr": "Krem"
+        },
+        "imageIndex": 6
+      },
+      {
+        "hex": "#78350f",
+        "name": {
+          "en": "Brown",
+          "tr": "Kahverengi"
+        },
+        "imageIndex": 7
+      },
+      {
+        "hex": "#15803d",
+        "name": {
+          "en": "Green",
+          "tr": "Yeşil"
+        },
+        "imageIndex": 8
       }
     ],
     "etsyUrl": "https://www.etsy.com/listing/4549572323/last-supper-metal-wall-art-christian",
     "images": [
       "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2016_42_34%20%283%29.png",
-      "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_36%20%2825%29.png",
       "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_36%20%2826%29.png",
+      "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_36%20%2825%29.png",
+      "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_37%20%2830%29.png",
       "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_37%20%2827%29.png",
+      "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_37%20%2831%29.png",
       "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_37%20%2828%29.png",
       "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_37%20%2829%29.png",
-      "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_37%20%2830%29.png",
-      "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_37%20%2831%29.png",
       "TheRefined/Sonak%C5%9Famyeme%C4%9Fitablo/ChatGPT%20Image%202%20A%C4%9Fu%202026%2018_14_38%20%2832%29.png"
     ]
   },
@@ -2828,6 +3055,14 @@
         "imageIndex": 0
       },
       {
+        "hex": "#c0c0c0",
+        "name": {
+          "en": "Silver",
+          "tr": "Gümüş"
+        },
+        "imageIndex": 1
+      },
+      {
         "hex": "#f5f5f4",
         "name": {
           "en": "White",
@@ -2897,49 +3132,62 @@
         "name": {
           "en": "Matte Black",
           "tr": "Mat Siyah"
-        }
+        },
+        "imageIndex": 0
       },
       {
         "hex": "#f5f5f4",
         "name": {
           "en": "White",
           "tr": "Beyaz"
-        }
-      },
-      {
-        "hex": "#d4af37",
-        "name": {
-          "en": "Gold",
-          "tr": "Altın"
-        }
+        },
+        "imageIndex": 2
       },
       {
         "hex": "#c0c0c0",
         "name": {
           "en": "Silver",
           "tr": "Gümüş"
-        }
+        },
+        "imageIndex": 4
       },
       {
-        "hex": "#71717a",
+        "hex": "#d4af37",
         "name": {
-          "en": "Grey",
-          "tr": "Gri"
-        }
+          "en": "Gold",
+          "tr": "Altın"
+        },
+        "imageIndex": 6
+      },
+      {
+        "hex": "#b91c1c",
+        "name": {
+          "en": "Red",
+          "tr": "Kırmızı"
+        },
+        "imageIndex": 8
+      },
+      {
+        "hex": "#1d4ed8",
+        "name": {
+          "en": "Blue",
+          "tr": "Mavi"
+        },
+        "imageIndex": 9
       }
     ],
     "etsyUrl": "https://therefinedwallart.etsy.com",
     "images": [
       "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_25_58%20%281%29.png",
+      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_26_00%20%288%29.png",
       "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_25_58%20%282%29.png",
+      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_26_01%20%289%29.png",
       "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_25_59%20%283%29.png",
-      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_25_59%20%284%29.png",
-      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_25_59%20%285%29.png",
+      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_26_01%20%2810%29.png",
       "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_26_00%20%286%29.png",
       "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_26_00%20%287%29.png",
-      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_26_00%20%288%29.png",
-      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_26_01%20%289%29.png",
-      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_26_01%20%2810%29.png"
+      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_25_59%20%284%29.png",
+      "TheRefined/wonderwoman/ChatGPT%20Image%2028%20A%C4%9Fu%202026%2022_25_59%20%285%29.png"
     ]
   }
 ]

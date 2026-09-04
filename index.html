@@ -701,10 +701,13 @@
       const colors = colorsOf(product);
       if (!colors.length || galleryIndex < 0) return -1;
 
+      // A colour owns every image from its own index up to the next colour's index,
+      // and the final colour owns the rest of the gallery.
+      const lastEnd = Math.max(imagesOf(product).length, colors.length);
       for (let i = 0; i < colors.length; i++) {
         const start = colorSourceIndex(colors[i], i);
         const next = colors[i + 1];
-        const end = next ? colorSourceIndex(next, i + 1) : start + 1;
+        const end = next ? colorSourceIndex(next, i + 1) : lastEnd;
         if (galleryIndex >= start && galleryIndex < end) return i;
       }
       return -1;
