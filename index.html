@@ -12,7 +12,7 @@
   <link rel="alternate" hreflang="x-default" href="https://therefinedwallart.com/" />
   <link rel="icon" href="/favicon.ico?v=3" sizes="any" />
   <link rel="icon" type="image/png" href="/favicon-32.png?v=3" sizes="32x32" />
-  <meta name="theme-color" content="#fafafa" />
+  <meta name="theme-color" content="#f8f7f4" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="The Refined Wall Art" />
@@ -85,12 +85,18 @@
   }
   </script>
 
+  <script>
+    try {
+      if (localStorage.getItem("theme") === "dark") document.documentElement.classList.add("dark");
+    } catch (e) {}
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
   <script>
     tailwind.config = {
+      darkMode: "class",
       theme: {
         extend: {
           colors: {
@@ -121,19 +127,27 @@
   </script>
   <style>
     ::selection { background: #c8a97e; color: #18181b; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; color-scheme: light; }
+    html.dark { color-scheme: dark; }
     body { -webkit-font-smoothing: antialiased; }
     .scroll-slim::-webkit-scrollbar { width: 6px; height: 6px; }
     .scroll-slim::-webkit-scrollbar-track { background: transparent; }
     .scroll-slim::-webkit-scrollbar-thumb { background: rgba(24,24,27,0.14); border-radius: 9999px; }
+    html.dark .scroll-slim::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.14); }
     .no-scrollbar { scrollbar-width: none; }
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .hairline { background: linear-gradient(90deg, transparent, rgba(200,169,126,0.45), transparent); }
     .swatch {
       box-shadow: inset 0 0 0 1px rgba(24,24,27,0.14);
     }
+    html.dark .swatch {
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.16);
+    }
     .swatch[aria-pressed="true"] {
-      box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px #c8a97e, inset 0 0 0 1px rgba(24,24,27,0.1);
+      box-shadow: 0 0 0 2px #f8f7f4, 0 0 0 3.5px #c8a97e, inset 0 0 0 1px rgba(24,24,27,0.1);
+    }
+    html.dark .swatch[aria-pressed="true"] {
+      box-shadow: 0 0 0 2px #141414, 0 0 0 3.5px #c8a97e, inset 0 0 0 1px rgba(255,255,255,0.08);
     }
     #product-grid article img {
       max-width: 100%;
@@ -164,7 +178,7 @@
     }
   </style>
 </head>
-<body class="bg-[#fafafa] font-inter text-zinc-800">
+<body class="bg-[#f8f7f4] font-inter text-zinc-800 dark:bg-[#0b0b0b] dark:text-zinc-200">
 
   <!-- Mobile drawer backdrop -->
   <div id="sidebar-backdrop" class="fixed inset-0 z-40 hidden bg-black/70 backdrop-blur-sm lg:hidden"></div>
@@ -174,11 +188,11 @@
     <!-- ============================= SIDEBAR ============================= -->
     <aside
       id="sidebar"
-      class="fixed inset-y-0 left-0 z-50 flex w-[286px] -translate-x-full flex-col border-r border-zinc-200 bg-white transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] lg:sticky lg:top-0 lg:z-30 lg:h-screen lg:w-[300px] lg:shrink-0 lg:translate-x-0"
+      class="fixed inset-y-0 left-0 z-50 flex w-[286px] -translate-x-full flex-col border-r border-[#e2ded6] bg-[#efece6] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] dark:border-white/10 dark:bg-[#0b0b0b] lg:sticky lg:top-0 lg:z-30 lg:h-screen lg:w-[300px] lg:shrink-0 lg:translate-x-0"
     >
       <!-- Brand -->
       <div class="relative px-8 pb-8 pt-9">
-        <h1 class="font-cinzel text-[19px] font-semibold leading-snug tracking-[0.16em] text-zinc-900">
+        <h1 class="font-cinzel text-[19px] font-semibold leading-snug tracking-[0.16em] text-zinc-900 dark:text-zinc-100">
           THE REFINED<br />
           <span class="text-champagne">&amp;</span> STUDIOS
         </h1>
@@ -186,7 +200,7 @@
         <button
           type="button"
           id="sidebar-close"
-          class="absolute right-5 top-6 rounded-full border border-zinc-200 p-2 text-zinc-500 transition hover:border-zinc-300 hover:text-zinc-900 lg:hidden"
+          class="absolute right-5 top-6 rounded-full border border-[#e2ded6] p-2 text-zinc-600 transition hover:border-[#d6d0c6] hover:text-zinc-900 dark:border-white/10 dark:text-zinc-400 dark:hover:border-white/20 dark:hover:text-zinc-100 lg:hidden"
           data-i18n-aria="a11y.closeMenu"
           aria-label="Close menu"
         >
@@ -198,7 +212,7 @@
 
       <!-- Filters -->
       <nav class="scroll-slim flex-1 overflow-y-auto px-5 pb-4" aria-label="Collections">
-        <p class="px-3 pb-3 text-[10px] font-medium uppercase tracking-luxe text-zinc-400" data-i18n="nav.heading">Collections</p>
+        <p class="px-3 pb-3 text-[10px] font-medium uppercase tracking-luxe text-zinc-500 dark:text-zinc-500" data-i18n="nav.heading">Collections</p>
 
         <button type="button" data-filter="all" class="filter-btn group relative flex w-full items-center gap-3 rounded-sm px-3 py-3 text-left transition">
           <span class="filter-bar absolute left-0 top-1/2 h-0 w-px -translate-y-1/2 bg-champagne transition-all duration-300"></span>
@@ -220,13 +234,13 @@
       </nav>
 
       <!-- Storefront + atelier -->
-      <div class="border-t border-zinc-200 px-8 py-6">
-        <p class="text-[10px] font-medium uppercase tracking-luxe text-zinc-400" data-i18n="sidebar.storefront">Official Storefronts</p>
+      <div class="border-t border-[#e2ded6] px-8 py-6 dark:border-white/10">
+        <p class="text-[10px] font-medium uppercase tracking-luxe text-zinc-500" data-i18n="sidebar.storefront">Official Storefronts</p>
         <a
           href="https://therefinedwallart.etsy.com"
           target="_blank"
           rel="noopener noreferrer"
-          class="group mt-4 flex w-full items-center justify-between gap-3 text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-500 transition hover:text-champagne"
+          class="group mt-4 flex w-full items-center justify-between gap-3 text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-600 transition hover:text-champagne dark:text-zinc-400"
         >
           <span>The Refined Wall Art</span>
           <svg class="h-3.5 w-3.5 shrink-0 text-zinc-400 transition duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-champagne" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
@@ -237,7 +251,7 @@
           href="https://absoluteironworks.etsy.com"
           target="_blank"
           rel="noopener noreferrer"
-          class="group mt-3 flex w-full items-center justify-between gap-3 text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-500 transition hover:text-champagne"
+          class="group mt-3 flex w-full items-center justify-between gap-3 text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-600 transition hover:text-champagne dark:text-zinc-400"
         >
           <span>Absolute Iron Works</span>
           <svg class="h-3.5 w-3.5 shrink-0 text-zinc-400 transition duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-champagne" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
@@ -252,7 +266,7 @@
           data-info-open="about"
           aria-haspopup="dialog"
           aria-controls="info-modal"
-          class="group flex w-full items-center justify-between py-2.5 text-left text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-500 transition hover:text-champagne"
+          class="group flex w-full items-center justify-between py-2.5 text-left text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-600 transition hover:text-champagne dark:text-zinc-400"
         >
           <span data-i18n="sidebar.about">About Us</span>
           <svg class="h-3.5 w-3.5 shrink-0 text-zinc-400 transition duration-300 group-hover:translate-x-0.5 group-hover:text-champagne" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
@@ -264,7 +278,7 @@
           data-info-open="contact"
           aria-haspopup="dialog"
           aria-controls="info-modal"
-          class="group flex w-full items-center justify-between py-2.5 text-left text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-500 transition hover:text-champagne"
+          class="group flex w-full items-center justify-between py-2.5 text-left text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-600 transition hover:text-champagne dark:text-zinc-400"
         >
           <span data-i18n="sidebar.contact">Contact Us</span>
           <svg class="h-3.5 w-3.5 shrink-0 text-zinc-400 transition duration-300 group-hover:translate-x-0.5 group-hover:text-champagne" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
@@ -281,13 +295,13 @@
     <div class="flex min-w-0 flex-1 flex-col">
 
       <!-- Top bar -->
-      <header class="sticky top-0 z-30 border-b border-zinc-200 bg-white/90 backdrop-blur-xl">
+      <header class="sticky top-0 z-30 border-b border-[#e2ded6] bg-[#f8f7f4]/90 backdrop-blur-xl dark:border-white/10 dark:bg-[#0b0b0b]/90">
         <div class="flex items-center justify-between gap-4 px-5 py-4 sm:px-8 lg:px-12">
           <div class="flex min-w-0 items-center gap-3">
             <button
               type="button"
               id="sidebar-open"
-              class="rounded-sm border border-zinc-200 p-2.5 text-zinc-500 transition hover:border-zinc-300 hover:text-zinc-900 lg:hidden"
+              class="rounded-sm border border-[#e2ded6] p-2.5 text-zinc-600 transition hover:border-[#d6d0c6] hover:text-zinc-900 dark:border-white/10 dark:text-zinc-400 dark:hover:border-white/20 dark:hover:text-zinc-100 lg:hidden"
               data-i18n-aria="a11y.openMenu"
               aria-label="Open menu"
             >
@@ -295,16 +309,33 @@
                 <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
               </svg>
             </button>
-            <span class="truncate font-cinzel text-[13px] font-semibold tracking-[0.18em] text-zinc-900 lg:hidden">
+            <span class="truncate font-cinzel text-[13px] font-semibold tracking-[0.18em] text-zinc-900 dark:text-zinc-100 lg:hidden">
               THE REFINED <span class="text-champagne">&amp;</span> STUDIOS
             </span>
           </div>
 
-          <!-- Language switch -->
-          <div class="flex items-center gap-1 rounded-full border border-zinc-200 bg-zinc-50 p-1" role="group" aria-label="Language">
-            <button type="button" data-lang="tr" class="lang-btn rounded-full px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] transition">TR</button>
-            <span class="h-3 w-px bg-zinc-200" aria-hidden="true"></span>
-            <button type="button" data-lang="en" class="lang-btn rounded-full px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] transition">EN</button>
+          <div class="flex items-center gap-2">
+            <button
+              type="button"
+              id="theme-toggle"
+              class="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#e2ded6] bg-[#f4f1ea] text-zinc-700 transition hover:border-[#d6d0c6] hover:text-zinc-900 dark:border-white/10 dark:bg-white/5 dark:text-zinc-300 dark:hover:border-white/20 dark:hover:text-zinc-100"
+              aria-label="Switch to dark theme"
+              aria-pressed="false"
+            >
+              <svg class="h-3.5 w-3.5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5z" />
+              </svg>
+              <svg class="hidden h-3.5 w-3.5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <circle cx="12" cy="12" r="3.5" />
+                <path stroke-linecap="round" d="M12 3v1.5M12 19.5V21M4.5 12H3M21 12h-1.5M6.2 6.2l1.1 1.1M16.7 16.7l1.1 1.1M17.8 6.2l-1.1 1.1M7.3 16.7l-1.1 1.1" />
+              </svg>
+            </button>
+
+            <div class="flex items-center gap-1 rounded-full border border-[#e2ded6] bg-[#f4f1ea] p-1 dark:border-white/10 dark:bg-white/5" role="group" aria-label="Language">
+              <button type="button" data-lang="tr" class="lang-btn rounded-full px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] transition">TR</button>
+              <span class="h-3 w-px bg-[#e2ded6] dark:bg-white/10" aria-hidden="true"></span>
+              <button type="button" data-lang="en" class="lang-btn rounded-full px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] transition">EN</button>
+            </div>
           </div>
         </div>
       </header>
@@ -312,16 +343,16 @@
       <main class="flex-1 px-3 pb-16 pt-5 sm:px-8 sm:pb-20 sm:pt-8 lg:px-12 lg:pt-10">
         <div class="mb-4 flex items-center gap-4 sm:mb-8 lg:mb-10">
           <span class="h-px w-12 bg-champagne/40"></span>
-          <span id="collection-count" class="text-[10px] font-light uppercase tracking-[0.24em] text-zinc-400"></span>
+          <span id="collection-count" class="text-[10px] font-light uppercase tracking-[0.24em] text-zinc-500"></span>
         </div>
 
         <!-- Product grid -->
         <div id="product-grid" class="grid grid-cols-2 items-stretch gap-2 sm:gap-3 lg:grid-cols-3 lg:gap-x-6 lg:gap-y-10 2xl:grid-cols-4"></div>
       </main>
 
-      <footer class="border-t border-zinc-200 bg-white px-5 py-10 sm:px-8 lg:px-12">
+      <footer class="border-t border-[#e2ded6] bg-[#efece6] px-5 py-10 dark:border-white/10 dark:bg-[#0b0b0b] sm:px-8 lg:px-12">
         <div class="flex flex-col items-start gap-3 sm:items-center sm:text-center">
-          <p class="text-[11px] font-light tracking-[0.16em] text-zinc-500">
+          <p class="text-[11px] font-light tracking-[0.16em] text-zinc-600 dark:text-zinc-400">
             © <span id="year"></span> The Refined Wall Art. All rights reserved. Handcrafted with precision.
           </p>
           <nav class="flex flex-wrap items-center gap-x-5 gap-y-1" data-i18n-aria="footer.shopsAria" aria-label="Official Etsy shops">
@@ -361,12 +392,12 @@
     <div id="qv-shell" class="scroll-slim relative flex h-full items-start justify-center overflow-y-auto p-0 sm:items-center sm:p-6">
       <div
         id="qv-panel"
-        class="relative w-full max-w-6xl translate-y-6 overflow-hidden rounded-2xl border border-zinc-200 bg-white opacity-0 shadow-[0_40px_120px_-20px_rgba(24,24,27,0.18)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] sm:translate-y-4"
+        class="relative w-full max-w-6xl translate-y-6 overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white opacity-0 shadow-[0_40px_120px_-20px_rgba(24,24,27,0.18)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] dark:border-white/10 dark:bg-[#141414] dark:shadow-[0_40px_120px_-20px_rgba(0,0,0,0.65)] sm:translate-y-4"
       >
         <button
           type="button"
           id="qv-close"
-          class="absolute right-4 top-4 z-20 rounded-full border border-zinc-200 bg-white/80 p-2.5 text-zinc-500 backdrop-blur transition hover:border-zinc-300 hover:text-zinc-900"
+          class="absolute right-4 top-4 z-20 rounded-full border border-[#e2ded6] bg-white/80 p-2.5 text-zinc-600 backdrop-blur transition hover:border-[#d6d0c6] hover:text-zinc-900 dark:border-white/10 dark:bg-[#141414]/80 dark:text-zinc-400 dark:hover:border-white/20 dark:hover:text-zinc-100"
           data-i18n-aria="a11y.closeModal"
           aria-label="Close"
         >
@@ -377,16 +408,16 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)]">
           <!-- Gallery. min-w-0 stops the media's intrinsic width from blowing out the fr column. -->
-          <div class="flex min-h-0 min-w-0 flex-col bg-zinc-50 px-4 pb-4 pt-14 sm:p-6 lg:p-8">
-            <div id="qv-stage" class="relative flex h-auto min-h-0 w-full max-h-[45vh] items-center justify-center overflow-hidden rounded-2xl bg-white sm:max-h-none sm:min-h-[28rem] lg:h-[min(72vh,42rem)] lg:min-h-[32rem]"></div>
+          <div class="flex min-h-0 min-w-0 flex-col bg-[#f4f1ea] px-4 pb-4 pt-14 dark:bg-[#0b0b0b] sm:p-6 lg:p-8">
+            <div id="qv-stage" class="relative flex h-auto min-h-0 w-full max-h-[45vh] items-center justify-center overflow-hidden rounded-2xl bg-white dark:bg-[#141414] sm:max-h-none sm:min-h-[28rem] lg:h-[min(72vh,42rem)] lg:min-h-[32rem]"></div>
             <div id="qv-thumbs" class="no-scrollbar mt-4 flex gap-3 overflow-x-auto"></div>
           </div>
 
           <!-- Details -->
           <div class="flex min-w-0 flex-col p-6 sm:p-8 lg:p-10">
             <span id="qv-shop" class="inline-flex w-fit items-center rounded-sm border border-champagne/30 bg-champagne/[0.08] px-2.5 py-1 text-[9.5px] font-medium uppercase tracking-[0.22em] text-champagne"></span>
-            <h3 id="qv-title" class="mt-5 font-cinzel text-2xl font-medium leading-snug tracking-[0.05em] text-zinc-900 lg:text-[26px]"></h3>
-            <div class="mt-6 h-px w-14 bg-zinc-200"></div>
+            <h3 id="qv-title" class="mt-5 font-cinzel text-2xl font-medium leading-snug tracking-[0.05em] text-zinc-900 dark:text-zinc-100 lg:text-[26px]"></h3>
+            <div class="mt-6 h-px w-14 bg-[#e2ded6] dark:bg-white/10"></div>
             <p id="qv-description" class="mt-6 text-[13.5px] font-light leading-[1.85] text-zinc-600"></p>
 
             <div id="qv-colors-wrap" class="mt-8 hidden">
@@ -431,12 +462,12 @@
     <div id="info-shell" class="scroll-slim relative flex h-full items-end justify-center overflow-y-auto p-0 sm:items-center sm:p-6">
       <div
         id="info-panel"
-        class="relative w-full max-w-lg translate-y-6 overflow-hidden rounded-2xl border border-zinc-200 bg-white opacity-0 shadow-[0_40px_120px_-20px_rgba(24,24,27,0.18)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] sm:translate-y-4"
+        class="relative w-full max-w-lg translate-y-6 overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white opacity-0 shadow-[0_40px_120px_-20px_rgba(24,24,27,0.18)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] dark:border-white/10 dark:bg-[#141414] dark:shadow-[0_40px_120px_-20px_rgba(0,0,0,0.65)] sm:translate-y-4"
       >
         <button
           type="button"
           id="info-close"
-          class="absolute right-4 top-4 z-10 rounded-full border border-zinc-200 bg-white/80 p-2.5 text-zinc-500 backdrop-blur transition hover:border-zinc-300 hover:text-zinc-900"
+          class="absolute right-4 top-4 z-10 rounded-full border border-[#e2ded6] bg-white/80 p-2.5 text-zinc-600 backdrop-blur transition hover:border-[#d6d0c6] hover:text-zinc-900 dark:border-white/10 dark:bg-[#141414]/80 dark:text-zinc-400 dark:hover:border-white/20 dark:hover:text-zinc-100"
           data-i18n-aria="a11y.closeModal"
           aria-label="Close"
         >
@@ -447,7 +478,7 @@
 
         <div id="info-about" class="hidden px-8 pb-10 pt-12 sm:px-10">
           <p class="text-[10px] font-medium uppercase tracking-luxe text-champagne/80" data-i18n="about.eyebrow">Our Story</p>
-          <h2 id="info-about-title" class="mt-3 font-cinzel text-[22px] font-medium leading-snug tracking-[0.06em] text-zinc-900" data-i18n="about.title">ABOUT THE REFINED WALL ART</h2>
+          <h2 id="info-about-title" class="mt-3 font-cinzel text-[22px] font-medium leading-snug tracking-[0.06em] text-zinc-900 dark:text-zinc-100" data-i18n="about.title">ABOUT THE REFINED WALL ART</h2>
           <div class="mt-6 h-px w-14 bg-champagne/35"></div>
           <p class="mt-6 text-[13.5px] font-light leading-[1.85] text-zinc-600" data-i18n="about.p1">
             The Refined Wall Art began with a simple belief: metal furniture can be strong, functional, and refined at the same time. From our workshop, we design and produce modern pieces for homes, gardens, cafés, and offices.
@@ -459,7 +490,7 @@
 
         <div id="info-contact" class="hidden px-8 pb-10 pt-12 sm:px-10">
           <p class="text-[10px] font-medium uppercase tracking-luxe text-champagne/80" data-i18n="contact.eyebrow">Atelier</p>
-          <h2 id="info-contact-title" class="mt-3 font-cinzel text-[22px] font-medium leading-snug tracking-[0.06em] text-zinc-900" data-i18n="contact.title">Contact Us</h2>
+          <h2 id="info-contact-title" class="mt-3 font-cinzel text-[22px] font-medium leading-snug tracking-[0.06em] text-zinc-900 dark:text-zinc-100" data-i18n="contact.title">Contact Us</h2>
           <div class="mt-6 h-px w-14 bg-champagne/35"></div>
 
           <div class="mt-8">
@@ -570,6 +601,8 @@
       "a11y.openMenu": { en: "Open menu", tr: "Menüyü aç" },
       "a11y.closeMenu": { en: "Close menu", tr: "Menüyü kapat" },
       "a11y.closeModal": { en: "Close", tr: "Kapat" },
+      "a11y.themeDark": { en: "Switch to dark theme", tr: "Koyu temaya geç" },
+      "a11y.themeLight": { en: "Switch to light theme", tr: "Aydınlık temaya geç" },
       "a11y.openDetails": { en: "View details", tr: "Detayları görüntüle" },
       "a11y.openOnEtsy": { en: "Open on Etsy", tr: "Etsy'de aç" },
       "a11y.prevImage": { en: "Previous image", tr: "Önceki görsel" },
@@ -601,21 +634,21 @@
     /* -------------------------------- Styling -------------------------------- */
     const FILTER_STATE = {
       active: {
-        button: "bg-zinc-100",
-        label: "text-zinc-900",
+        button: "bg-[#e7e3dc] dark:bg-white/10",
+        label: "text-zinc-900 dark:text-zinc-100",
         count: "text-champagne",
         bar: "h-8",
       },
       inactive: {
-        button: "hover:bg-zinc-50",
-        label: "text-zinc-500",
-        count: "text-zinc-400",
+        button: "hover:bg-[#e7e3dc]/70 dark:hover:bg-white/5",
+        label: "text-zinc-600 dark:text-zinc-400",
+        count: "text-zinc-500",
         bar: "h-0",
       },
     };
 
     const LANG_ACTIVE = "lang-btn rounded-full bg-champagne px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-ink transition";
-    const LANG_INACTIVE = "lang-btn rounded-full px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-500 transition hover:text-zinc-800";
+    const LANG_INACTIVE = "lang-btn rounded-full px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100";
 
     /* --------------------------------- State --------------------------------- */
     const grid = document.getElementById("product-grid");
@@ -775,7 +808,7 @@
       return `
         <article
           data-product-id="${productId}"
-          class="group relative flex h-full animate-rise flex-col items-center overflow-hidden rounded-2xl border border-zinc-100/80 bg-white text-center shadow-sm transition hover:shadow-md"
+          class="group relative flex h-full animate-rise flex-col items-center overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white text-center shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] transition hover:shadow-[0_8px_28px_-6px_rgba(0,0,0,0.10)] dark:border-white/10 dark:bg-[#141414] dark:shadow-[0_4px_24px_-4px_rgba(0,0,0,0.45)] dark:hover:shadow-[0_8px_32px_-6px_rgba(0,0,0,0.6)]"
           style="animation-delay:${Math.min(index, 11) * 55}ms"
         >
           <div class="flex aspect-[4/5] w-full items-center justify-center overflow-hidden rounded-xl p-2.5 sm:aspect-[3/4] sm:p-5">
@@ -783,14 +816,14 @@
           </div>
 
           <div class="flex w-full flex-1 flex-col items-center px-3 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-3">
-            <p class="text-[8px] font-medium uppercase tracking-[0.16em] text-zinc-400 transition-colors duration-500 group-hover:text-champagne/80 sm:text-[9.5px] sm:tracking-[0.22em]">${shop}</p>
-            <h3 class="mt-1.5 line-clamp-2 max-w-[26ch] font-cinzel text-[11px] font-medium leading-snug tracking-[0.04em] text-zinc-900 sm:text-[15px]">${title}</h3>
+            <p class="text-[8px] font-medium uppercase tracking-[0.16em] text-zinc-600 transition-colors duration-500 group-hover:text-champagne sm:text-[9.5px] sm:tracking-[0.22em] dark:text-zinc-400">${shop}</p>
+            <h3 class="mt-1.5 line-clamp-2 max-w-[26ch] font-cinzel text-[11px] font-medium leading-snug tracking-[0.04em] text-zinc-900 sm:text-[15px] dark:text-zinc-100">${title}</h3>
           </div>
 
           <button
             type="button"
             data-open-product="${productId}"
-            class="absolute inset-0 z-10 cursor-pointer outline-none ring-champagne/60 ring-offset-2 ring-offset-white focus-visible:ring-1"
+            class="absolute inset-0 z-10 cursor-pointer outline-none ring-champagne/60 ring-offset-2 ring-offset-white focus-visible:ring-1 dark:ring-offset-[#141414]"
           >
             <span class="sr-only">${escapeHtml(t("a11y.openDetails"))} — ${title}</span>
           </button>
@@ -866,10 +899,10 @@
         const count = button.querySelector(".filter-count");
         const bar = button.querySelector(".filter-bar");
 
-        label.classList.remove(other.label);
-        label.classList.add(state.label);
-        count.classList.remove(other.count);
-        count.classList.add(state.count);
+        label.classList.remove(...other.label.split(" "));
+        label.classList.add(...state.label.split(" "));
+        count.classList.remove(...other.count.split(" "));
+        count.classList.add(...state.count.split(" "));
         bar.classList.remove(other.bar);
         bar.classList.add(state.bar);
       });
@@ -899,8 +932,45 @@
         el.setAttribute("aria-label", t(el.dataset.i18nAria));
       });
 
+      syncThemeToggle();
       renderProducts();
       if (openProductId !== null) renderModal(openProductId, true);
+    }
+
+    /* --------------------------------- Theme ---------------------------------- */
+    const THEME_KEY = "theme";
+    const THEME_DARK = "dark";
+    const THEME_LIGHT = "light";
+    const themeToggle = document.getElementById("theme-toggle");
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+
+    function themeFromStorage() {
+      try {
+        return localStorage.getItem(THEME_KEY) === THEME_DARK ? THEME_DARK : THEME_LIGHT;
+      } catch (_) {
+        return THEME_LIGHT;
+      }
+    }
+
+    function syncThemeToggle() {
+      if (!themeToggle) return;
+      const isDark = document.documentElement.classList.contains("dark");
+      themeToggle.setAttribute("aria-pressed", String(isDark));
+      themeToggle.setAttribute("aria-label", t(isDark ? "a11y.themeLight" : "a11y.themeDark"));
+    }
+
+    function applyTheme(theme) {
+      const isDark = theme === THEME_DARK;
+      document.documentElement.classList.toggle("dark", isDark);
+      try {
+        localStorage.setItem(THEME_KEY, theme);
+      } catch (_) {}
+      if (metaThemeColor) metaThemeColor.setAttribute("content", isDark ? "#0b0b0b" : "#f8f7f4");
+      syncThemeToggle();
+    }
+
+    function toggleTheme() {
+      applyTheme(document.documentElement.classList.contains("dark") ? THEME_LIGHT : THEME_DARK);
     }
 
     /* --------------------------- Mobile sidebar drawer -------------------------- */
@@ -961,8 +1031,8 @@
       const src = url ? escapeHtml(url) : IMAGE_FALLBACK;
       const href = escapeHtml(etsyUrl);
       const nav = images.length > 1
-        ? `<button type="button" data-qv-nav="-1" class="absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-zinc-200 bg-white/80 text-[22px] font-light leading-none text-zinc-700 backdrop-blur-sm transition hover:border-champagne/40 hover:text-champagne" aria-label="${escapeHtml(t("a11y.prevImage"))}">‹</button>
-           <button type="button" data-qv-nav="1" class="absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-zinc-200 bg-white/80 text-[22px] font-light leading-none text-zinc-700 backdrop-blur-sm transition hover:border-champagne/40 hover:text-champagne" aria-label="${escapeHtml(t("a11y.nextImage"))}">›</button>`
+        ? `<button type="button" data-qv-nav="-1" class="absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-[#e2ded6] bg-white/80 text-[22px] font-light leading-none text-zinc-700 backdrop-blur-sm transition hover:border-champagne/40 hover:text-champagne dark:border-white/10 dark:bg-[#141414]/80 dark:text-zinc-200" aria-label="${escapeHtml(t("a11y.prevImage"))}">‹</button>
+           <button type="button" data-qv-nav="1" class="absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-[#e2ded6] bg-white/80 text-[22px] font-light leading-none text-zinc-700 backdrop-blur-sm transition hover:border-champagne/40 hover:text-champagne dark:border-white/10 dark:bg-[#141414]/80 dark:text-zinc-200" aria-label="${escapeHtml(t("a11y.nextImage"))}">›</button>`
         : "";
 
       qvStage.innerHTML = `
@@ -972,7 +1042,7 @@
           target="_blank"
           rel="noopener noreferrer"
           aria-label="${escapeHtml(t("a11y.openOnEtsy"))} — ${alt}"
-          class="flex h-full w-full max-w-full items-center justify-center overflow-hidden rounded-2xl bg-white"
+          class="flex h-full w-full max-w-full items-center justify-center overflow-hidden rounded-2xl bg-white dark:bg-[#141414]"
         >
           <img src="${src}" alt="${alt}" class="mx-auto h-auto w-full max-h-[45vh] object-contain object-center sm:h-full sm:max-h-none" />
         </a>`;
@@ -993,7 +1063,7 @@
             <button
               type="button"
               data-image-index="${i}"
-              class="relative h-16 w-16 shrink-0 overflow-hidden rounded-xl border transition hover:border-zinc-300 ${selected ? "border-champagne/70" : "border-zinc-200"}"
+              class="relative h-16 w-16 shrink-0 overflow-hidden rounded-xl border transition hover:border-[#d6d0c6] dark:hover:border-white/20 ${selected ? "border-champagne/70" : "border-[#e2ded6] dark:border-white/10"}"
               aria-label="${label}"
               aria-pressed="${selected}"
             ><img src="${escapeHtml(url)}" alt="${escapeHtml(titleText)}" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button>`;
@@ -1106,7 +1176,8 @@
       qvThumbs.querySelectorAll("[data-image-index]").forEach((button) => {
         const selected = Number(button.dataset.imageIndex) === selectedImageIndex;
         button.classList.toggle("border-champagne/70", selected);
-        button.classList.toggle("border-zinc-200", !selected);
+        button.classList.toggle("border-[#e2ded6]", !selected);
+        button.classList.toggle("dark:border-white/10", !selected);
         button.setAttribute("aria-pressed", String(selected));
         if (selected) button.scrollIntoView({ behavior: "smooth", inline: "nearest", block: "nearest" });
       });
@@ -1313,11 +1384,14 @@
       button.addEventListener("click", () => setLanguage(button.dataset.lang));
     });
 
+    themeToggle.addEventListener("click", toggleTheme);
+
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("year-sidebar").textContent = new Date().getFullYear();
 
     /* Seed the filter before setLanguage runs, so its syncUrl() call preserves ?filter= */
     activeFilter = filterFromUrl();
+    applyTheme(themeFromStorage());
     setLanguage(langFromUrl());
     setActiveFilter(activeFilter);
 
