@@ -775,7 +775,7 @@
           style="animation-delay:${Math.min(index, 11) * 55}ms"
         >
           <div class="flex aspect-[4/5] w-full items-center justify-center overflow-hidden p-2.5 sm:aspect-[3/4] sm:p-5">
-            <img src="${image}" alt="${title}" loading="lazy" />
+            <img src="${image}" alt="${title}" loading="lazy" decoding="async" />
           </div>
 
           <div class="flex w-full flex-1 flex-col items-center px-3 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-3">
@@ -939,6 +939,13 @@
     let selectedImageIndex = 0;
     let selectedColorIndex = 0;
 
+    /* Closing is deferred 300ms for the fade-out. Reopening inside that window must
+       cancel the pending teardown, or it lands on the reopened modal and hides it
+       while dropping the scroll lock. Reachable by keyboard: closeModal() restores
+       focus to the card button immediately, so Esc then Enter hits this. */
+    let modalCloseTimer = null;
+    let infoCloseTimer = null;
+
     function colorName(color) {
       if (!color) return "";
       return localized(color.name);
@@ -985,7 +992,7 @@
               class="relative h-16 w-16 shrink-0 overflow-hidden border transition hover:border-white/40 ${selected ? "border-champagne/70" : "border-white/10"}"
               aria-label="${label}"
               aria-pressed="${selected}"
-            ><img src="${escapeHtml(url)}" alt="${escapeHtml(titleText)}" loading="lazy" class="h-full w-full object-cover" /></button>`;
+            ><img src="${escapeHtml(url)}" alt="${escapeHtml(titleText)}" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button>`;
         })
         .join("");
     }
@@ -1048,6 +1055,8 @@
       const product = products.find((p) => String(p.id) === String(productId));
       if (!product) return;
 
+      window.clearTimeout(modalCloseTimer);
+
       lastFocused = document.activeElement;
       openProductId = productId;
       selectedColorIndex = selectedColorIndexFor(product);
@@ -1072,9 +1081,9 @@
       modalPanel.classList.remove("opacity-100", "translate-y-0");
       modalPanel.classList.add("opacity-0", "translate-y-6", "sm:translate-y-4");
 
-      window.setTimeout(() => {
+      modalCloseTimer = window.setTimeout(() => {
         modal.classList.add("hidden");
-        document.body.classList.remove("overflow-hidden");
+        if (openInfoPanel === null) document.body.classList.remove("overflow-hidden");
         qvStage.innerHTML = "";
         qvThumbs.innerHTML = "";
       }, 300);
@@ -1205,6 +1214,8 @@
     }
 
     function openInfoModal(which) {
+      window.clearTimeout(infoCloseTimer);
+
       const alreadyOpen = openInfoPanel !== null;
       if (!alreadyOpen) lastFocused = document.activeElement;
       showInfoPanel(which);
@@ -1235,7 +1246,7 @@
       infoPanel.classList.remove("opacity-100", "translate-y-0");
       infoPanel.classList.add("opacity-0", "translate-y-6", "sm:translate-y-4");
 
-      window.setTimeout(() => {
+      infoCloseTimer = window.setTimeout(() => {
         infoModal.classList.add("hidden");
         infoAbout.classList.add("hidden");
         infoContact.classList.add("hidden");
