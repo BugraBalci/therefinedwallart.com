@@ -10,7 +10,8 @@
   <link rel="alternate" hreflang="en" href="https://therefinedwallart.com/" />
   <link rel="alternate" hreflang="tr" href="https://therefinedwallart.com/" />
   <link rel="alternate" hreflang="x-default" href="https://therefinedwallart.com/" />
-  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.ico?v=3" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon-32.png?v=3" sizes="32x32" />
   <meta name="theme-color" content="#0b0b0b" />
 
   <meta property="og:type" content="website" />
@@ -39,7 +40,7 @@
         "logo": "https://therefinedwallart.com/og-image.jpeg",
         "image": "https://therefinedwallart.com/og-image.jpeg",
         "description": "Luxury modern metal & 3D wall art, forged iron works and bespoke organizers, handcrafted in our Konya atelier.",
-        "email": "yasaralpa34@gmail.com",
+        "email": "info@therefinedwallart.com",
         "telephone": "+90-544-602-50-08",
         "address": {
           "@type": "PostalAddress",
@@ -482,8 +483,7 @@
 
           <div class="mt-7">
             <p class="text-[10px] font-medium uppercase tracking-[0.24em] text-neutral-600" data-i18n="contact.email">Email</p>
-            <a href="mailto:yasaralpa34@gmail.com" class="mt-3 block text-[13px] font-light tracking-wide text-neutral-300 transition hover:text-champagne">yasaralpa34@gmail.com</a>
-            <a href="mailto:balcibugra4@gmail.com" class="mt-2 block text-[13px] font-light tracking-wide text-neutral-300 transition hover:text-champagne">balcibugra4@gmail.com</a>
+            <a href="mailto:info@therefinedwallart.com" class="mt-3 block text-[13px] font-light tracking-wide text-neutral-300 transition hover:text-champagne">info@therefinedwallart.com</a>
           </div>
 
           <div class="mt-7">
@@ -612,10 +612,8 @@
     const filterButtons = Array.from(document.querySelectorAll(".filter-btn"));
     const langButtons = Array.from(document.querySelectorAll(".lang-btn"));
     const collectionCount = document.getElementById("collection-count");
-    const canonicalLink = document.getElementById("canonical-url");
 
     const FILTER_PARAM = "filter";
-    const CANONICAL_ORIGIN = "https://therefinedwallart.com";
     const validFilters = new Set(filterButtons.map((button) => button.dataset.filter));
 
     let products = [];
@@ -816,7 +814,8 @@
 
     function syncUrlToFilter(filter) {
       const query = filter === "all" ? "" : `?${FILTER_PARAM}=${encodeURIComponent(filter)}`;
-      canonicalLink.href = `${CANONICAL_ORIGIN}/${query}`;
+
+      /* Canonical stays pinned to the site root: filters are views of the same collection, not distinct pages */
 
       /* replaceState throws on file:// and keeps filter clicks out of session history */
       if (window.location.protocol === "http:" || window.location.protocol === "https:") {
