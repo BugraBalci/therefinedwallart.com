@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Refined Wall Art | Luxury Modern Metal &amp; 3D Wall Art</title>
-  <meta name="description" content="The Refined Wall Art | Luxury Modern Metal &amp; 3D Wall Art — handcrafted metal wall art, forged iron works, bespoke organizers and 3D printed objects, shipped worldwide from our official Etsy shops." />
+  <meta id="meta-description" name="description" content="The Refined Wall Art | Luxury Modern Metal &amp; 3D Wall Art — handcrafted metal wall art, forged iron works, bespoke organizers and 3D printed objects, shipped worldwide from our official Etsy shops." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
-  <link id="canonical-url" rel="canonical" href="https://therefinedwallart.com/" />
-  <link rel="alternate" hreflang="en" href="https://therefinedwallart.com/" />
-  <link rel="alternate" hreflang="tr" href="https://therefinedwallart.com/" />
+  <link id="canonical-url" rel="canonical" href="https://therefinedwallart.com/?lang=en" />
+  <link rel="alternate" hreflang="en" href="https://therefinedwallart.com/?lang=en" />
+  <link rel="alternate" hreflang="tr" href="https://therefinedwallart.com/?lang=tr" />
   <link rel="alternate" hreflang="x-default" href="https://therefinedwallart.com/" />
   <link rel="icon" href="/favicon.ico?v=3" sizes="any" />
   <link rel="icon" type="image/png" href="/favicon-32.png?v=3" sizes="32x32" />
@@ -519,6 +519,14 @@
   <script>
     /* ---------------------------------- i18n ---------------------------------- */
     const I18N = {
+      "meta.title": {
+        en: "The Refined Wall Art | Luxury Modern Metal & 3D Wall Art",
+        tr: "The Refined Wall Art | Lüks Metal ve 3D Duvar Sanatı",
+      },
+      "meta.description": {
+        en: "The Refined Wall Art | Luxury Modern Metal & 3D Wall Art — handcrafted metal wall art, forged iron works, bespoke organizers and 3D printed objects, shipped worldwide from our official Etsy shops.",
+        tr: "The Refined Wall Art | Lüks Metal ve 3D Duvar Sanatı — el yapımı metal duvar tabloları, dövme demir işleri, özel tasarım düzenleyiciler ve 3D baskı objeler, resmî Etsy mağazalarımızdan dünya genelinde gönderim.",
+      },
       all: { en: "All Studios", tr: "Tüm Stüdyolar" },
       viewOnEtsy: { en: "Order on Etsy", tr: "Etsy Üzerinden İncele" },
       selectColor: { en: "Select Color / Finish:", tr: "Renk / Bitiş Seçenekleri:" },
@@ -575,8 +583,6 @@
       "iron-works": "https://absoluteironworks.etsy.com",
     };
 
-    const STORAGE_KEY = "trs-lang";
-
     /* Shown when a product has no artwork yet, or an Etsy CDN url stops resolving. */
     const IMAGE_FALLBACK =
       "data:image/svg+xml;charset=utf-8," +
@@ -612,13 +618,19 @@
     const filterButtons = Array.from(document.querySelectorAll(".filter-btn"));
     const langButtons = Array.from(document.querySelectorAll(".lang-btn"));
     const collectionCount = document.getElementById("collection-count");
+    const canonicalLink = document.getElementById("canonical-url");
+    const metaDescription = document.getElementById("meta-description");
 
     const FILTER_PARAM = "filter";
+    const LANG_PARAM = "lang";
+    const DEFAULT_LANG = "en";
+    const CANONICAL_ORIGIN = "https://therefinedwallart.com";
+    const supportedLangs = new Set(["en", "tr"]);
     const validFilters = new Set(filterButtons.map((button) => button.dataset.filter));
 
     let products = [];
     let activeFilter = "all";
-    let lang = "en";
+    let lang = DEFAULT_LANG;
     let loadFailed = false;
     let openProductId = null;
     let openInfoPanel = null;
@@ -812,20 +824,30 @@
       return requested && validFilters.has(requested) ? requested : "all";
     }
 
-    function syncUrlToFilter(filter) {
-      const query = filter === "all" ? "" : `?${FILTER_PARAM}=${encodeURIComponent(filter)}`;
+    function langFromUrl() {
+      const requested = new URLSearchParams(window.location.search).get(LANG_PARAM);
+      return requested && supportedLangs.has(requested) ? requested : DEFAULT_LANG;
+    }
 
-      /* Canonical stays pinned to the site root: filters are views of the same collection, not distinct pages */
+    /* Single writer for the query string so a language switch cannot drop the active
+       filter, and vice versa. Canonical carries only lang: filters are views of the
+       same collection, so they must not fragment into separate indexable URLs. */
+    function syncUrl() {
+      const params = new URLSearchParams();
+      params.set(LANG_PARAM, lang);
+      if (activeFilter !== "all") params.set(FILTER_PARAM, activeFilter);
 
-      /* replaceState throws on file:// and keeps filter clicks out of session history */
+      canonicalLink.href = `${CANONICAL_ORIGIN}/?${LANG_PARAM}=${lang}`;
+
+      /* replaceState throws on file:// and keeps switcher clicks out of session history */
       if (window.location.protocol === "http:" || window.location.protocol === "https:") {
-        window.history.replaceState(null, "", `${window.location.pathname}${query}`);
+        window.history.replaceState(null, "", `${window.location.pathname}?${params}`);
       }
     }
 
     function setActiveFilter(filter) {
       activeFilter = filter;
-      syncUrlToFilter(filter);
+      syncUrl();
 
       filterButtons.forEach((button) => {
         const isActive = button.dataset.filter === filter;
@@ -853,14 +875,12 @@
 
     /* -------------------------------- Language -------------------------------- */
     function setLanguage(next) {
-      lang = next === "tr" || next === "en" ? next : "en";
-      document.documentElement.lang = lang;
+      lang = supportedLangs.has(next) ? next : DEFAULT_LANG;
 
-      try {
-        localStorage.setItem(STORAGE_KEY, lang);
-      } catch (_) {
-        /* storage unavailable — language still applies for this session */
-      }
+      document.documentElement.lang = lang;
+      document.title = t("meta.title");
+      metaDescription.setAttribute("content", t("meta.description"));
+      syncUrl();
 
       langButtons.forEach((button) => {
         const isActive = button.dataset.lang === lang;
@@ -1280,14 +1300,10 @@
 
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    let storedLang = null;
-    try {
-      storedLang = localStorage.getItem(STORAGE_KEY);
-    } catch (_) {
-      /* storage unavailable — fall back to the default language */
-    }
-    setLanguage(storedLang === "tr" || storedLang === "en" ? storedLang : "en");
-    setActiveFilter(filterFromUrl());
+    /* Seed the filter before setLanguage runs, so its syncUrl() call preserves ?filter= */
+    activeFilter = filterFromUrl();
+    setLanguage(langFromUrl());
+    setActiveFilter(activeFilter);
 
     fetch("products.json")
       .then((response) => {
