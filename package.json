@@ -1,0 +1,10 @@
+{
+  "name": "therefinedwallart.com",
+  "private": true,
+  "scripts": {
+    "optimize-images": "node optimize-images.js"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}
