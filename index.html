@@ -10,9 +10,10 @@
   <link rel="alternate" hreflang="en" href="https://therefinedwallart.com/?lang=en" />
   <link rel="alternate" hreflang="tr" href="https://therefinedwallart.com/?lang=tr" />
   <link rel="alternate" hreflang="x-default" href="https://therefinedwallart.com/" />
-  <link rel="icon" href="/favicon.ico?v=3" sizes="any" />
-  <link rel="icon" type="image/png" href="/favicon-32.png?v=3" sizes="32x32" />
-  <meta name="theme-color" content="#f8f7f4" />
+  <link rel="icon" type="image/x-icon" href="https://therefinedwallart.com/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://therefinedwallart.com/favicon-32.png">
+  <link rel="apple-touch-icon" href="https://therefinedwallart.com/favicon-32.png">
+  <meta name="theme-color" content="#f4f1ea" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="The Refined Wall Art" />
@@ -130,6 +131,9 @@
     html { scroll-behavior: smooth; color-scheme: light; }
     html.dark { color-scheme: dark; }
     body { -webkit-font-smoothing: antialiased; }
+    body, aside, header, footer, article {
+      transition: background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
+    }
     .scroll-slim::-webkit-scrollbar { width: 6px; height: 6px; }
     .scroll-slim::-webkit-scrollbar-track { background: transparent; }
     .scroll-slim::-webkit-scrollbar-thumb { background: rgba(24,24,27,0.14); border-radius: 9999px; }
@@ -144,7 +148,7 @@
       box-shadow: inset 0 0 0 1px rgba(255,255,255,0.16);
     }
     .swatch[aria-pressed="true"] {
-      box-shadow: 0 0 0 2px #f8f7f4, 0 0 0 3.5px #c8a97e, inset 0 0 0 1px rgba(24,24,27,0.1);
+      box-shadow: 0 0 0 2px #f4f1ea, 0 0 0 3.5px #c8a97e, inset 0 0 0 1px rgba(24,24,27,0.1);
     }
     html.dark .swatch[aria-pressed="true"] {
       box-shadow: 0 0 0 2px #141414, 0 0 0 3.5px #c8a97e, inset 0 0 0 1px rgba(255,255,255,0.08);
@@ -178,7 +182,7 @@
     }
   </style>
 </head>
-<body class="bg-[#f8f7f4] font-inter text-zinc-800 dark:bg-[#0b0b0b] dark:text-zinc-200">
+<body class="bg-[#f4f1ea] font-inter text-zinc-800 dark:bg-[#0b0b0b] dark:text-zinc-200">
 
   <!-- Mobile drawer backdrop -->
   <div id="sidebar-backdrop" class="fixed inset-0 z-40 hidden bg-black/70 backdrop-blur-sm lg:hidden"></div>
@@ -295,7 +299,7 @@
     <div class="flex min-w-0 flex-1 flex-col">
 
       <!-- Top bar -->
-      <header class="sticky top-0 z-30 border-b border-[#e2ded6] bg-[#f8f7f4]/90 backdrop-blur-xl dark:border-white/10 dark:bg-[#0b0b0b]/90">
+      <header class="sticky top-0 z-30 border-b border-[#e2ded6] bg-[#f4f1ea]/90 backdrop-blur-xl dark:border-white/10 dark:bg-[#0b0b0b]/90">
         <div class="flex items-center justify-between gap-4 px-5 py-4 sm:px-8 lg:px-12">
           <div class="flex min-w-0 items-center gap-3">
             <button
@@ -965,7 +969,7 @@
       try {
         localStorage.setItem(THEME_KEY, theme);
       } catch (_) {}
-      if (metaThemeColor) metaThemeColor.setAttribute("content", isDark ? "#0b0b0b" : "#f8f7f4");
+      if (metaThemeColor) metaThemeColor.setAttribute("content", isDark ? "#0b0b0b" : "#f4f1ea");
       syncThemeToggle();
     }
 
