@@ -16,7 +16,13 @@ const SKIP_DIRS = new Set([
   ".cursor",
   ".netlify",
 ]);
-const SKIP_FILES = new Set(["favicon-32.png"]);
+const SKIP_FILES = new Set([
+  "favicon-32.png",
+  "favicon-48.png",
+  "favicon-192.png",
+  "favicon-512.png",
+  "apple-touch-icon.png",
+]);
 
 async function walk(dir, acc = []) {
   const entries = await fs.readdir(dir, { withFileTypes: true });
