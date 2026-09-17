@@ -17,6 +17,7 @@ const SKIP_DIRS = new Set([
   ".netlify",
 ]);
 const SKIP_FILES = new Set([
+  "favicon.png",
   "favicon-32.png",
   "favicon-48.png",
   "favicon-192.png",
