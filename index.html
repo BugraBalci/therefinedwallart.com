@@ -3,7 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    body { background-color: #0b0b0b; }
+    #product-grid { min-height: 80vh; display: grid; }
+    .product-skeleton { aspect-ratio: 4/5; background-color: #18181b; border-radius: 0.5rem; }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="assets/styles.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600&display=swap">
+  </noscript>
   <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/cinzel-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link
@@ -279,28 +291,28 @@
         <!-- Product grid: static skeletons reserve first-viewport height before JS paints cards -->
         <div id="product-grid" class="grid min-h-[100svh] grid-cols-2 items-stretch gap-2 sm:gap-3 lg:grid-cols-3 lg:gap-x-6 lg:gap-y-10 2xl:grid-cols-4" aria-busy="true">
           <article class="flex h-full flex-col overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white dark:border-white/10 dark:bg-[#141414]" aria-hidden="true">
-            <div class="product-frame relative aspect-[4/5] w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800"></div>
+            <div class="product-skeleton product-frame relative w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800" style="aspect-ratio: 4/5;"></div>
             <div class="flex w-full flex-col items-center px-3 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-3">
               <div class="h-2.5 w-16 rounded-full bg-zinc-200 dark:bg-zinc-700"></div>
               <div class="mt-1.5 h-[31px] w-3/4 rounded-full bg-zinc-200 dark:bg-zinc-700 sm:h-[42px]"></div>
             </div>
           </article>
           <article class="flex h-full flex-col overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white dark:border-white/10 dark:bg-[#141414]" aria-hidden="true">
-            <div class="product-frame relative aspect-[4/5] w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800"></div>
+            <div class="product-skeleton product-frame relative w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800" style="aspect-ratio: 4/5;"></div>
             <div class="flex w-full flex-col items-center px-3 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-3">
               <div class="h-2.5 w-16 rounded-full bg-zinc-200 dark:bg-zinc-700"></div>
               <div class="mt-1.5 h-[31px] w-3/4 rounded-full bg-zinc-200 dark:bg-zinc-700 sm:h-[42px]"></div>
             </div>
           </article>
           <article class="flex h-full flex-col overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white dark:border-white/10 dark:bg-[#141414]" aria-hidden="true">
-            <div class="product-frame relative aspect-[4/5] w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800"></div>
+            <div class="product-skeleton product-frame relative w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800" style="aspect-ratio: 4/5;"></div>
             <div class="flex w-full flex-col items-center px-3 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-3">
               <div class="h-2.5 w-16 rounded-full bg-zinc-200 dark:bg-zinc-700"></div>
               <div class="mt-1.5 h-[31px] w-3/4 rounded-full bg-zinc-200 dark:bg-zinc-700 sm:h-[42px]"></div>
             </div>
           </article>
           <article class="flex h-full flex-col overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white dark:border-white/10 dark:bg-[#141414]" aria-hidden="true">
-            <div class="product-frame relative aspect-[4/5] w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800"></div>
+            <div class="product-skeleton product-frame relative w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800" style="aspect-ratio: 4/5;"></div>
             <div class="flex w-full flex-col items-center px-3 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-3">
               <div class="h-2.5 w-16 rounded-full bg-zinc-200 dark:bg-zinc-700"></div>
               <div class="mt-1.5 h-[31px] w-3/4 rounded-full bg-zinc-200 dark:bg-zinc-700 sm:h-[42px]"></div>
@@ -738,6 +750,10 @@
       return images[0] || IMAGE_FALLBACK;
     }
 
+    function compactEtsyImage(src) {
+      return String(src ?? "").replace("/il_1588xN.", "/il_600xN.");
+    }
+
     function markSelectedColor(product, colorIndex) {
       const colors = colorsOf(product);
       if (!colors[colorIndex]) return;
@@ -777,31 +793,34 @@
     }
 
     function cardPicture(src, title, index) {
-      const sizes = CARD_IMAGE_SIZES;
-      const webp400 = escapeHtml(cardVariantPath(src, 400, "webp"));
-      const webp800 = escapeHtml(cardVariantPath(src, 800, "webp"));
-      const avif400 = escapeHtml(cardVariantPath(src, 400, "avif"));
-      const avif800 = escapeHtml(cardVariantPath(src, 800, "avif"));
-      const isLcp = index === 0;
-      const aboveFold = index < FIRST_PAINT_CARDS;
-      const loadingAttrs = isLcp
+      const compactSrc = compactEtsyImage(src);
+      const loadingAttrs = index === 0
         ? 'loading="eager" fetchpriority="high"'
-        : aboveFold
-          ? 'loading="eager" decoding="async"'
-          : 'loading="lazy" decoding="async"';
+        : 'loading="lazy" decoding="async"';
+
+      if (/etsystatic\.com|\/il_\d+xN\./i.test(compactSrc)) {
+        const url = escapeHtml(compactSrc);
+        return `<img src="${url}" alt="${title}" width="400" height="500" ${loadingAttrs} class="h-full w-full object-contain" data-fullsrc="${escapeHtml(src)}" />`;
+      }
+
+      const sizes = CARD_IMAGE_SIZES;
+      const webp400 = escapeHtml(cardVariantPath(compactSrc, 400, "webp"));
+      const webp800 = escapeHtml(cardVariantPath(compactSrc, 800, "webp"));
+      const avif400 = escapeHtml(cardVariantPath(compactSrc, 400, "avif"));
+      const avif800 = escapeHtml(cardVariantPath(compactSrc, 800, "avif"));
 
       return `
         <picture>
           <source type="image/avif" srcset="${avif400} 400w, ${avif800} 800w" sizes="${sizes}">
           <source type="image/webp" srcset="${webp400} 400w, ${webp800} 800w" sizes="${sizes}">
-          <img src="${webp400}" alt="${title}" width="400" height="500" ${loadingAttrs} class="h-full w-full object-contain" data-fullsrc="${escapeHtml(src)}" />
+          <img src="${webp400}" alt="${title}" width="400" height="500" ${loadingAttrs} class="h-full w-full object-contain" data-fullsrc="${escapeHtml(compactSrc)}" />
         </picture>`;
     }
 
     /* ---------------------------------- Cards --------------------------------- */
     function productCard(product, index) {
       const title = escapeHtml(localized(product.title));
-      const image = previewImageFor(product);
+      const image = compactEtsyImage(previewImageFor(product));
       const shop = escapeHtml(SHOP_LABELS[product.category] ?? product.shop ?? "");
       const productId = escapeHtml(product.id);
       const picture = image === IMAGE_FALLBACK
@@ -814,7 +833,7 @@
           class="group relative flex h-full flex-col items-center overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white text-center shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] transition hover:shadow-[0_8px_28px_-6px_rgba(0,0,0,0.10)] dark:border-white/10 dark:bg-[#141414] dark:shadow-[0_4px_24px_-4px_rgba(0,0,0,0.45)] dark:hover:shadow-[0_8px_32px_-6px_rgba(0,0,0,0.6)]${index < FIRST_PAINT_CARDS ? "" : " animate-rise"}"
           ${index < FIRST_PAINT_CARDS ? "" : `style="animation-delay:${Math.min(index - FIRST_PAINT_CARDS, 11) * 55}ms"`}
         >
-          <div class="product-frame relative aspect-[4/5] w-full overflow-hidden">
+          <div class="product-frame relative w-full overflow-hidden" style="aspect-ratio: 4/5;">
             ${picture}
           </div>
 
@@ -846,7 +865,10 @@
 
       if (!productsLoaded) return;
 
-      const visible = activeFilter === "all" ? products : products.filter((p) => p.category === activeFilter);
+      const visible = (activeFilter === "all" ? products : products.filter((p) => p.category === activeFilter)).map((product) => ({
+        ...product,
+        images: imagesOf(product).map((src) => compactEtsyImage(src)),
+      }));
 
       collectionCount.textContent = visible.length === 1 ? t("grid.countOne") : t("grid.count").replace("{n}", visible.length);
 
