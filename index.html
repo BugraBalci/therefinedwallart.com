@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <title>The Refined Wall Art | Luxury Modern Metal &amp; 3D Wall Art</title>
   <meta id="meta-description" name="description" content="The Refined Wall Art | Luxury Modern Metal &amp; 3D Wall Art — handcrafted metal wall art, forged iron works, bespoke organizers and 3D printed objects, shipped worldwide from our official Etsy shops." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
-  <link id="canonical-url" rel="canonical" href="https://therefinedwallart.com/?lang=en" />
-  <link rel="alternate" hreflang="en" href="https://therefinedwallart.com/?lang=en" />
+  <link id="canonical-url" rel="canonical" href="https://therefinedwallart.com/" />
+  <link rel="alternate" hreflang="en" href="https://therefinedwallart.com/" />
   <link rel="alternate" hreflang="tr" href="https://therefinedwallart.com/?lang=tr" />
   <link rel="alternate" hreflang="x-default" href="https://therefinedwallart.com/" />
   <link rel="icon" type="image/svg+xml" href="https://therefinedwallart.com/favicon.svg">
@@ -95,8 +97,6 @@
     } catch (e) {}
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
   <script>
     tailwind.config = {
@@ -156,11 +156,14 @@
     html.dark .swatch[aria-pressed="true"] {
       box-shadow: 0 0 0 2px #141414, 0 0 0 3.5px #c8a97e, inset 0 0 0 1px rgba(255,255,255,0.08);
     }
+    #product-grid article .product-frame {
+      aspect-ratio: 4 / 5;
+    }
     #product-grid article img {
+      width: 100%;
+      height: 100%;
       max-width: 100%;
       max-height: 100%;
-      width: auto;
-      height: auto;
       object-fit: contain;
       object-position: center;
     }
@@ -219,7 +222,7 @@
 
       <!-- Filters -->
       <nav class="scroll-slim flex-1 overflow-y-auto px-5 pb-4" aria-label="Collections">
-        <p class="px-3 pb-3 text-[10px] font-medium uppercase tracking-luxe text-zinc-500 dark:text-zinc-500" data-i18n="nav.heading">Collections</p>
+        <p class="px-3 pb-3 text-[10px] font-medium uppercase tracking-luxe text-zinc-600 dark:text-zinc-400" data-i18n="nav.heading">Collections</p>
 
         <button type="button" data-filter="all" class="filter-btn group relative flex w-full items-center gap-3 rounded-sm px-3 py-3 text-left transition">
           <span class="filter-bar absolute left-0 top-1/2 h-0 w-px -translate-y-1/2 bg-champagne transition-all duration-300"></span>
@@ -242,7 +245,7 @@
 
       <!-- Storefront + atelier -->
       <div class="border-t border-[#e2ded6] px-8 py-6 dark:border-white/10">
-        <p class="text-[10px] font-medium uppercase tracking-luxe text-zinc-500" data-i18n="sidebar.storefront">Official Storefronts</p>
+        <p class="text-[10px] font-medium uppercase tracking-luxe text-zinc-600" data-i18n="sidebar.storefront">Official Storefronts</p>
         <a
           href="https://therefinedwallart.etsy.com"
           target="_blank"
@@ -292,7 +295,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6" />
           </svg>
         </button>
-        <p class="mt-6 text-[9px] font-light leading-relaxed tracking-[0.08em] text-zinc-400">
+        <p class="mt-6 text-[9px] font-light leading-relaxed tracking-[0.08em] text-zinc-600">
           © <span id="year-sidebar"></span> The Refined Wall Art. All rights reserved.
         </p>
       </div>
@@ -350,7 +353,7 @@
       <main class="flex-1 px-3 pb-16 pt-5 sm:px-8 sm:pb-20 sm:pt-8 lg:px-12 lg:pt-10">
         <div class="mb-4 flex items-center gap-4 sm:mb-8 lg:mb-10">
           <span class="h-px w-12 bg-champagne/40"></span>
-          <span id="collection-count" class="text-[10px] font-light uppercase tracking-[0.24em] text-zinc-500"></span>
+          <span id="collection-count" class="text-[10px] font-light uppercase tracking-[0.24em] text-zinc-600"></span>
         </div>
 
         <!-- Product grid -->
@@ -367,7 +370,7 @@
               href="https://therefinedwallart.etsy.com"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-[10px] font-light tracking-wide text-zinc-400 transition hover:text-champagne"
+              class="text-[10px] font-light tracking-wide text-zinc-600 transition hover:text-champagne"
             >
               TheRefinedWallArt
             </a>
@@ -376,7 +379,7 @@
               href="https://absoluteironworks.etsy.com"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-[10px] font-light tracking-wide text-zinc-400 transition hover:text-champagne"
+              class="text-[10px] font-light tracking-wide text-zinc-600 transition hover:text-champagne"
             >
               AbsoluteIronWorks
             </a>
@@ -428,7 +431,7 @@
             <p id="qv-description" class="mt-6 text-[13.5px] font-light leading-[1.85] text-zinc-600"></p>
 
             <div id="qv-colors-wrap" class="mt-8 hidden">
-              <p class="text-[10px] font-medium uppercase tracking-[0.24em] text-zinc-400" data-i18n="selectColor">Select Color / Finish:</p>
+              <p class="text-[10px] font-medium uppercase tracking-[0.24em] text-zinc-600" data-i18n="selectColor">Select Color / Finish:</p>
               <div id="qv-colors" class="mt-4 flex flex-wrap items-center gap-3"></div>
               <p id="qv-color-name" class="mt-4 text-[11px] font-medium uppercase tracking-[0.2em] text-champagne"></p>
             </div>
@@ -446,7 +449,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M9 7h8v8" />
                 </svg>
               </a>
-              <p class="mt-4 text-[10.5px] font-light leading-relaxed tracking-wide text-zinc-400" data-i18n="modal.note">
+              <p class="mt-4 text-[10.5px] font-light leading-relaxed tracking-wide text-zinc-600" data-i18n="modal.note">
                 Sizes, finishes and shipping details are listed on the Etsy product page.
               </p>
             </div>
@@ -501,7 +504,7 @@
           <div class="mt-6 h-px w-14 bg-champagne/35"></div>
 
           <div class="mt-8">
-            <p class="text-[10px] font-medium uppercase tracking-[0.24em] text-zinc-400" data-i18n="contact.address">Address</p>
+            <p class="text-[10px] font-medium uppercase tracking-[0.24em] text-zinc-600" data-i18n="contact.address">Address</p>
             <a
               href="https://maps.google.com/?q=Fevziçakmak,+10618.+Sk.+26A,+42210+Karatay/Konya"
               target="_blank"
@@ -518,18 +521,18 @@
           </div>
 
           <div class="mt-7">
-            <p class="text-[10px] font-medium uppercase tracking-[0.24em] text-zinc-400" data-i18n="contact.whatsapp">WhatsApp</p>
+            <p class="text-[10px] font-medium uppercase tracking-[0.24em] text-zinc-600" data-i18n="contact.whatsapp">WhatsApp</p>
             <a href="https://wa.me/905446025008" target="_blank" rel="noopener noreferrer" class="mt-3 block text-[13px] font-light tracking-wide text-zinc-700 transition hover:text-champagne">+90 544 602 50 08</a>
             <a href="https://wa.me/905456078088" target="_blank" rel="noopener noreferrer" class="mt-2 block text-[13px] font-light tracking-wide text-zinc-700 transition hover:text-champagne">+90 545 607 80 88</a>
           </div>
 
           <div class="mt-7">
-            <p class="text-[10px] font-medium uppercase tracking-[0.24em] text-zinc-400" data-i18n="contact.email">Email</p>
+            <p class="text-[10px] font-medium uppercase tracking-[0.24em] text-zinc-600" data-i18n="contact.email">Email</p>
             <a href="mailto:info@therefinedwallart.com" class="mt-3 block text-[13px] font-light tracking-wide text-zinc-700 transition hover:text-champagne">info@therefinedwallart.com</a>
           </div>
 
           <div class="mt-7">
-            <p class="text-[10px] font-medium uppercase tracking-[0.24em] text-zinc-400" data-i18n="contact.etsy">Official Etsy Shops</p>
+            <p class="text-[10px] font-medium uppercase tracking-[0.24em] text-zinc-600" data-i18n="contact.etsy">Official Etsy Shops</p>
             <a
               href="https://therefinedwallart.etsy.com"
               target="_blank"
@@ -649,7 +652,7 @@
       inactive: {
         button: "hover:bg-[#e7e3dc]/70 dark:hover:bg-white/5",
         label: "text-zinc-600 dark:text-zinc-400",
-        count: "text-zinc-500",
+        count: "text-zinc-600",
         bar: "h-0",
       },
     };
@@ -811,6 +814,11 @@
       const image = escapeHtml(previewImageFor(product));
       const shop = escapeHtml(SHOP_LABELS[product.category] ?? product.shop ?? "");
       const productId = escapeHtml(product.id);
+      const loadingAttrs = index === 0
+        ? 'fetchpriority="high"'
+        : index === 1
+          ? 'decoding="async"'
+          : 'loading="lazy" decoding="async"';
 
       return `
         <article
@@ -818,13 +826,13 @@
           class="group relative flex h-full animate-rise flex-col items-center overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white text-center shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] transition hover:shadow-[0_8px_28px_-6px_rgba(0,0,0,0.10)] dark:border-white/10 dark:bg-[#141414] dark:shadow-[0_4px_24px_-4px_rgba(0,0,0,0.45)] dark:hover:shadow-[0_8px_32px_-6px_rgba(0,0,0,0.6)]"
           style="animation-delay:${Math.min(index, 11) * 55}ms"
         >
-          <div class="flex aspect-[4/5] w-full items-center justify-center overflow-hidden rounded-xl p-2.5 sm:aspect-[3/4] sm:p-5">
-            <img src="${image}" alt="${title}" loading="lazy" decoding="async" />
+          <div class="product-frame flex aspect-[4/5] w-full items-center justify-center overflow-hidden rounded-xl p-2.5 sm:p-5">
+            <img src="${image}" alt="${title}" width="400" height="500" ${loadingAttrs} />
           </div>
 
           <div class="flex w-full flex-1 flex-col items-center px-3 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-3">
-            <p class="text-[8px] font-medium uppercase tracking-[0.16em] text-zinc-600 transition-colors duration-500 group-hover:text-champagne sm:text-[9.5px] sm:tracking-[0.22em] dark:text-zinc-400">${shop}</p>
-            <h3 class="mt-1.5 line-clamp-2 max-w-[26ch] font-cinzel text-[11px] font-medium leading-snug tracking-[0.04em] text-zinc-900 sm:text-[15px] dark:text-zinc-100">${title}</h3>
+            <p class="text-[8px] font-medium uppercase tracking-[0.16em] text-zinc-700 transition-colors duration-500 group-hover:text-champagne sm:text-[9.5px] sm:tracking-[0.22em] dark:text-zinc-400">${shop}</p>
+            <h2 class="mt-1.5 line-clamp-2 max-w-[26ch] font-cinzel text-[11px] font-medium leading-snug tracking-[0.04em] text-zinc-900 sm:text-[15px] dark:text-zinc-100">${title}</h2>
           </div>
 
           <button
@@ -840,7 +848,7 @@
 
     function renderProducts() {
       if (loadFailed) {
-        grid.innerHTML = `<p class="col-span-full py-24 text-center text-[13px] font-light tracking-wide text-zinc-500">${escapeHtml(t("grid.failed"))}</p>`;
+        grid.innerHTML = `<p class="col-span-full py-24 text-center text-[13px] font-light tracking-wide text-zinc-600">${escapeHtml(t("grid.failed"))}</p>`;
         collectionCount.textContent = "";
         return;
       }
@@ -851,7 +859,7 @@
 
       grid.innerHTML = visible.length
         ? visible.map(productCard).join("")
-        : `<p class="col-span-full py-24 text-center text-[13px] font-light tracking-wide text-zinc-500">${escapeHtml(t("grid.empty"))}</p>`;
+        : `<p class="col-span-full py-24 text-center text-[13px] font-light tracking-wide text-zinc-600">${escapeHtml(t("grid.empty"))}</p>`;
     }
 
     function renderCounts() {
@@ -876,16 +884,23 @@
     /* Single writer for the query string so a language switch cannot drop the active
        filter, and vice versa. Canonical carries only lang: filters are views of the
        same collection, so they must not fragment into separate indexable URLs. */
+    function canonicalHrefFor(language) {
+      return language === DEFAULT_LANG
+        ? `${CANONICAL_ORIGIN}/`
+        : `${CANONICAL_ORIGIN}/?${LANG_PARAM}=${language}`;
+    }
+
     function syncUrl() {
       const params = new URLSearchParams();
-      params.set(LANG_PARAM, lang);
+      if (lang !== DEFAULT_LANG) params.set(LANG_PARAM, lang);
       if (activeFilter !== "all") params.set(FILTER_PARAM, activeFilter);
 
-      canonicalLink.href = `${CANONICAL_ORIGIN}/?${LANG_PARAM}=${lang}`;
+      canonicalLink.href = canonicalHrefFor(lang);
 
       /* replaceState throws on file:// and keeps switcher clicks out of session history */
       if (window.location.protocol === "http:" || window.location.protocol === "https:") {
-        window.history.replaceState(null, "", `${window.location.pathname}?${params}`);
+        const query = params.toString();
+        window.history.replaceState(null, "", query ? `${window.location.pathname}?${query}` : window.location.pathname);
       }
     }
 
