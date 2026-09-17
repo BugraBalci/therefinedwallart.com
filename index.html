@@ -3,8 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cinzel-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link
+    rel="preload"
+    as="image"
+    type="image/avif"
+    href="thumbs/w400/AbsoluteIronworks/a%C4%9Fa%C3%A7%20ask%C4%B1l%C4%B1k/agacask%C4%B1l%C4%B1ksiyah.avif"
+    imagesrcset="thumbs/w400/AbsoluteIronworks/a%C4%9Fa%C3%A7%20ask%C4%B1l%C4%B1k/agacask%C4%B1l%C4%B1ksiyah.avif 400w, thumbs/w800/AbsoluteIronworks/a%C4%9Fa%C3%A7%20ask%C4%B1l%C4%B1k/agacask%C4%B1l%C4%B1ksiyah.avif 800w"
+    imagesizes="(min-width: 1536px) 18vw, (min-width: 1024px) 22vw, (min-width: 640px) 46vw, 48vw"
+    fetchpriority="high"
+  >
+  <link rel="preload" href="products.json" as="fetch" crossorigin>
   <title>The Refined Wall Art | Luxury Modern Metal &amp; 3D Wall Art</title>
   <meta id="meta-description" name="description" content="The Refined Wall Art | Luxury Modern Metal &amp; 3D Wall Art — handcrafted metal wall art, forged iron works, bespoke organizers and 3D printed objects, shipped worldwide from our official Etsy shops." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
@@ -96,97 +107,6 @@
       if (localStorage.getItem("theme") === "dark") document.documentElement.classList.add("dark");
     } catch (e) {}
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            ink: "#0b0b0b",
-            coal: "#121212",
-            anthracite: "#181818",
-            champagne: "#c8a97e",
-          },
-          fontFamily: {
-            cinzel: ["Cinzel", "serif"],
-            inter: ["Inter", "sans-serif"],
-          },
-          letterSpacing: {
-            luxe: "0.32em",
-          },
-          keyframes: {
-            rise: {
-              "0%": { opacity: "0", transform: "translateY(14px)" },
-              "100%": { opacity: "1", transform: "translateY(0)" },
-            },
-          },
-          animation: {
-            rise: "rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both",
-          },
-        },
-      },
-    };
-  </script>
-  <style>
-    ::selection { background: #c8a97e; color: #18181b; }
-    html { scroll-behavior: smooth; color-scheme: light; }
-    html.dark { color-scheme: dark; }
-    body { -webkit-font-smoothing: antialiased; }
-    body, aside, header, footer, article {
-      transition: background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
-    }
-    .scroll-slim::-webkit-scrollbar { width: 6px; height: 6px; }
-    .scroll-slim::-webkit-scrollbar-track { background: transparent; }
-    .scroll-slim::-webkit-scrollbar-thumb { background: rgba(24,24,27,0.14); border-radius: 9999px; }
-    html.dark .scroll-slim::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.14); }
-    .no-scrollbar { scrollbar-width: none; }
-    .no-scrollbar::-webkit-scrollbar { display: none; }
-    .hairline { background: linear-gradient(90deg, transparent, rgba(200,169,126,0.45), transparent); }
-    .swatch {
-      box-shadow: inset 0 0 0 1px rgba(24,24,27,0.14);
-    }
-    html.dark .swatch {
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.16);
-    }
-    .swatch[aria-pressed="true"] {
-      box-shadow: 0 0 0 2px #f4f1ea, 0 0 0 3.5px #c8a97e, inset 0 0 0 1px rgba(24,24,27,0.1);
-    }
-    html.dark .swatch[aria-pressed="true"] {
-      box-shadow: 0 0 0 2px #141414, 0 0 0 3.5px #c8a97e, inset 0 0 0 1px rgba(255,255,255,0.08);
-    }
-    #product-grid article .product-frame {
-      aspect-ratio: 4 / 5;
-    }
-    #product-grid article img {
-      width: 100%;
-      height: 100%;
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-      object-position: center;
-    }
-    #qv-stage {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    #qv-stage img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      max-height: 45vh;
-      object-fit: contain;
-      object-position: center;
-    }
-    @media (min-width: 640px) {
-      #qv-stage img {
-        height: 100%;
-        max-height: none;
-      }
-    }
-  </style>
 </head>
 <body class="bg-[#f4f1ea] font-inter text-zinc-800 dark:bg-[#0b0b0b] dark:text-zinc-200">
 
@@ -227,19 +147,19 @@
         <button type="button" data-filter="all" class="filter-btn group relative flex w-full items-center gap-3 rounded-sm px-3 py-3 text-left transition">
           <span class="filter-bar absolute left-0 top-1/2 h-0 w-px -translate-y-1/2 bg-champagne transition-all duration-300"></span>
           <span class="filter-label min-w-0 flex-1 truncate text-[12px] font-medium uppercase tracking-[0.2em]" data-i18n="all">All Studios</span>
-          <span class="filter-count text-[10px] font-light tabular-nums tracking-widest" data-count-for="all"></span>
+          <span class="filter-count inline-block min-w-[2ch] text-right text-[10px] font-light tabular-nums tracking-widest" data-count-for="all">&nbsp;</span>
         </button>
 
         <button type="button" data-filter="wall-art" class="filter-btn group relative flex w-full items-center gap-3 rounded-sm px-3 py-3 text-left transition">
           <span class="filter-bar absolute left-0 top-1/2 h-0 w-px -translate-y-1/2 bg-champagne transition-all duration-300"></span>
           <span class="filter-label min-w-0 flex-1 truncate text-[12px] font-medium uppercase tracking-[0.2em]" data-i18n="nav.wallArt.title">The Refined Wall Art</span>
-          <span class="filter-count text-[10px] font-light tabular-nums tracking-widest" data-count-for="wall-art"></span>
+          <span class="filter-count inline-block min-w-[2ch] text-right text-[10px] font-light tabular-nums tracking-widest" data-count-for="wall-art">&nbsp;</span>
         </button>
 
         <button type="button" data-filter="iron-works" class="filter-btn group relative flex w-full items-center gap-3 rounded-sm px-3 py-3 text-left transition">
           <span class="filter-bar absolute left-0 top-1/2 h-0 w-px -translate-y-1/2 bg-champagne transition-all duration-300"></span>
           <span class="filter-label min-w-0 flex-1 truncate text-[12px] font-medium uppercase tracking-[0.2em]" data-i18n="nav.iron.title">Absolute Iron Works</span>
-          <span class="filter-count text-[10px] font-light tabular-nums tracking-widest" data-count-for="iron-works"></span>
+          <span class="filter-count inline-block min-w-[2ch] text-right text-[10px] font-light tabular-nums tracking-widest" data-count-for="iron-works">&nbsp;</span>
         </button>
       </nav>
 
@@ -296,7 +216,7 @@
           </svg>
         </button>
         <p class="mt-6 text-[9px] font-light leading-relaxed tracking-[0.08em] text-zinc-600">
-          © <span id="year-sidebar"></span> The Refined Wall Art. All rights reserved.
+          © <span id="year-sidebar">2026</span> The Refined Wall Art. All rights reserved.
         </p>
       </div>
     </aside>
@@ -351,19 +271,48 @@
       </header>
 
       <main class="flex-1 px-3 pb-16 pt-5 sm:px-8 sm:pb-20 sm:pt-8 lg:px-12 lg:pt-10">
-        <div class="mb-4 flex items-center gap-4 sm:mb-8 lg:mb-10">
+        <div class="mb-4 flex min-h-[15px] items-center gap-4 sm:mb-8 lg:mb-10">
           <span class="h-px w-12 bg-champagne/40"></span>
-          <span id="collection-count" class="text-[10px] font-light uppercase tracking-[0.24em] text-zinc-600"></span>
+          <span id="collection-count" class="inline-block min-h-[15px] min-w-[9ch] text-[10px] font-light uppercase leading-[15px] tracking-[0.24em] text-zinc-600"></span>
         </div>
 
-        <!-- Product grid -->
-        <div id="product-grid" class="grid grid-cols-2 items-stretch gap-2 sm:gap-3 lg:grid-cols-3 lg:gap-x-6 lg:gap-y-10 2xl:grid-cols-4"></div>
+        <!-- Product grid: static skeletons reserve first-viewport height before JS paints cards -->
+        <div id="product-grid" class="grid min-h-[100svh] grid-cols-2 items-stretch gap-2 sm:gap-3 lg:grid-cols-3 lg:gap-x-6 lg:gap-y-10 2xl:grid-cols-4" aria-busy="true">
+          <article class="flex h-full flex-col overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white dark:border-white/10 dark:bg-[#141414]" aria-hidden="true">
+            <div class="product-frame relative aspect-[4/5] w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800"></div>
+            <div class="flex w-full flex-col items-center px-3 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-3">
+              <div class="h-2.5 w-16 rounded-full bg-zinc-200 dark:bg-zinc-700"></div>
+              <div class="mt-1.5 h-[31px] w-3/4 rounded-full bg-zinc-200 dark:bg-zinc-700 sm:h-[42px]"></div>
+            </div>
+          </article>
+          <article class="flex h-full flex-col overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white dark:border-white/10 dark:bg-[#141414]" aria-hidden="true">
+            <div class="product-frame relative aspect-[4/5] w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800"></div>
+            <div class="flex w-full flex-col items-center px-3 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-3">
+              <div class="h-2.5 w-16 rounded-full bg-zinc-200 dark:bg-zinc-700"></div>
+              <div class="mt-1.5 h-[31px] w-3/4 rounded-full bg-zinc-200 dark:bg-zinc-700 sm:h-[42px]"></div>
+            </div>
+          </article>
+          <article class="flex h-full flex-col overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white dark:border-white/10 dark:bg-[#141414]" aria-hidden="true">
+            <div class="product-frame relative aspect-[4/5] w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800"></div>
+            <div class="flex w-full flex-col items-center px-3 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-3">
+              <div class="h-2.5 w-16 rounded-full bg-zinc-200 dark:bg-zinc-700"></div>
+              <div class="mt-1.5 h-[31px] w-3/4 rounded-full bg-zinc-200 dark:bg-zinc-700 sm:h-[42px]"></div>
+            </div>
+          </article>
+          <article class="flex h-full flex-col overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white dark:border-white/10 dark:bg-[#141414]" aria-hidden="true">
+            <div class="product-frame relative aspect-[4/5] w-full overflow-hidden bg-zinc-200 dark:bg-zinc-800"></div>
+            <div class="flex w-full flex-col items-center px-3 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-3">
+              <div class="h-2.5 w-16 rounded-full bg-zinc-200 dark:bg-zinc-700"></div>
+              <div class="mt-1.5 h-[31px] w-3/4 rounded-full bg-zinc-200 dark:bg-zinc-700 sm:h-[42px]"></div>
+            </div>
+          </article>
+        </div>
       </main>
 
       <footer class="border-t border-[#e2ded6] bg-[#efece6] px-5 py-10 dark:border-white/10 dark:bg-[#0b0b0b] sm:px-8 lg:px-12">
         <div class="flex flex-col items-start gap-3 sm:items-center sm:text-center">
           <p class="text-[11px] font-light tracking-[0.16em] text-zinc-600 dark:text-zinc-400">
-            © <span id="year"></span> The Refined Wall Art. All rights reserved. Handcrafted with precision.
+            © <span id="year">2026</span> The Refined Wall Art. All rights reserved. Handcrafted with precision.
           </p>
           <nav class="flex flex-wrap items-center gap-x-5 gap-y-1" data-i18n-aria="footer.shopsAria" aria-label="Official Etsy shops">
             <a
@@ -641,6 +590,10 @@
           "</svg>"
       );
 
+    const CARD_IMAGE_SIZES = "(min-width: 1536px) 18vw, (min-width: 1024px) 22vw, (min-width: 640px) 46vw, 48vw";
+    const FIRST_PAINT_CARDS = 8;
+    const CARD_CHUNK = 8;
+
     /* -------------------------------- Styling -------------------------------- */
     const FILTER_STATE = {
       active: {
@@ -676,11 +629,13 @@
     const validFilters = new Set(filterButtons.map((button) => button.dataset.filter));
 
     let products = [];
+    let productsLoaded = false;
     let activeFilter = "all";
     let lang = DEFAULT_LANG;
     let loadFailed = false;
     let openProductId = null;
     let openInfoPanel = null;
+    let renderToken = 0;
     const selectedColorByProduct = new Map();
 
     const t = (key) => I18N[key]?.[lang] ?? I18N[key]?.en ?? key;
@@ -808,31 +763,64 @@
       }
     }
 
+    function encodeAssetPath(rel) {
+      return String(rel)
+        .split("/")
+        .map((segment) => encodeURIComponent(segment))
+        .join("/");
+    }
+
+    function cardVariantPath(src, width, ext) {
+      const decoded = decodeURI(src);
+      const withoutExt = decoded.replace(/\.[a-z0-9]+$/i, "");
+      return encodeAssetPath(`thumbs/w${width}/${withoutExt}.${ext}`);
+    }
+
+    function cardPicture(src, title, index) {
+      const sizes = CARD_IMAGE_SIZES;
+      const webp400 = escapeHtml(cardVariantPath(src, 400, "webp"));
+      const webp800 = escapeHtml(cardVariantPath(src, 800, "webp"));
+      const avif400 = escapeHtml(cardVariantPath(src, 400, "avif"));
+      const avif800 = escapeHtml(cardVariantPath(src, 800, "avif"));
+      const isLcp = index === 0;
+      const aboveFold = index < FIRST_PAINT_CARDS;
+      const loadingAttrs = isLcp
+        ? 'loading="eager" fetchpriority="high"'
+        : aboveFold
+          ? 'loading="eager" decoding="async"'
+          : 'loading="lazy" decoding="async"';
+
+      return `
+        <picture>
+          <source type="image/avif" srcset="${avif400} 400w, ${avif800} 800w" sizes="${sizes}">
+          <source type="image/webp" srcset="${webp400} 400w, ${webp800} 800w" sizes="${sizes}">
+          <img src="${webp400}" alt="${title}" width="400" height="500" ${loadingAttrs} class="h-full w-full object-contain" data-fullsrc="${escapeHtml(src)}" />
+        </picture>`;
+    }
+
     /* ---------------------------------- Cards --------------------------------- */
     function productCard(product, index) {
       const title = escapeHtml(localized(product.title));
-      const image = escapeHtml(previewImageFor(product));
+      const image = previewImageFor(product);
       const shop = escapeHtml(SHOP_LABELS[product.category] ?? product.shop ?? "");
       const productId = escapeHtml(product.id);
-      const loadingAttrs = index === 0
-        ? 'fetchpriority="high"'
-        : index === 1
-          ? 'decoding="async"'
-          : 'loading="lazy" decoding="async"';
+      const picture = image === IMAGE_FALLBACK
+        ? `<img src="${IMAGE_FALLBACK}" alt="${title}" width="400" height="500" decoding="async" class="h-full w-full object-contain" />`
+        : cardPicture(image, title, index);
 
       return `
         <article
           data-product-id="${productId}"
-          class="group relative flex h-full animate-rise flex-col items-center overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white text-center shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] transition hover:shadow-[0_8px_28px_-6px_rgba(0,0,0,0.10)] dark:border-white/10 dark:bg-[#141414] dark:shadow-[0_4px_24px_-4px_rgba(0,0,0,0.45)] dark:hover:shadow-[0_8px_32px_-6px_rgba(0,0,0,0.6)]"
-          style="animation-delay:${Math.min(index, 11) * 55}ms"
+          class="group relative flex h-full flex-col items-center overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white text-center shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] transition hover:shadow-[0_8px_28px_-6px_rgba(0,0,0,0.10)] dark:border-white/10 dark:bg-[#141414] dark:shadow-[0_4px_24px_-4px_rgba(0,0,0,0.45)] dark:hover:shadow-[0_8px_32px_-6px_rgba(0,0,0,0.6)]${index < FIRST_PAINT_CARDS ? "" : " animate-rise"}"
+          ${index < FIRST_PAINT_CARDS ? "" : `style="animation-delay:${Math.min(index - FIRST_PAINT_CARDS, 11) * 55}ms"`}
         >
-          <div class="product-frame flex aspect-[4/5] w-full items-center justify-center overflow-hidden rounded-xl p-2.5 sm:p-5">
-            <img src="${image}" alt="${title}" width="400" height="500" ${loadingAttrs} />
+          <div class="product-frame relative aspect-[4/5] w-full overflow-hidden">
+            ${picture}
           </div>
 
           <div class="flex w-full flex-1 flex-col items-center px-3 pb-4 pt-2 sm:px-4 sm:pb-5 sm:pt-3">
-            <p class="text-[8px] font-medium uppercase tracking-[0.16em] text-zinc-700 transition-colors duration-500 group-hover:text-champagne sm:text-[9.5px] sm:tracking-[0.22em] dark:text-zinc-400">${shop}</p>
-            <h2 class="mt-1.5 line-clamp-2 max-w-[26ch] font-cinzel text-[11px] font-medium leading-snug tracking-[0.04em] text-zinc-900 sm:text-[15px] dark:text-zinc-100">${title}</h2>
+            <p class="min-h-[10px] text-[8px] font-medium uppercase tracking-[0.16em] text-zinc-700 transition-colors duration-500 group-hover:text-champagne sm:min-h-[13px] sm:text-[9.5px] sm:tracking-[0.22em] dark:text-zinc-400">${shop}</p>
+            <h2 class="mt-1.5 line-clamp-2 min-h-[31px] max-w-[26ch] font-cinzel text-[11px] font-medium leading-snug tracking-[0.04em] text-zinc-900 sm:min-h-[42px] sm:text-[15px] dark:text-zinc-100">${title}</h2>
           </div>
 
           <button
@@ -847,19 +835,44 @@
     }
 
     function renderProducts() {
+      const token = ++renderToken;
+
       if (loadFailed) {
         grid.innerHTML = `<p class="col-span-full py-24 text-center text-[13px] font-light tracking-wide text-zinc-600">${escapeHtml(t("grid.failed"))}</p>`;
+        grid.setAttribute("aria-busy", "false");
         collectionCount.textContent = "";
         return;
       }
+
+      if (!productsLoaded) return;
 
       const visible = activeFilter === "all" ? products : products.filter((p) => p.category === activeFilter);
 
       collectionCount.textContent = visible.length === 1 ? t("grid.countOne") : t("grid.count").replace("{n}", visible.length);
 
-      grid.innerHTML = visible.length
-        ? visible.map(productCard).join("")
-        : `<p class="col-span-full py-24 text-center text-[13px] font-light tracking-wide text-zinc-600">${escapeHtml(t("grid.empty"))}</p>`;
+      if (!visible.length) {
+        grid.innerHTML = `<p class="col-span-full py-24 text-center text-[13px] font-light tracking-wide text-zinc-600">${escapeHtml(t("grid.empty"))}</p>`;
+        grid.setAttribute("aria-busy", "false");
+        return;
+      }
+
+      const first = visible.slice(0, FIRST_PAINT_CARDS);
+      const rest = visible.slice(FIRST_PAINT_CARDS);
+      grid.innerHTML = first.map(productCard).join("");
+      grid.setAttribute("aria-busy", "false");
+
+      if (!rest.length) return;
+
+      let offset = 0;
+      const pump = () => {
+        if (token !== renderToken) return;
+        const slice = rest.slice(offset, offset + CARD_CHUNK);
+        if (!slice.length) return;
+        grid.insertAdjacentHTML("beforeend", slice.map((product, i) => productCard(product, FIRST_PAINT_CARDS + offset + i)).join(""));
+        offset += CARD_CHUNK;
+        if (offset < rest.length) window.setTimeout(pump, 0);
+      };
+      window.setTimeout(pump, 0);
     }
 
     function renderCounts() {
@@ -1066,7 +1079,7 @@
           aria-label="${escapeHtml(t("a11y.openOnEtsy"))} — ${alt}"
           class="flex h-full w-full max-w-full items-center justify-center overflow-hidden rounded-2xl bg-white dark:bg-[#141414]"
         >
-          <img src="${src}" alt="${alt}" class="mx-auto h-auto w-full max-h-[45vh] object-contain object-center sm:h-full sm:max-h-none" />
+          <img src="${src}" alt="${alt}" width="800" height="800" decoding="async" class="mx-auto h-auto w-full max-h-[45vh] object-contain object-center sm:h-full sm:max-h-none" />
         </a>`;
     }
 
@@ -1088,7 +1101,7 @@
               class="relative h-16 w-16 shrink-0 overflow-hidden rounded-xl border transition hover:border-[#d6d0c6] dark:hover:border-white/20 ${selected ? "border-champagne/70" : "border-[#e2ded6] dark:border-white/10"}"
               aria-label="${label}"
               aria-pressed="${selected}"
-            ><img src="${escapeHtml(url)}" alt="${escapeHtml(titleText)}" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button>`;
+            ><img src="${escapeHtml(url)}" alt="${escapeHtml(titleText)}" width="64" height="64" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button>`;
         })
         .join("");
     }
@@ -1388,9 +1401,24 @@
       "error",
       (event) => {
         const target = event.target;
-        if (target instanceof HTMLImageElement && target.src !== IMAGE_FALLBACK) {
-          target.src = IMAGE_FALLBACK;
+        if (!(target instanceof HTMLImageElement) || target.src === IMAGE_FALLBACK) return;
+        const picture = target.parentElement;
+        if (picture && picture.tagName === "PICTURE") {
+          picture.querySelectorAll("source").forEach((source) => source.remove());
         }
+        target.removeAttribute("srcset");
+        target.removeAttribute("sizes");
+        if (target.dataset.fallbackApplied === "1") {
+          target.src = IMAGE_FALLBACK;
+          return;
+        }
+        const original = target.dataset.fullsrc;
+        target.dataset.fallbackApplied = "1";
+        if (original && target.getAttribute("src") !== original) {
+          target.src = original;
+          return;
+        }
+        target.src = IMAGE_FALLBACK;
       },
       true
     );
@@ -1417,13 +1445,14 @@
     setLanguage(langFromUrl());
     setActiveFilter(activeFilter);
 
-    fetch("products.json")
+    fetch("products.json", { credentials: "omit" })
       .then((response) => {
         if (!response.ok) throw new Error("Unable to load products");
         return response.json();
       })
       .then((data) => {
         products = Array.isArray(data) ? data : [];
+        productsLoaded = true;
         renderCounts();
         renderProducts();
       })

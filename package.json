@@ -2,7 +2,11 @@
   "name": "therefinedwallart.com",
   "private": true,
   "scripts": {
-    "optimize-images": "node optimize-images.js"
+    "optimize-images": "node optimize-images.js",
+    "build:fonts": "node scripts/copy-fonts.js",
+    "build:css": "node scripts/build-css.js",
+    "build:images": "node scripts/generate-card-images.js",
+    "build": "npm run build:fonts && npm run build:css && npm run build:images"
   },
   "dependencies": {
     "sharp": "^0.34.5"
