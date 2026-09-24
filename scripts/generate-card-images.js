@@ -20,6 +20,10 @@ const CONCURRENCY = 6;
 const WEBP_QUALITY = 76;
 const AVIF_QUALITY = 55;
 
+function isRemote(src) {
+  return /^https?:\/\//i.test(src);
+}
+
 function encodePath(rel) {
   return rel
     .split("/")
@@ -35,13 +39,18 @@ function thumbRel(rel, width, ext) {
 async function walkProducts() {
   const data = JSON.parse(await fs.readFile(path.join(ROOT, "products.json"), "utf8"));
   const unique = new Map();
+  let skippedRemote = 0;
   for (const product of data) {
     const src = product?.images?.[0];
     if (!src) continue;
+    if (isRemote(src)) {
+      skippedRemote += 1;
+      continue;
+    }
     const decoded = decodeURI(src);
     unique.set(decoded, src);
   }
-  return { products: data, unique };
+  return { products: data, unique, skippedRemote };
 }
 
 async function mapLimit(items, limit, fn) {
@@ -94,9 +103,12 @@ async function patchLcpPreload(avif400, avif800) {
 }
 
 async function main() {
-  const { products, unique } = await walkProducts();
+  const { products, unique, skippedRemote } = await walkProducts();
   const sources = [...unique.keys()];
   console.log(`Generating card variants for ${sources.length} preview images…`);
+  if (skippedRemote) {
+    console.log(`Skipped ${skippedRemote} remote preview images (http/https).`);
+  }
 
   let originalBytes = 0;
   let avif400Bytes = 0;
@@ -105,6 +117,7 @@ async function main() {
   const samples = [];
 
   await mapLimit(sources, CONCURRENCY, async (rel) => {
+    if (isRemote(rel)) return;
     const abs = path.join(ROOT, rel);
     try {
       const [stat, meta] = await Promise.all([fs.stat(abs), sharp(abs).metadata()]);
@@ -132,7 +145,7 @@ async function main() {
 
   samples.sort((a, b) => b.original - a.original);
   const firstSrc = products[0]?.images?.[0];
-  const firstRel = firstSrc ? decodeURI(firstSrc) : "";
+  const firstRel = firstSrc && !isRemote(firstSrc) ? decodeURI(firstSrc) : "";
   if (firstRel && !failed.includes(firstRel)) {
     const first = firstRel;
     const lcpAvif = encodePath(thumbRel(first, 800, "avif"));
