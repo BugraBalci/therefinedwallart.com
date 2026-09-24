@@ -16,16 +16,27 @@ const FILES = [
 
 async function main() {
   await fs.mkdir(DEST, { recursive: true });
+  let copied = 0;
   for (const [fromRel, name] of FILES) {
     const from = path.join(ROOT, "node_modules", fromRel);
     const to = path.join(DEST, name);
-    await fs.copyFile(from, to);
-    const size = (await fs.stat(to)).size;
-    console.log(`${name}  ${(size / 1024).toFixed(1)} KB`);
+    try {
+      await fs.copyFile(from, to);
+      const size = (await fs.stat(to)).size;
+      console.log(`${name}  ${(size / 1024).toFixed(1)} KB`);
+      copied += 1;
+    } catch (err) {
+      console.warn(
+        `[copy-fonts] Uyarı: ${name} kopyalanamadı (${err.message}).`,
+      );
+    }
+  }
+  if (copied === 0) {
+    console.warn("[copy-fonts] Uyarı: hiçbir font kopyalanamadı, derleme devam ediyor.");
   }
 }
 
 main().catch((err) => {
-  console.error(err);
-  process.exit(1);
+  console.warn(`[copy-fonts] Uyarı: ${err.message}. Font kopyalama atlandı, derleme devam ediyor.`);
+  process.exit(0);
 });

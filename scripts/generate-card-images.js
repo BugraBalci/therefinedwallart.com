@@ -3,7 +3,16 @@
 
 const fs = require("fs/promises");
 const path = require("path");
-const sharp = require("sharp");
+
+let sharp;
+try {
+  sharp = require("sharp");
+} catch (err) {
+  console.warn(
+    `[generate-card-images] Uyarı: Sharp yüklenemedi (${err.message}). Kart görselleri atlandı, derleme devam ediyor.`,
+  );
+  process.exit(0);
+}
 
 const ROOT = path.join(__dirname, "..");
 const WIDTHS = [400, 800];
@@ -116,21 +125,34 @@ async function main() {
         avif400,
       });
     } catch (err) {
-      failed.push(`${rel}: ${err.message}`);
+      failed.push(rel);
+      console.warn(`[generate-card-images] Uyarı: ${rel} üretilemedi (${err.message}).`);
     }
   });
 
   samples.sort((a, b) => b.original - a.original);
-  const first = decodeURI(products[0].images[0]);
-  const lcpAvif = encodePath(thumbRel(first, 800, "avif"));
-  const lcpAvif400 = encodePath(thumbRel(first, 400, "avif"));
-  await patchLcpPreload(lcpAvif400, lcpAvif);
+  const firstSrc = products[0]?.images?.[0];
+  const firstRel = firstSrc ? decodeURI(firstSrc) : "";
+  if (firstRel && !failed.includes(firstRel)) {
+    const first = firstRel;
+    const lcpAvif = encodePath(thumbRel(first, 800, "avif"));
+    const lcpAvif400 = encodePath(thumbRel(first, 400, "avif"));
+    try {
+      await patchLcpPreload(lcpAvif400, lcpAvif);
+      console.log(`LCP preload: ${lcpAvif}`);
+      console.log(`LCP srcset: ${lcpAvif400} 400w, ${lcpAvif} 800w`);
+    } catch (err) {
+      console.warn(`[generate-card-images] Uyarı: LCP preload güncellenemedi (${err.message}).`);
+    }
+  } else if (!firstRel) {
+    console.warn("[generate-card-images] Uyarı: LCP önizlemesi için ürün görseli yok, preload atlandı.");
+  } else {
+    console.warn("[generate-card-images] Uyarı: ilk ürün görseli üretilemedi, LCP preload değiştirilmedi.");
+  }
 
   console.log(`Original previews: ${(originalBytes / 1024).toFixed(1)} KB`);
   console.log(`Generated variants (all widths/formats): ${(outputBytes / 1024).toFixed(1)} KB`);
   console.log(`Card AVIF 400w total: ${(avif400Bytes / 1024).toFixed(1)} KB`);
-  console.log(`LCP preload: ${lcpAvif}`);
-  console.log(`LCP srcset: ${lcpAvif400} 400w, ${lcpAvif} 800w`);
   console.log("Largest original previews → 400w AVIF:");
   for (const row of samples.slice(0, 8)) {
     console.log(
@@ -138,12 +160,16 @@ async function main() {
     );
   }
   if (failed.length) {
-    console.error(failed.join("\n"));
-    process.exitCode = 1;
+    console.warn(
+      `[generate-card-images] Uyarı: ${failed.length} görsel atlandı. Derleme devam ediyor.`,
+    );
   }
+  process.exit(0);
 }
 
 main().catch((err) => {
-  console.error(err);
-  process.exit(1);
+  console.warn(
+    `[generate-card-images] Uyarı: ${err.message}. Kart görselleri atlandı, derleme devam ediyor.`,
+  );
+  process.exit(0);
 });

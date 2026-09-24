@@ -3,7 +3,16 @@
 
 const fs = require("fs/promises");
 const path = require("path");
-const sharp = require("sharp");
+
+let sharp;
+try {
+  sharp = require("sharp");
+} catch (err) {
+  console.warn(
+    `[optimize-images] Uyarı: Sharp yüklenemedi (${err.message}). Görsel optimizasyonu atlandı, derleme devam ediyor.`,
+  );
+  process.exit(0);
+}
 
 const ROOT = __dirname;
 const MAX_WIDTH = 1400;
@@ -136,7 +145,9 @@ async function main() {
       ok += 1;
     } catch (err) {
       failed.push(file);
-      console.error(`FAIL ${path.relative(ROOT, file)}: ${err.message}`);
+      console.warn(
+        `[optimize-images] Uyarı: ${path.relative(ROOT, file)} dönüştürülemedi (${err.message}).`,
+      );
     }
   });
 
@@ -147,12 +158,16 @@ async function main() {
   console.log(`Converted: ${ok}/${files.length}`);
   console.log(`Size: ${fmt(before)} → ${fmt(after)}  (saved ${fmt(Math.max(0, before - after))})`);
   if (failed.length) {
-    console.error(`Failed: ${failed.length}`);
-    process.exitCode = 1;
+    console.warn(
+      `[optimize-images] Uyarı: ${failed.length} görsel atlandı. Derleme devam ediyor.`,
+    );
   }
+  process.exit(0);
 }
 
 main().catch((err) => {
-  console.error(err);
-  process.exit(1);
+  console.warn(
+    `[optimize-images] Uyarı: ${err.message}. Görsel optimizasyonu atlandı, derleme devam ediyor.`,
+  );
+  process.exit(0);
 });
