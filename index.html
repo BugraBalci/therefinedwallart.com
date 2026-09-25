@@ -927,8 +927,17 @@
         .replace(/^-+|-+$/g, "");
     }
 
+    function locationUrl() {
+      try {
+        return new URL(window.location.href);
+      } catch (_) {
+        return null;
+      }
+    }
+
     function wallArtSlugFromLocation() {
-      let path = window.location.pathname || "/";
+      const url = locationUrl();
+      let path = url ? url.pathname : window.location.pathname || "/";
       try {
         path = decodeURIComponent(path);
       } catch (_) {}
@@ -976,16 +985,20 @@
     }
 
     function syncUrl() {
-      const params = new URLSearchParams();
+      const url = locationUrl();
+      const params = new URLSearchParams(url ? url.search : window.location.search);
       if (lang !== DEFAULT_LANG) params.set(LANG_PARAM, lang);
+      else params.delete(LANG_PARAM);
       if (activeFilter !== "all") params.set(FILTER_PARAM, activeFilter);
+      else params.delete(FILTER_PARAM);
 
       canonicalLink.href = canonicalHrefFor(lang);
 
       /* replaceState throws on file:// and keeps switcher clicks out of session history */
       if (window.location.protocol === "http:" || window.location.protocol === "https:") {
         const query = params.toString();
-        window.history.replaceState(null, "", query ? `${window.location.pathname}?${query}` : window.location.pathname);
+        const path = url ? url.pathname : window.location.pathname;
+        window.history.replaceState(null, "", query ? `${path}?${query}` : path);
       }
     }
 

@@ -2,7 +2,7 @@
   "outputDirectory": ".",
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/wall-art/(.*)", "destination": "/index.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/wall-art/:path*", "destination": "/" },
+    { "source": "/((?!api/|_next/|_vercel/|.*\\..*).*)", "destination": "/" }
   ]
 }
