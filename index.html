@@ -362,10 +362,10 @@
   >
     <div id="qv-backdrop" class="absolute inset-0 bg-black/85 opacity-0 backdrop-blur-md transition-opacity duration-300"></div>
 
-    <div id="qv-shell" class="scroll-slim relative flex h-full items-start justify-center overflow-y-auto p-0 sm:items-center sm:p-6">
+    <div id="qv-shell" class="scroll-slim relative flex h-full items-start justify-center overflow-y-auto px-4 py-12 sm:items-center sm:px-6">
       <div
         id="qv-panel"
-        class="relative w-full max-w-6xl translate-y-6 overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white opacity-0 shadow-[0_40px_120px_-20px_rgba(24,24,27,0.18)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] dark:border-white/10 dark:bg-[#141414] dark:shadow-[0_40px_120px_-20px_rgba(0,0,0,0.65)] sm:translate-y-4"
+        class="relative w-full max-w-6xl translate-y-6 overflow-hidden rounded-2xl border border-[#e7e3dc] bg-white opacity-0 shadow-[0_40px_120px_-20px_rgba(24,24,27,0.18)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] dark:border-white/10 dark:bg-[#141414] dark:shadow-[0_40px_120px_-20px_rgba(0,0,0,0.65)] sm:translate-y-4 lg:max-h-[calc(100dvh-6rem)]"
       >
         <button
           type="button"
@@ -379,19 +379,19 @@
           </svg>
         </button>
 
-        <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)]">
+        <div class="grid grid-cols-1 lg:h-full lg:max-h-[calc(100dvh-6rem)] lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)]">
           <!-- Gallery. min-w-0 stops the media's intrinsic width from blowing out the fr column. -->
-          <div class="flex min-h-0 min-w-0 flex-col bg-[#f4f1ea] px-4 pb-4 pt-14 dark:bg-[#0b0b0b] sm:p-6 lg:p-8">
-            <div id="qv-stage" class="relative flex h-auto min-h-0 w-full max-h-[45vh] items-center justify-center overflow-hidden rounded-2xl bg-white dark:bg-[#141414] sm:max-h-none sm:min-h-[28rem] lg:h-[min(72vh,42rem)] lg:min-h-[32rem]"></div>
-            <div id="qv-thumbs" class="no-scrollbar mt-4 flex gap-3 overflow-x-auto"></div>
+          <div class="flex min-h-0 min-w-0 flex-col bg-[#f4f1ea] px-4 pb-4 pt-16 dark:bg-[#0b0b0b] sm:p-6 sm:pt-16 lg:p-8 lg:pt-8">
+            <div id="qv-stage" class="relative flex h-auto min-h-0 w-full max-h-[45vh] items-center justify-center overflow-hidden rounded-2xl bg-white dark:bg-[#141414] sm:max-h-none sm:min-h-[22rem] lg:h-auto lg:min-h-0 lg:flex-1"></div>
+            <div id="qv-thumbs" class="no-scrollbar mt-4 flex shrink-0 gap-3 overflow-x-auto"></div>
           </div>
 
           <!-- Details -->
-          <div class="flex min-w-0 flex-col p-6 sm:p-8 lg:p-10">
+          <div id="qv-details" class="scroll-slim flex min-h-0 min-w-0 flex-col overflow-y-auto p-6 sm:p-8 lg:p-10 lg:pr-12">
             <span id="qv-shop" class="inline-flex w-fit items-center rounded-sm border border-champagne/30 bg-champagne/[0.08] px-2.5 py-1 text-[9.5px] font-medium uppercase tracking-[0.22em] text-champagne"></span>
-            <h3 id="qv-title" class="mt-5 font-cinzel text-2xl font-medium leading-snug tracking-[0.05em] text-zinc-900 dark:text-zinc-100 lg:text-[26px]"></h3>
+            <h3 id="qv-title" class="mt-5 pr-10 font-cinzel text-2xl font-medium leading-snug tracking-[0.05em] text-zinc-900 dark:text-zinc-100 lg:text-[26px]"></h3>
             <div class="mt-6 h-px w-14 bg-[#e2ded6] dark:bg-white/10"></div>
-            <p id="qv-description" class="mt-6 text-[13.5px] font-light leading-[1.85] text-zinc-600"></p>
+            <div id="qv-description" class="mt-6"></div>
 
             <div id="qv-colors-wrap" class="mt-8 hidden">
               <p class="text-[10px] font-medium uppercase tracking-[0.24em] text-zinc-600" data-i18n="selectColor">Select Color / Finish:</p>
@@ -666,6 +666,162 @@
     function localized(field) {
       if (!field) return "";
       return typeof field === "string" ? field : field[lang] ?? field.en ?? "";
+    }
+
+    function decodeEntities(value) {
+      return String(value ?? "")
+        .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCodePoint(parseInt(hex, 16)))
+        .replace(/&#(\d+);/g, (_, num) => String.fromCodePoint(Number(num)))
+        .replace(/&nbsp;/gi, " ")
+        .replace(/&quot;/gi, '"')
+        .replace(/&apos;/gi, "'")
+        .replace(/&amp;/gi, "&")
+        .replace(/&lt;/gi, "<")
+        .replace(/&gt;/gi, ">");
+    }
+
+    function normalizeHeadingKey(line) {
+      return String(line ?? "")
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/['’]/g, "")
+        .replace(/&/g, "and")
+        .replace(/[^a-zA-Z0-9\s]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim()
+        .toLowerCase();
+    }
+
+    const DESCRIPTION_HEADINGS = new Set([
+      "product details",
+      "why youll love it",
+      "details",
+      "description",
+      "design details",
+      "size options",
+      "color options",
+      "material",
+      "personalization",
+      "personalized for your dog",
+      "style and placement",
+      "urun detaylari",
+      "neden seveceksiniz",
+      "ozellikler",
+      "aciklama",
+      "olcu secenekleri",
+      "renk secenekleri",
+      "malzeme",
+    ]);
+
+    function isDescriptionHeading(line, titleKey) {
+      const key = normalizeHeadingKey(line);
+      if (!key || key === titleKey) return false;
+      if (DESCRIPTION_HEADINGS.has(key)) return true;
+      if (line.length > 42) return false;
+      const letters = line.replace(/[^A-Za-zÇĞİÖŞÜçğıöşü]/g, "");
+      if (letters.length < 4) return false;
+      const upper = line.toLocaleUpperCase("en");
+      const words = line.split(/\s+/).filter(Boolean);
+      return line === upper && words.length <= 6 && !/[.!?]$/.test(line);
+    }
+
+    function isBulletLine(line) {
+      return /^[•●▪◦·\*·\-–—]\s+\S/.test(line) || /^\d+[.)]\s+\S/.test(line);
+    }
+
+    function stripBullet(line) {
+      return line.replace(/^[•●▪◦·\*·\-–—]\s+/, "").replace(/^\d+[.)]\s+/, "").trim();
+    }
+
+    function looksLikeListItem(line) {
+      if (!line || line.length > 90) return false;
+      if (/^[^:]{1,48}:\s+\S/.test(line)) return true;
+      if (/^\d+(\.\d+)?\s*(cm|mm|in|inch)/i.test(line)) return true;
+      return line.length <= 24 && !/[.!?]/.test(line);
+    }
+
+    function formatDescription(raw, titleText) {
+      const text = decodeEntities(raw).replace(/\r\n/g, "\n").trim();
+      if (!text) return "";
+
+      const titleKey = normalizeHeadingKey(titleText);
+      const lines = text.split("\n").map((line) => line.replace(/\s+/g, " ").trim());
+      const paraClass = "mb-3 text-sm font-light leading-[1.6] text-zinc-600 dark:text-zinc-400";
+      const headingClass = "mb-2 mt-4 font-semibold text-xs uppercase tracking-wider text-zinc-500 dark:text-zinc-400";
+      const listClass = "mb-3 space-y-1.5";
+      const itemClass = "flex gap-2.5 text-sm font-light leading-[1.6] text-zinc-600 dark:text-zinc-400";
+      const chunks = [];
+
+      const pushParagraph = (value) => {
+        if (!value) return;
+        chunks.push(`<p class="${paraClass}">${escapeHtml(value)}</p>`);
+      };
+      const pushHeading = (value) => {
+        chunks.push(`<h4 class="${headingClass}">${escapeHtml(value)}</h4>`);
+      };
+      const pushList = (items) => {
+        if (!items.length) return;
+        chunks.push(
+          `<ul class="${listClass}">${items
+            .map(
+              (item) =>
+                `<li class="${itemClass}"><span class="mt-[0.55em] h-1 w-1 shrink-0 rounded-full bg-champagne/70" aria-hidden="true"></span><span>${escapeHtml(item)}</span></li>`
+            )
+            .join("")}</ul>`
+        );
+      };
+
+      let i = 0;
+      while (i < lines.length) {
+        if (!lines[i]) {
+          i += 1;
+          continue;
+        }
+        if (isDescriptionHeading(lines[i], titleKey)) {
+          pushHeading(lines[i]);
+          i += 1;
+          continue;
+        }
+        if (isBulletLine(lines[i])) {
+          const items = [];
+          while (i < lines.length && isBulletLine(lines[i])) {
+            items.push(stripBullet(lines[i]));
+            i += 1;
+          }
+          pushList(items);
+          continue;
+        }
+
+        const block = [];
+        while (i < lines.length && lines[i] && !isDescriptionHeading(lines[i], titleKey) && !isBulletLine(lines[i])) {
+          block.push(lines[i]);
+          i += 1;
+        }
+
+        let prose = [];
+        const flushProse = () => {
+          if (prose.length) pushParagraph(prose.join(" "));
+          prose = [];
+        };
+        const pending = [];
+        const flushPending = () => {
+          if (pending.length) pushList(pending);
+          pending.length = 0;
+        };
+        for (const line of block) {
+          if (looksLikeListItem(line)) {
+            flushProse();
+            pending.push(line);
+          } else {
+            flushPending();
+            prose.push(line);
+          }
+        }
+        flushProse();
+        flushPending();
+      }
+
+      return chunks.join("");
     }
 
     /* --------------------------------- Etsy links ------------------------------ */
@@ -1211,7 +1367,7 @@
 
       qvShop.textContent = SHOP_LABELS[product.category] ?? product.shop ?? "";
       qvTitle.textContent = titleText;
-      qvDescription.textContent = localized(product.description);
+      qvDescription.innerHTML = formatDescription(localized(product.description), titleText);
       qvCta.href = etsyUrl;
 
       renderStage(gallery, titleText, etsyUrl);
