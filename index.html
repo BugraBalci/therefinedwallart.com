@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <base href="/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="p:domain_verify" content="d82d0458682649d15e3a3ffc29772b81" />
   <style>
@@ -907,6 +908,54 @@
     }
 
     /* -------------------------------- Filtering ------------------------------- */
+    /* Pinterest and other outbound links use /wall-art/<kebab-title>. Query strings
+       (utm_*, lang, filter) stay on location.search and must not affect the match. */
+    function toKebab(value) {
+      return String(value ?? "")
+        .replace(/İ/g, "i")
+        .replace(/I/g, "i")
+        .toLocaleLowerCase("en")
+        .replace(/ı/g, "i")
+        .replace(/ş/g, "s")
+        .replace(/ğ/g, "g")
+        .replace(/ü/g, "u")
+        .replace(/ö/g, "o")
+        .replace(/ç/g, "c")
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+    }
+
+    function wallArtSlugFromLocation() {
+      let path = window.location.pathname || "/";
+      try {
+        path = decodeURIComponent(path);
+      } catch (_) {}
+      const match = path.replace(/\/+$/, "").match(/^\/wall-art\/([^/]+)$/i);
+      return match ? toKebab(match[1]) : "";
+    }
+
+    function productSlugCandidates(product) {
+      const candidates = [];
+      if (typeof product?.slug === "string" && product.slug.trim()) candidates.push(product.slug);
+      const title = product?.title;
+      if (typeof title === "string") candidates.push(title);
+      else if (title && typeof title === "object") {
+        for (const value of Object.values(title)) {
+          if (typeof value === "string" && value.trim()) candidates.push(value);
+        }
+      }
+      return candidates.map(toKebab).filter(Boolean);
+    }
+
+    function openProductFromPath() {
+      const slug = wallArtSlugFromLocation();
+      if (!slug) return;
+      const product = products.find((item) => productSlugCandidates(item).includes(slug));
+      if (product) openModal(product.id);
+    }
+
     function filterFromUrl() {
       const requested = new URLSearchParams(window.location.search).get(FILTER_PARAM);
       return requested && validFilters.has(requested) ? requested : "all";
@@ -1478,6 +1527,7 @@
         productsLoaded = true;
         renderCounts();
         renderProducts();
+        openProductFromPath();
       })
       .catch(() => {
         loadFailed = true;
