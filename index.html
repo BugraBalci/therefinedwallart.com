@@ -379,15 +379,15 @@
           </svg>
         </button>
 
-        <div class="grid grid-cols-1 lg:h-full lg:max-h-[calc(100dvh-6rem)] lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)]">
+        <div class="grid grid-cols-1 items-start lg:h-full lg:max-h-[calc(100dvh-6rem)] lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)]">
           <!-- Gallery. min-w-0 stops the media's intrinsic width from blowing out the fr column. -->
-          <div class="flex min-h-0 min-w-0 flex-col bg-[#f4f1ea] px-4 pb-4 pt-16 dark:bg-[#0b0b0b] sm:p-6 sm:pt-16 lg:p-8 lg:pt-8">
-            <div id="qv-stage" class="relative flex h-auto min-h-0 w-full max-h-[45vh] items-center justify-center overflow-hidden rounded-2xl bg-white dark:bg-[#141414] sm:max-h-none sm:min-h-[22rem] lg:h-auto lg:min-h-0 lg:flex-1"></div>
-            <div id="qv-thumbs" class="no-scrollbar mt-4 flex shrink-0 gap-3 overflow-x-auto"></div>
+          <div class="flex min-w-0 flex-col self-start bg-[#f4f1ea] p-0 dark:bg-[#0b0b0b] lg:sticky lg:top-0 lg:p-10">
+            <div id="qv-stage" class="relative flex h-auto w-full items-start justify-center overflow-hidden rounded-none bg-white dark:bg-[#141414] lg:rounded-2xl"></div>
+            <div id="qv-thumbs" class="no-scrollbar mt-4 flex shrink-0 gap-3 overflow-x-auto px-4 pb-4 lg:px-0 lg:pb-0"></div>
           </div>
 
           <!-- Details -->
-          <div id="qv-details" class="scroll-slim flex min-h-0 min-w-0 flex-col overflow-y-auto p-6 sm:p-8 lg:p-10 lg:pr-12">
+          <div id="qv-details" class="scroll-slim flex min-h-0 min-w-0 flex-col self-stretch overflow-y-auto p-6 sm:p-8 lg:h-full lg:p-10 lg:pr-12">
             <span id="qv-shop" class="inline-flex w-fit items-center rounded-sm border border-champagne/30 bg-champagne/[0.08] px-2.5 py-1 text-[9.5px] font-medium uppercase tracking-[0.22em] text-champagne"></span>
             <h3 id="qv-title" class="mt-5 pr-10 font-cinzel text-2xl font-medium leading-snug tracking-[0.05em] text-zinc-900 dark:text-zinc-100 lg:text-[26px]"></h3>
             <div class="mt-6 h-px w-14 bg-[#e2ded6] dark:bg-white/10"></div>
@@ -1318,9 +1318,9 @@
           target="_blank"
           rel="noopener noreferrer"
           aria-label="${escapeHtml(t("a11y.openOnEtsy"))} — ${alt}"
-          class="flex h-full w-full max-w-full items-center justify-center overflow-hidden rounded-2xl bg-white dark:bg-[#141414]"
+          class="flex h-auto w-full max-w-full items-start justify-center overflow-hidden rounded-none bg-white dark:bg-[#141414] lg:rounded-2xl"
         >
-          <img src="${src}" alt="${alt}" width="800" height="800" decoding="async" class="mx-auto h-auto w-full max-h-[45vh] object-contain object-center sm:h-full sm:max-h-none" />
+          <img src="${src}" alt="${alt}" width="800" height="800" decoding="async" class="mx-auto h-auto w-full object-contain object-top" />
         </a>`;
     }
 

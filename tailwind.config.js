@@ -37,6 +37,8 @@ module.exports = {
     "lg:max-h-[calc(100dvh-6rem)]",
     "leading-[1.6]",
     "mt-[0.55em]",
+    "lg:sticky",
+    "object-top",
     "shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]",
     "hover:shadow-[0_8px_28px_-6px_rgba(0,0,0,0.10)]",
     "dark:shadow-[0_4px_24px_-4px_rgba(0,0,0,0.45)]",

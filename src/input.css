@@ -110,29 +110,13 @@ html.dark .swatch[aria-pressed="true"] {
 }
 #qv-stage {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 #qv-stage img {
   width: 100%;
   max-width: 100%;
   height: auto;
-  max-height: 45vh;
   object-fit: contain;
-  object-position: center;
-}
-@media (min-width: 640px) {
-  #qv-stage img {
-    height: 100%;
-    max-height: none;
-  }
-}
-@media (min-width: 1024px) {
-  #qv-stage {
-    flex: 1 1 auto;
-    min-height: 0;
-  }
-  #qv-stage img {
-    max-height: 100%;
-  }
+  object-position: top;
 }
